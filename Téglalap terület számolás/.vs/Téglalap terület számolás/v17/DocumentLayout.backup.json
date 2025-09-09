@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\fxemow\\Desktop\\T\u00E9glalap ter\u00FClet sz\u00E1mol\u00E1s\\",
+  "WorkspaceRootPath": "C:\\Users\\fxemow\\Desktop\\Alex\\T\u00E9glalap ter\u00FClet sz\u00E1mol\u00E1s\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7843BC19-41A6-4834-A5F4-DC37C50741DF}|T\u00E9glalap ter\u00FClet sz\u00E1mol\u00E1s\\T\u00E9glalap ter\u00FClet sz\u00E1mol\u00E1s.csproj|c:\\users\\fxemow\\desktop\\t\u00E9glalap ter\u00FClet sz\u00E1mol\u00E1s\\t\u00E9glalap ter\u00FClet sz\u00E1mol\u00E1s\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7843BC19-41A6-4834-A5F4-DC37C50741DF}|T\u00E9glalap ter\u00FClet sz\u00E1mol\u00E1s\\T\u00E9glalap ter\u00FClet sz\u00E1mol\u00E1s.csproj|c:\\users\\fxemow\\desktop\\alex\\t\u00E9glalap ter\u00FClet sz\u00E1mol\u00E1s\\t\u00E9glalap ter\u00FClet sz\u00E1mol\u00E1s\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7843BC19-41A6-4834-A5F4-DC37C50741DF}|T\u00E9glalap ter\u00FClet sz\u00E1mol\u00E1s\\T\u00E9glalap ter\u00FClet sz\u00E1mol\u00E1s.csproj|solutionrelative:t\u00E9glalap ter\u00FClet sz\u00E1mol\u00E1s\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\fxemow\\Desktop\\T\u00E9glalap ter\u00FClet sz\u00E1mol\u00E1s\\T\u00E9glalap ter\u00FClet sz\u00E1mol\u00E1s\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\fxemow\\Desktop\\Alex\\T\u00E9glalap ter\u00FClet sz\u00E1mol\u00E1s\\T\u00E9glalap ter\u00FClet sz\u00E1mol\u00E1s\\Program.cs",
               "RelativeDocumentMoniker": "T\u00E9glalap ter\u00FClet sz\u00E1mol\u00E1s\\Program.cs",
-              "ToolTip": "C:\\Users\\fxemow\\Desktop\\T\u00E9glalap ter\u00FClet sz\u00E1mol\u00E1s\\T\u00E9glalap ter\u00FClet sz\u00E1mol\u00E1s\\Program.cs",
-              "RelativeToolTip": "T\u00E9glalap ter\u00FClet sz\u00E1mol\u00E1s\\Program.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAswBUAAAAMAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\fxemow\\Desktop\\Alex\\T\u00E9glalap ter\u00FClet sz\u00E1mol\u00E1s\\T\u00E9glalap ter\u00FClet sz\u00E1mol\u00E1s\\Program.cs*",
+              "RelativeToolTip": "T\u00E9glalap ter\u00FClet sz\u00E1mol\u00E1s\\Program.cs*",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAswBgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-09T12:47:20.516Z",
               "EditorCaption": ""

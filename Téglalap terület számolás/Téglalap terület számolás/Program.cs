@@ -17,41 +17,56 @@ namespace Téglalap_terület_számolás
         }
         static void AskQuestion(string error)
         {
-            Console.WriteLine(error);
-            Console.Write("Adja meg az egyik oldalt (egész szám legyen légyszi és ne 0 és ne negatív pliz pliz): ");
-            double a = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Adja meg az másik oldalt (egész szám legyen légyszi és ne 0 és ne negatív pliz pliz): ");
-            double b = Convert.ToDouble(Console.ReadLine());
-            if (a == 0 || b == 0)
+            try
             {
-                Console.Clear();
-                AskQuestion("NE LEGYEN NULLA NAAAA");
-            }
-            else if (a < 0 || b < 0) 
-            {
-                Console.Clear();
-                AskQuestion("Legyen már bozítív naaa");
-            }
-            else 
-            {
-                Console.WriteLine(a*b + " lett az eredmény");
-                Console.Write("Akarod újra? (y/n)");
-                string answer = Console.ReadLine();
-                if (answer == "y" || answer == "yes") 
+                if(error != "")
                 {
-                    error = "";
-                    Console.Clear();
-                    AskQuestion(error);
+                    Console.WriteLine(error);
                 }
+                Console.Write("a = ");
+                double a = Convert.ToDouble(Console.ReadLine());
+                Console.Write("b = ");
+                double b = Convert.ToDouble(Console.ReadLine());
+                if (a == 0 || b == 0)
+                {
+                    Console.Clear();
+                    AskQuestion("Nem lehet 0");
+                }
+                else if (a < 0 || b < 0)
+                {
+                    Console.Clear();
+                    AskQuestion("Nem lehet negatív");
+                }
+
                 else
                 {
-                    Console.Clear();
-                    Console.WriteLine("Mindegy amúgysem akartam, lépj ki nyugodtan");
+                    Console.WriteLine(a * b + " lett az eredmény");
+                    Console.WriteLine($"{a * b} lett az eredmény");
+
+                    Console.Write("Akarod újra? (y/n)");
+                    string answer = Console.ReadLine();
+                    if (answer == "y" || answer == "yes")
+                    {
+                        error = "";
+                        Console.Clear();
+                        AskQuestion(error);
+                    }
+                    else
+                    {
+                        Console.Clear();
+                        Console.WriteLine("Mindegy amúgysem akartam, lépj ki nyugodtan");
+                    }
+
+                    //double tryParse(Console.Readline(), out a);
+
                 }
-
-                //double tryParse(Console.Readline(), out a);
-
             }
+            catch (System.FormatException)
+            {
+                Console.Clear();
+                AskQuestion("Nem emgfelelő a bemeneti formátum (szám legyen, törtet ,-vel válaszd el ne .-al)");
+            }
+            
         }
     }
 }
