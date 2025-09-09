@@ -1,0 +1,8 @@
+C:\Users\fxemow\Desktop\Alex\Másodperckonvertál\Másodperckonvertál\bin\Debug\Másodperckonvertál.exe.config
+C:\Users\fxemow\Desktop\Alex\Másodperckonvertál\Másodperckonvertál\bin\Debug\Másodperckonvertál.exe
+C:\Users\fxemow\Desktop\Alex\Másodperckonvertál\Másodperckonvertál\bin\Debug\Másodperckonvertál.pdb
+C:\Users\fxemow\Desktop\Alex\Másodperckonvertál\Másodperckonvertál\obj\Debug\Másodperckonvertál.csproj.AssemblyReference.cache
+C:\Users\fxemow\Desktop\Alex\Másodperckonvertál\Másodperckonvertál\obj\Debug\Másodperckonvertál.csproj.CoreCompileInputs.cache
+C:\Users\fxemow\Desktop\Alex\Másodperckonvertál\Másodperckonvertál\obj\Debug\Másodperckonvertál.exe
+C:\Users\fxemow\Desktop\Alex\Másodperckonvertál\Másodperckonvertál\obj\Debug\Másodperckonvertál.pdb
+C:\Users\fxemow\Desktop\Alex\Másodperckonvertál\Másodperckonvertál\obj\Debug\Másodperckonvertál.exe.config

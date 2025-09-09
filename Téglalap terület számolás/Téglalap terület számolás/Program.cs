@@ -17,11 +17,19 @@ namespace Téglalap_terület_számolás
         }
         static void AskQuestion(string error)
         {
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("==========================================");
+            Console.WriteLine("Az Alex féle téglalap terület számító 5000");
+            Console.WriteLine("==========================================");
+            Console.ForegroundColor = ConsoleColor.White;
             try
             {
                 if(error != "")
-                {
+                { 
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine(error);
+                    Console.ForegroundColor = ConsoleColor.White;
                 }
                 Console.Write("a = ");
                 double a = Convert.ToDouble(Console.ReadLine());
@@ -29,12 +37,12 @@ namespace Téglalap_terület_számolás
                 double b = Convert.ToDouble(Console.ReadLine());
                 if (a == 0 || b == 0)
                 {
-                    Console.Clear();
+                    
                     AskQuestion("Nem lehet 0");
                 }
                 else if (a < 0 || b < 0)
                 {
-                    Console.Clear();
+                    
                     AskQuestion("Nem lehet negatív");
                 }
 
@@ -43,12 +51,13 @@ namespace Téglalap_terület_számolás
                     Console.WriteLine(a * b + " lett az eredmény");
                     Console.WriteLine($"{a * b} lett az eredmény");
 
-                    Console.Write("Akarod újra? (y/n)");
+                    Console.Write("Akarod újra? (y/n): ");
                     string answer = Console.ReadLine();
-                    if (answer == "y" || answer == "yes")
+                    answer = answer.ToLower();
+                    if (answer == "y" || answer == "yes" )
                     {
                         error = "";
-                        Console.Clear();
+                        ;
                         AskQuestion(error);
                     }
                     else
@@ -63,8 +72,12 @@ namespace Téglalap_terület_számolás
             }
             catch (System.FormatException)
             {
-                Console.Clear();
-                AskQuestion("Nem emgfelelő a bemeneti formátum (szám legyen, törtet ,-vel válaszd el ne .-al)");
+                
+                AskQuestion("Nem emgfelelő a bemeneti formátum (szám legyen)(törtet ,-vel válaszd el ne .-val)");
+            }
+            catch
+            {
+                AskQuestion("Nem tudom ezt hogy hoztad össze de ne csináld");
             }
             
         }

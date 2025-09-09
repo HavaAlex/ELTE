@@ -1,0 +1,4 @@
+https://progalap.elte.hu/specifikacio/
+https://progalap.elte.hu/stuki/
+http://biro.inf.elte.hu/faces/login.xhtml
+http://mester.inf.elte.hu/

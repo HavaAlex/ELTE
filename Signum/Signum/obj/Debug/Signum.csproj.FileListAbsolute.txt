@@ -1,0 +1,8 @@
+C:\Users\fxemow\Desktop\Alex\Signum\Signum\bin\Debug\Signum.exe.config
+C:\Users\fxemow\Desktop\Alex\Signum\Signum\bin\Debug\Signum.exe
+C:\Users\fxemow\Desktop\Alex\Signum\Signum\bin\Debug\Signum.pdb
+C:\Users\fxemow\Desktop\Alex\Signum\Signum\obj\Debug\Signum.csproj.AssemblyReference.cache
+C:\Users\fxemow\Desktop\Alex\Signum\Signum\obj\Debug\Signum.csproj.CoreCompileInputs.cache
+C:\Users\fxemow\Desktop\Alex\Signum\Signum\obj\Debug\Signum.exe
+C:\Users\fxemow\Desktop\Alex\Signum\Signum\obj\Debug\Signum.pdb
+C:\Users\fxemow\Desktop\Alex\Signum\Signum\obj\Debug\Signum.exe.config

@@ -14,12 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,7 +24,7 @@
               "RelativeDocumentMoniker": "T\u00E9glalap ter\u00FClet sz\u00E1mol\u00E1s\\Program.cs",
               "ToolTip": "C:\\Users\\fxemow\\Desktop\\Alex\\T\u00E9glalap ter\u00FClet sz\u00E1mol\u00E1s\\T\u00E9glalap ter\u00FClet sz\u00E1mol\u00E1s\\Program.cs",
               "RelativeToolTip": "T\u00E9glalap ter\u00FClet sz\u00E1mol\u00E1s\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAswBgAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAABgAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-09T12:47:20.516Z",
               "EditorCaption": ""
