@@ -1,0 +1,8 @@
+C:\Users\fxemow\Desktop\ElsoLesson\ElsoLesson\obj\Debug\ElsoLesson.csproj.AssemblyReference.cache
+C:\Users\fxemow\Desktop\ElsoLesson\ElsoLesson\obj\Debug\ElsoLesson.csproj.CoreCompileInputs.cache
+C:\Users\fxemow\Desktop\ElsoLesson\ElsoLesson\bin\Debug\ElsoLesson.exe.config
+C:\Users\fxemow\Desktop\ElsoLesson\ElsoLesson\bin\Debug\ElsoLesson.exe
+C:\Users\fxemow\Desktop\ElsoLesson\ElsoLesson\bin\Debug\ElsoLesson.pdb
+C:\Users\fxemow\Desktop\ElsoLesson\ElsoLesson\obj\Debug\ElsoLesson.exe
+C:\Users\fxemow\Desktop\ElsoLesson\ElsoLesson\obj\Debug\ElsoLesson.pdb
+C:\Users\fxemow\Desktop\ElsoLesson\ElsoLesson\obj\Debug\ElsoLesson.exe.config
