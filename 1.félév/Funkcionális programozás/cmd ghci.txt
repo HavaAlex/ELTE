@@ -1,0 +1,6 @@
+ghci (belép)
+:q (kilép)
+:l fajlnev.hs (compile)
+:r (ujra compile)
+
+:! cls
