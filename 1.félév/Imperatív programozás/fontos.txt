@@ -1,0 +1,21 @@
+GSD.web.elte.hu
+gsd@inf.elte.hu ha kell vmi
+https://gsd.web.elte.hu/imper/
+előadások felcseréhetők
+röpzh lesz (gyakorlaton)
+
+100 pont a félév sórán
+40 a gyak: 
+ - 20 a röpzhán (figyelni kell)
+ - 20 órai munka hazik egyebek
+év végén zh 60 p (c reference az jó oldal)
+
+könyvek:
+Nyékyné Gaizler: Judit Programozási nyelvek
+Brian W Kernigham, Dennis Ritchi: The C programming language (fehér színű ansi c feliratos)
+Brian W Kernigham: The Practice of Programming, 1st Edition
+
+!INTERPRETEREKNEK UTÁNA NÉZNI!
+
+
+
