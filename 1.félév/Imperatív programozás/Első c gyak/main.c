@@ -7,3 +7,7 @@ int main()
     printf("Üdv világ!");
     return 0;
 }
+
+/*
+c
+*/
