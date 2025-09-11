@@ -1,0 +1,8 @@
+C:\Users\admin\Desktop\ELTE repo\1.félév\Programozási alapok\1.hazi\1.hazi\bin\Debug\1.hazi.exe.config
+C:\Users\admin\Desktop\ELTE repo\1.félév\Programozási alapok\1.hazi\1.hazi\bin\Debug\1.hazi.exe
+C:\Users\admin\Desktop\ELTE repo\1.félév\Programozási alapok\1.hazi\1.hazi\bin\Debug\1.hazi.pdb
+C:\Users\admin\Desktop\ELTE repo\1.félév\Programozási alapok\1.hazi\1.hazi\obj\Debug\1.hazi.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\ELTE repo\1.félév\Programozási alapok\1.hazi\1.hazi\obj\Debug\1.hazi.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\ELTE repo\1.félév\Programozási alapok\1.hazi\1.hazi\obj\Debug\1.hazi.exe
+C:\Users\admin\Desktop\ELTE repo\1.félév\Programozási alapok\1.hazi\1.hazi\obj\Debug\1.hazi.pdb
+C:\Users\admin\Desktop\ELTE repo\1.félév\Programozási alapok\1.hazi\1.hazi\obj\Debug\1.hazi.exe.config

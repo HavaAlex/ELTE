@@ -22,7 +22,9 @@ inc x = x + 1 --baloldal a lesza  neve a paramnak. több param esetén többet i
 
 
 double :: Int -> Int
-double x = x *2
+double x = x * 2
 
 sumold :: Int -> Int -> Int
 sumold x y = x + y 
+
+--fact n = prod [1..n]

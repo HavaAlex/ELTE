@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\admin\\Desktop\\ELTE repo\\1.f\u00E9l\u00E9v\\Programoz\u00E1si alapok\\1.hazi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{74A989F6-2CB8-44C5-9920-3E74CB984101}|1.hazi\\1.hazi.csproj|c:\\users\\admin\\desktop\\elte repo\\1.f\u00E9l\u00E9v\\programoz\u00E1si alapok\\1.hazi\\1.hazi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74A989F6-2CB8-44C5-9920-3E74CB984101}|1.hazi\\1.hazi.csproj|solutionrelative:1.hazi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\ELTE repo\\1.f\u00E9l\u00E9v\\Programoz\u00E1si alapok\\1.hazi\\1.hazi\\Program.cs",
+              "RelativeDocumentMoniker": "1.hazi\\Program.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\ELTE repo\\1.f\u00E9l\u00E9v\\Programoz\u00E1si alapok\\1.hazi\\1.hazi\\Program.cs*",
+              "RelativeToolTip": "1.hazi\\Program.cs*",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T13:01:05.723Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

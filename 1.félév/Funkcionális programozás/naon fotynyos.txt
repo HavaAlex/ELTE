@@ -1,0 +1,16 @@
+Feladatközpontúság és szemantika
+azonosító függvény definicióban van
+Érték adni tilos! ( nem lehet felülirni valszeg ezt jelenti) definició van
+minden constans
+params az nem kell különleges legyen
+
+definiáló egyenlőség választja el a függvény nevet és a paramétereket (argumentum) a visszatérési értékektől
+square x = x * 1
+előre definiált függvény azért mert már megvan csinálva (div v mod)
+több tipusra is definiálódik a függvény mert pl:
+    square x = x * 1 egyszerre jó egész és valós számokra
+
+fact n = prod [1..n] ( .. számtani sorozatot jelent)
+függvény diszkusszió ( olyat ad e aminek van értelme ha a paraméterértékre nem számítok pl 0 )
+kezeeti kifejezés kiirtékelése a program
+az eredmény a normálforma
