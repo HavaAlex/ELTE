@@ -44,7 +44,7 @@ void main(){
  printf("Ezzel elosztom neked: ");
  scanf("%d",&osztoint);
  float eredmeny = osztandoint / osztoint;
- printf("%f lett remelem elegedett vagy\n",eredmeny);
+ printf("%.2f lett remelem elegedett vagy\n",eredmeny);
 
 
  //3/b
@@ -56,7 +56,7 @@ void main(){
  printf("Ezzel elosztom neked: ");
  scanf("%f",&osztof);
  float eredmeny2 = osztandof / osztof;
- printf("%f lett remelem elegedett vagy\n",eredmeny2);
+ printf("%.2f lett remelem elegedett vagy\n",eredmeny2);
  //4
  printf("4.Feladat: =============================\n");
  float r ;
@@ -74,7 +74,8 @@ void main(){
  printf("Téglalap terüéete: %f\n",tt);
  //5
  printf("5.Feladat: =============================\n");
- char name[4] = "Alex";
+ 
+ char name[5] = "Alex";
  printf("Szia %s\n",name);
  
 
