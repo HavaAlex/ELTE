@@ -1,0 +1,8 @@
+C:\Users\fxemow\Desktop\Alex\1.félév\Programozási alapok\2025_09_16_faktorialiszamito\2025_09_16_faktorialiszamito\bin\Debug\2025_09_16_faktorialiszamito.exe.config
+C:\Users\fxemow\Desktop\Alex\1.félév\Programozási alapok\2025_09_16_faktorialiszamito\2025_09_16_faktorialiszamito\bin\Debug\2025_09_16_faktorialiszamito.exe
+C:\Users\fxemow\Desktop\Alex\1.félév\Programozási alapok\2025_09_16_faktorialiszamito\2025_09_16_faktorialiszamito\bin\Debug\2025_09_16_faktorialiszamito.pdb
+C:\Users\fxemow\Desktop\Alex\1.félév\Programozási alapok\2025_09_16_faktorialiszamito\2025_09_16_faktorialiszamito\obj\Debug\2025_09_16_faktorialiszamito.csproj.AssemblyReference.cache
+C:\Users\fxemow\Desktop\Alex\1.félév\Programozási alapok\2025_09_16_faktorialiszamito\2025_09_16_faktorialiszamito\obj\Debug\2025_09_16_faktorialiszamito.csproj.CoreCompileInputs.cache
+C:\Users\fxemow\Desktop\Alex\1.félév\Programozási alapok\2025_09_16_faktorialiszamito\2025_09_16_faktorialiszamito\obj\Debug\2025_09_16_faktorialiszamito.exe
+C:\Users\fxemow\Desktop\Alex\1.félév\Programozási alapok\2025_09_16_faktorialiszamito\2025_09_16_faktorialiszamito\obj\Debug\2025_09_16_faktorialiszamito.pdb
+C:\Users\fxemow\Desktop\Alex\1.félév\Programozási alapok\2025_09_16_faktorialiszamito\2025_09_16_faktorialiszamito\obj\Debug\2025_09_16_faktorialiszamito.exe.config

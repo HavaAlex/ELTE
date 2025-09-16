@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36401.2 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2025_09_16_faktorialiszamito", "2025_09_16_faktorialiszamito\2025_09_16_faktorialiszamito.csproj", "{5D48FF98-9A57-446D-9992-4B424912EDA0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D48FF98-9A57-446D-9992-4B424912EDA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D48FF98-9A57-446D-9992-4B424912EDA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D48FF98-9A57-446D-9992-4B424912EDA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D48FF98-9A57-446D-9992-4B424912EDA0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {416D49FA-1079-40EF-8BED-4C9A07BA5E08}
+	EndGlobalSection
+EndGlobal

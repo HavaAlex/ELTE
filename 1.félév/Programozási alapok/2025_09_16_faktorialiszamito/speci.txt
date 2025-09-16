@@ -1,0 +1,4 @@
+Be: a∈Z
+Ki: f∈Z
+Ef: a>=0
+Uf: f = a!

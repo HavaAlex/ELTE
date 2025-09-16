@@ -1,0 +1,8 @@
+C:\Users\fxemow\Desktop\Alex\1.félév\Programozási alapok\2025_09_16_elsoNnegyzetszam\2025_09_16_elsoNnegyzetszam\bin\Debug\2025_09_16_elsoNnegyzetszam.exe.config
+C:\Users\fxemow\Desktop\Alex\1.félév\Programozási alapok\2025_09_16_elsoNnegyzetszam\2025_09_16_elsoNnegyzetszam\bin\Debug\2025_09_16_elsoNnegyzetszam.exe
+C:\Users\fxemow\Desktop\Alex\1.félév\Programozási alapok\2025_09_16_elsoNnegyzetszam\2025_09_16_elsoNnegyzetszam\bin\Debug\2025_09_16_elsoNnegyzetszam.pdb
+C:\Users\fxemow\Desktop\Alex\1.félév\Programozási alapok\2025_09_16_elsoNnegyzetszam\2025_09_16_elsoNnegyzetszam\obj\Debug\2025_09_16_elsoNnegyzetszam.csproj.AssemblyReference.cache
+C:\Users\fxemow\Desktop\Alex\1.félév\Programozási alapok\2025_09_16_elsoNnegyzetszam\2025_09_16_elsoNnegyzetszam\obj\Debug\2025_09_16_elsoNnegyzetszam.csproj.CoreCompileInputs.cache
+C:\Users\fxemow\Desktop\Alex\1.félév\Programozási alapok\2025_09_16_elsoNnegyzetszam\2025_09_16_elsoNnegyzetszam\obj\Debug\2025_09_16_elsoNnegyzetszam.exe
+C:\Users\fxemow\Desktop\Alex\1.félév\Programozási alapok\2025_09_16_elsoNnegyzetszam\2025_09_16_elsoNnegyzetszam\obj\Debug\2025_09_16_elsoNnegyzetszam.pdb
+C:\Users\fxemow\Desktop\Alex\1.félév\Programozási alapok\2025_09_16_elsoNnegyzetszam\2025_09_16_elsoNnegyzetszam\obj\Debug\2025_09_16_elsoNnegyzetszam.exe.config

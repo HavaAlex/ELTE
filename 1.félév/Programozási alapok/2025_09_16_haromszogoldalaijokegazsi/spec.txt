@@ -1,0 +1,5 @@
+Be:a∈R,b∈R,c∈R
+Ki:ok∈L
+Ef:a>0 és b>0 és c>0
+Uf: (a<b+c -> ok=true) vagy (b<a+c -> ok=true) vagy (c<a+b -> ok=true) vagy(a>=b+c -> ok=false) vagy (b>=a+c -> ok=false) vagy (c>=a+b -> ok=false)
+/*jó az is hogy : ok = (a<b+c) és (b<a+c) és (c<a+b)*/
