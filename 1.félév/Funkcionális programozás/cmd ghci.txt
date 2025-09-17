@@ -3,4 +3,4 @@ ghci (belép)
 :l fajlnev.hs (compile)
 :r (ujra compile)
 
-:! cls
+:! cls 
