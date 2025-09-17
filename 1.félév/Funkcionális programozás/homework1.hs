@@ -5,7 +5,7 @@ myFavouriteOneDigitNumber :: Int
 myFavouriteOneDigitNumber = 8
 --2
 myFavouriteOneDigitNumbersEvilTwin  :: Int
-myFavouriteOneDigitNumbersEvilTwin = myFavouriteOneDigitNumber * 2 -13
+myFavouriteOneDigitNumbersEvilTwin = myFavouriteOneDigitNumber * 2 + 13
 --3
 myFavouriteOneDigitNumbersAndTheirEvilTwinsDistantRelative :: Int -> Int
 myFavouriteOneDigitNumbersAndTheirEvilTwinsDistantRelative x = myFavouriteOneDigitNumber * x + myFavouriteOneDigitNumbersEvilTwin * x * 3 - 2
