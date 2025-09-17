@@ -1,0 +1,68 @@
+Közlekedés:
+    -kutyaszán
+    -szán
+    -elefánt szelídítés
+    -hajók fejlődése
+    -differenciálmű (kerék asszimetria)
+    -lengéscsillapító
+    -távcső
+    -saru
+Oktatás:
+    -közoktatás (napóleon, mária terézia)
+    -ai beszédmodell
+    -nyomtatás
+    -indogó (áttetsző papír)
+    -grafit bányászat fejlődése
+    -levelező tagozat
+    -tajgetosz
+    -körző
+    -vonalzó
+    -finn oktatási reformok
+    -nyelvújítás
+    -népdalgyüjtés
+    -fénymásoló
+    -nyomtató
+Logisztika:
+    -vasút
+    -hajózás
+    -repülés
+    -konténer
+    -papirusz
+    -galamposta
+    -füstjel
+    -targonca
+    -morze kód
+    -raklap
+    -kamion
+    -autópálya
+    -belsőégésű motor
+    -elektromos motorok
+    -egyenáram
+    -váltóáram
+    -egységes mértékegység rendszer
+    -hűtőszekrény/kamra
+    -navigáció fejlődése
+    -folyószabályozás
+    -rádió
+    -telegráf
+    -okosóra
+Egészségügy:
+    -őssejtbeültetés
+    -baktériumok felfedezése
+    -CRISPR
+    -kontaktlencse
+    -szemüveg
+    -mri
+    -ultrahang
+    -ultraibolya sugárzás
+    -infravörös sugárzás
+    -radióaktív sugárzás
+    -immunterápia
+    -csontvelőátültetés
+    -hidroterápia
+    -permetezés feltalálása
+    -fogamzásgátló
+    -ellenmérgek gyártása
+    -lélegeztetőgép
+    -szernyomtatás
+    -reneszánsz emberkép (5 óra szórakozás 5 óra tanulás 5 óra szórakozás 9 óra pihenés)

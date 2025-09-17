@@ -19,3 +19,19 @@ Brian W Kernigham: The Practice of Programming, 1st Edition
 
 
 
+#define LONG_MESSAGE "asdadasdasdasd/
+adsadasd"
+
+
+#ifdef SZIA
+    #define MESSAGE "Szia vilag"
+#else
+    #define MESSAGE "Hello World"
+#endif
+
+int main(){
+    prinf(MESSAGE "\n"0)
+    return 0
+}
+
+gcc -DSZIA

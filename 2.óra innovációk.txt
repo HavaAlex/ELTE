@@ -1,0 +1,122 @@
+Közlekedés:
+    -kerék
+    -gőzgép
+    -belsőégésű motor
+    -kutyaszán
+    -szán
+    -ló háziasítása
+    -elefánt szelídítés
+    -hajók fejlődése
+    -iránytű
+    -szextáns
+    -papirusz (térkép)
+    -elektromos motorok
+    -repülőgép
+    -gumi (kerék)
+    -manuális/automata váltó
+    -tempomat
+    -differenciál (kerék asszimetria)
+    -lengéscsillapító
+    -bicikli
+    -vonat
+    -villamos
+    -metro
+    -műhold
+    -internet
+    -GPS
+    -mozgólépcsó
+    -futószalag
+    -távcső
+    -saru
+    -cipő
+    -csizma
+    -bringohintő
+Oktatás:
+    -közoktatás (napóleon, mária terézia)
+    -ai beszédmodell
+    -kréta
+    -tábla
+    -interaktív tábla
+    -papirusz
+    -nyomtatás
+    -indogó (áttetsző papír)
+    -golyóstoll
+    -grafit bányászat fejlődése
+    -modern fűtésrendszer
+    -google classroom
+    -online Oktatás
+    -levelező tagozat
+    -vetítőgép
+    -mezőgazdaság fejlődése
+    -tajgetosz
+    -körző
+    -vonalzó
+    -finn oktatási reformok
+    -nyelvújítás
+    -népdalgyüjtés
+    -fénymásoló
+    -nyomtató
+Logisztika:
+    -vasút
+    -hajózás
+    -repülés
+    -konténer
+    -papirusz
+    -futószalag
+    -telefonközpont
+    -galamposta
+    -füstjel
+    -targonca
+    -morze kód
+    -raklap
+    -kamion
+    -autópálya
+    -belsőégésű motor
+    -elektromos motorok
+    -egyenáram
+    -váltóáram
+    -egységes mértékegység rendszer
+    -hűtőszekrény/kamra
+    -navigáció fejlődése
+    -folyószabályozás
+    -rádió
+    -telegráf
+    -okosóra
+Egészségügy:
+    -penicilin
+    -kézmosás
+    -altatás
+    -érzéstelenítés
+    -vakcina
+    -RNS vakcina
+    -őssejtbeültetés
+    -baktériumok felfedezése
+    -CRISPR
+    -fertőtlenítés
+    -kontaktlencse
+    -szemüveg
+    -hallókészülék
+    -kerekesszék
+    -protézis
+    -vercsoportok felfedezése
+    -vitaminok felf.
+    -röntgen sugárzás
+    -ct
+    -mri
+    -mikroszkóp
+    -ultrahang
+    -ultraibolya sugárzás
+    -infravörös sugárzás
+    -radióaktív sugárzás
+    -kemoterápia
+    -immunterápia
+    -csontvelőátültetés
+    -hidroterápia
+    -permetezés feltalálása
+    -fogamzásgátló
+    -ellenmérgek gyártása
+    -inkubátor
+    -lélegeztetőgép
+    -szervátültetés
+    -szernyomtatás
+    -reneszánsz emberkép (5 óra szórakozás 5 óra tanulás 5 óra szórakozás 9 óra pihenés)
