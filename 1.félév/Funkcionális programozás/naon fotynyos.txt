@@ -14,3 +14,11 @@ fact n = prod [1..n] ( .. számtani sorozatot jelent)
 függvény diszkusszió ( olyat ad e aminek van értelme ha a paraméterértékre nem számítok pl 0 )
 kezeeti kifejezés kiirtékelése a program
 az eredmény a normálforma
+
+
+kötési erősség = "precedencia"
+komment = "megjegyzéssor"
+összefolyik a tiszta funkc. nyelvekben a folyamat
+memőria szemétgyüjtés zajlik a kiirtékeléssel párhuzamosan
+reprezentáció : lehetséges memóriabeli tárolási módszer
+konkavetáció összefűzés
