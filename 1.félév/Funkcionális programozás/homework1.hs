@@ -12,11 +12,10 @@ myFavouriteOneDigitNumbersAndTheirEvilTwinsDistantRelative x = myFavouriteOneDig
 --4 
 isTheLastNumberTooLarge :: Int -> Int -> Int -> Bool
 isTheLastNumberTooLarge x y z = 
-    if z > x+y+100 then True
-    else False
+    z > x + y + 100
 --5
 isTheEvilDistantRelativeTooLargeForMyFavouriteOneDigitNumberAndItsEvilTwin :: Int -> Bool
 isTheEvilDistantRelativeTooLargeForMyFavouriteOneDigitNumberAndItsEvilTwin x =
-    if myFavouriteOneDigitNumbersAndTheirEvilTwinsDistantRelative x >myFavouriteOneDigitNumber+myFavouriteOneDigitNumbersEvilTwin+100 then True
-    else False 
+    myFavouriteOneDigitNumbersAndTheirEvilTwinsDistantRelative x > myFavouriteOneDigitNumber + myFavouriteOneDigitNumbersEvilTwin + 100 
+     
     
