@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\admin\\Desktop\\ELTE repo\\1.f\u00E9l\u00E9v\\Programoz\u00E1si alapok\\2025_09_16_elsoNnegyzetszam\\",
+  "WorkspaceRootPath": "C:\\Users\\admin\\Desktop\\ELTE repo mukodj\\1.f\u00E9l\u00E9v\\Programoz\u00E1si alapok\\2025_09_16_elsoNnegyzetszam\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{987A7320-2C79-41B4-988E-5123F5464BB6}|2025_09_16_elsoNnegyzetszam\\2025_09_16_elsoNnegyzetszam.csproj|c:\\users\\admin\\desktop\\elte repo\\1.f\u00E9l\u00E9v\\programoz\u00E1si alapok\\2025_09_16_elsonnegyzetszam\\2025_09_16_elsonnegyzetszam\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{987A7320-2C79-41B4-988E-5123F5464BB6}|2025_09_16_elsoNnegyzetszam\\2025_09_16_elsoNnegyzetszam.csproj|c:\\users\\admin\\desktop\\elte repo mukodj\\1.f\u00E9l\u00E9v\\programoz\u00E1si alapok\\2025_09_16_elsonnegyzetszam\\2025_09_16_elsonnegyzetszam\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{987A7320-2C79-41B4-988E-5123F5464BB6}|2025_09_16_elsoNnegyzetszam\\2025_09_16_elsoNnegyzetszam.csproj|solutionrelative:2025_09_16_elsonnegyzetszam\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -28,11 +28,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\ELTE repo\\1.f\u00E9l\u00E9v\\Programoz\u00E1si alapok\\2025_09_16_elsoNnegyzetszam\\2025_09_16_elsoNnegyzetszam\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\ELTE repo mukodj\\1.f\u00E9l\u00E9v\\Programoz\u00E1si alapok\\2025_09_16_elsoNnegyzetszam\\2025_09_16_elsoNnegyzetszam\\Program.cs",
               "RelativeDocumentMoniker": "2025_09_16_elsoNnegyzetszam\\Program.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\ELTE repo\\1.f\u00E9l\u00E9v\\Programoz\u00E1si alapok\\2025_09_16_elsoNnegyzetszam\\2025_09_16_elsoNnegyzetszam\\Program.cs",
-              "RelativeToolTip": "2025_09_16_elsoNnegyzetszam\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAzAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\ELTE repo mukodj\\1.f\u00E9l\u00E9v\\Programoz\u00E1si alapok\\2025_09_16_elsoNnegyzetszam\\2025_09_16_elsoNnegyzetszam\\Program.cs*",
+              "RelativeToolTip": "2025_09_16_elsoNnegyzetszam\\Program.cs*",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowBMAAAB5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-16T14:05:05.299Z",
               "EditorCaption": ""
