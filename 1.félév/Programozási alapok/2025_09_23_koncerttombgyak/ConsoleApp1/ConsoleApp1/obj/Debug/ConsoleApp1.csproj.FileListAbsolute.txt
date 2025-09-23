@@ -1,0 +1,8 @@
+C:\Users\fxemow\Desktop\git\1.félév\Programozási alapok\2025_09_23_koncerttombgyak\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\fxemow\Desktop\git\1.félév\Programozási alapok\2025_09_23_koncerttombgyak\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\fxemow\Desktop\git\1.félév\Programozási alapok\2025_09_23_koncerttombgyak\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\fxemow\Desktop\git\1.félév\Programozási alapok\2025_09_23_koncerttombgyak\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+C:\Users\fxemow\Desktop\git\1.félév\Programozási alapok\2025_09_23_koncerttombgyak\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\fxemow\Desktop\git\1.félév\Programozási alapok\2025_09_23_koncerttombgyak\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\fxemow\Desktop\git\1.félév\Programozási alapok\2025_09_23_koncerttombgyak\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\Users\fxemow\Desktop\git\1.félév\Programozási alapok\2025_09_23_koncerttombgyak\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe.config

@@ -1,0 +1,4 @@
+ Be:a∈Z, b∈Z 
+ Ki: m∈Z
+ Ef: b!=0 és a>0 és b>0
+ Uf: a mod b = m

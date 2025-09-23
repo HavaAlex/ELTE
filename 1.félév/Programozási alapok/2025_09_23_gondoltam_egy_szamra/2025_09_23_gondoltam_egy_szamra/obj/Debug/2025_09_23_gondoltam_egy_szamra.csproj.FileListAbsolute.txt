@@ -1,0 +1,8 @@
+C:\Users\fxemow\Desktop\git\1.félév\Programozási alapok\2025_09_23_gondoltam_egy_szamra\2025_09_23_gondoltam_egy_szamra\bin\Debug\2025_09_23_gondoltam_egy_szamra.exe.config
+C:\Users\fxemow\Desktop\git\1.félév\Programozási alapok\2025_09_23_gondoltam_egy_szamra\2025_09_23_gondoltam_egy_szamra\bin\Debug\2025_09_23_gondoltam_egy_szamra.exe
+C:\Users\fxemow\Desktop\git\1.félév\Programozási alapok\2025_09_23_gondoltam_egy_szamra\2025_09_23_gondoltam_egy_szamra\bin\Debug\2025_09_23_gondoltam_egy_szamra.pdb
+C:\Users\fxemow\Desktop\git\1.félév\Programozási alapok\2025_09_23_gondoltam_egy_szamra\2025_09_23_gondoltam_egy_szamra\obj\Debug\2025_09_23_gondoltam_egy_szamra.csproj.AssemblyReference.cache
+C:\Users\fxemow\Desktop\git\1.félév\Programozási alapok\2025_09_23_gondoltam_egy_szamra\2025_09_23_gondoltam_egy_szamra\obj\Debug\2025_09_23_gondoltam_egy_szamra.csproj.CoreCompileInputs.cache
+C:\Users\fxemow\Desktop\git\1.félév\Programozási alapok\2025_09_23_gondoltam_egy_szamra\2025_09_23_gondoltam_egy_szamra\obj\Debug\2025_09_23_gondoltam_egy_szamra.exe
+C:\Users\fxemow\Desktop\git\1.félév\Programozási alapok\2025_09_23_gondoltam_egy_szamra\2025_09_23_gondoltam_egy_szamra\obj\Debug\2025_09_23_gondoltam_egy_szamra.pdb
+C:\Users\fxemow\Desktop\git\1.félév\Programozási alapok\2025_09_23_gondoltam_egy_szamra\2025_09_23_gondoltam_egy_szamra\obj\Debug\2025_09_23_gondoltam_egy_szamra.exe.config

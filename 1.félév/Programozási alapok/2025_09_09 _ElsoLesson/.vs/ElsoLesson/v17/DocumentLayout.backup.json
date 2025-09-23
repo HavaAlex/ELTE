@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\fxemow\\Desktop\\ElsoLesson\\",
+  "WorkspaceRootPath": "C:\\Users\\fxemow\\Desktop\\git\\1.f\u00E9l\u00E9v\\Programoz\u00E1si alapok\\2025_09_09 _ElsoLesson\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{99FEAD1E-A39B-49D4-BC43-98C3C963C750}|ElsoLesson\\ElsoLesson.csproj|c:\\users\\fxemow\\desktop\\elsolesson\\elsolesson\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{99FEAD1E-A39B-49D4-BC43-98C3C963C750}|ElsoLesson\\ElsoLesson.csproj|c:\\users\\fxemow\\desktop\\git\\1.f\u00E9l\u00E9v\\programoz\u00E1si alapok\\2025_09_09 _elsolesson\\elsolesson\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99FEAD1E-A39B-49D4-BC43-98C3C963C750}|ElsoLesson\\ElsoLesson.csproj|solutionrelative:elsolesson\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\fxemow\\Desktop\\ElsoLesson\\ElsoLesson\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\fxemow\\Desktop\\git\\1.f\u00E9l\u00E9v\\Programoz\u00E1si alapok\\2025_09_09 _ElsoLesson\\ElsoLesson\\Program.cs",
               "RelativeDocumentMoniker": "ElsoLesson\\Program.cs",
-              "ToolTip": "C:\\Users\\fxemow\\Desktop\\ElsoLesson\\ElsoLesson\\Program.cs",
+              "ToolTip": "C:\\Users\\fxemow\\Desktop\\git\\1.f\u00E9l\u00E9v\\Programoz\u00E1si alapok\\2025_09_09 _ElsoLesson\\ElsoLesson\\Program.cs",
               "RelativeToolTip": "ElsoLesson\\Program.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA5wBAAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-09T12:05:51.776Z",
               "EditorCaption": ""

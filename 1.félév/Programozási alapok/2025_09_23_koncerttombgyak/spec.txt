@@ -1,0 +1,8 @@
+https://progalap.elte.hu/specifikacio/v1/?uuid=0e180b8e-a0e1-490b-b612-4f4392d903ea
+
+Be: z∈S,
+    zenekar∈S[1..5]=["Pamkutya","Metallica","Azahriah","Rúzsa Magdi","Rammstein"] ,
+    hanszor∈N[1..5]=[4,2,3,2,2]
+Ki: db∈N
+Ef: ∃i∈[1..5]:(zenekar[i] = z)
+Uf: ∃i∈[1..5]:(zenekar[i] = z és hanszor[i]=db)

@@ -1,0 +1,8 @@
+C:\Users\fxemow\Desktop\git\1.félév\Programozási alapok\2025_09_23_osztásozsdi\code\code\bin\Debug\code.exe.config
+C:\Users\fxemow\Desktop\git\1.félév\Programozási alapok\2025_09_23_osztásozsdi\code\code\bin\Debug\code.exe
+C:\Users\fxemow\Desktop\git\1.félév\Programozási alapok\2025_09_23_osztásozsdi\code\code\bin\Debug\code.pdb
+C:\Users\fxemow\Desktop\git\1.félév\Programozási alapok\2025_09_23_osztásozsdi\code\code\obj\Debug\code.csproj.AssemblyReference.cache
+C:\Users\fxemow\Desktop\git\1.félév\Programozási alapok\2025_09_23_osztásozsdi\code\code\obj\Debug\code.csproj.CoreCompileInputs.cache
+C:\Users\fxemow\Desktop\git\1.félév\Programozási alapok\2025_09_23_osztásozsdi\code\code\obj\Debug\code.exe
+C:\Users\fxemow\Desktop\git\1.félév\Programozási alapok\2025_09_23_osztásozsdi\code\code\obj\Debug\code.pdb
+C:\Users\fxemow\Desktop\git\1.félév\Programozási alapok\2025_09_23_osztásozsdi\code\code\obj\Debug\code.exe.config
