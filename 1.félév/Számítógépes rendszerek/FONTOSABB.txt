@@ -1,0 +1,41 @@
+ssh fxemow@szamrend.inf.elte.hu 
+jelszót beírni minden esetbeee
+ls -l
+ls -a (hidden dolgok)
+clear
+touch text.txt (új txt fájl)
+nano text.txt (ez egy szerkesztő)
+cat text.txt (fájl tartalmának kiiratása)
+mv text.txt text1.txt (move de amúgy átnevezés is lehet)
+mv .. 
+rm -R Filename (Akkor is töröl ha van a mappába vami)
+
+
+cat /proc/sys/kernel/pid_max
+ps 
+ps -aux
+top (tulajdonképpen feladatkezelő)
+van background process és foreground is  (back az nem foglalja le a terminált de a fore igen)
+sleep 10 (alapból előtér)
+sleep 10 &  (így viszont back)
+kill PID (folyamat leállítása)
+
+signalok:
+ctrl c (előtér folyamat elpusztítása)
+ctrl d (kijelentkezés ssh-ból)
+trap 'echo "Hajrá Bercel"' SIGINT
+
+sleep 100 &
+fg PID (előtérbe hozza elv.)
+sort minden.txt
+sort -rn minden.txt
+sort minden.txt | uniq -c | sort -nr (csökkenő sorrendben rendezve)
+sort minden.txt | uniq -c | sort -nr | head -3 | tail -1 (csökkenő sorrendben rendezés szerint a 3. leggyakrabb) 
+(megtartjuk az első 3-at és abból az utolsót)
+grep (global regular expression print)
+grep "alma" minden.txt
+grep -w "alma" minden.txt
+grep -E '[-0-9+*/^]' minden.txt (kiszedi a számokat és műveleteket)
+
+cat minden.txt | tr '[:lower:]' '[:upper:]' >> minden_nagybetus.txt (átrakja nagybetűsként)
+grep -E '^[a-zA-z].*[0-9]$' minden.txt

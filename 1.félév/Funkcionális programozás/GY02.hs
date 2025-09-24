@@ -11,3 +11,8 @@ product a b = a*b
 
 averageOfTwoNumbers :: Float -> Float -> Float
 averageOfTwoNumbers a b = (a+b)/2 
+
+function :: Char -> Int -> Int
+function 'x' num = num
+function y num = num * 2
+function 'z' num = num * 3
