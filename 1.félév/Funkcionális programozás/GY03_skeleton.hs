@@ -122,10 +122,13 @@ sumTo 1 = 1
 sumTo x = x+sumTo(x-1)
 
 -- Az előzőhöz hasonlóan, de most az adott számok négyzetét számoljuk meg
-sumSquaresTo = undefined
-
+sumSquaresTo :: Integer -> Integer
+sumSquaresTo 0 = 0
+sumSquaresTo x = (x*x) + sumSquaresTo (x-1)
 -- Definiáljuk újra a hatványozást, a viselkedés pontosan megegyezik az általunk ismert szabályokkal
-(^|^) = undefined
+(^|^) :: Integer -> Integer-> Integer
+(^|^) _ 0 = 1
+(^|^) x y =x * (^|^) x (y-1)
 ----------------------------------
 -- Rekurzív adatszerkezetek és polimorfizmus bevezető
 ----------------------------------
