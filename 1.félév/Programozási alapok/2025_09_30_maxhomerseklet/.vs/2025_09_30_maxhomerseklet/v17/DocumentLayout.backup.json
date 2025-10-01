@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\admin\\Desktop\\ELTE repo mukodj\\1.f\u00E9l\u00E9v\\Programoz\u00E1si alapok\\2025_09_30_maxhomerseklet\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BC8D6D5F-5BF1-47CF-80E3-3B387FD406BF}|2025_09_30_maxhomerseklet\\2025_09_30_maxhomerseklet.csproj|c:\\users\\admin\\desktop\\elte repo mukodj\\1.f\u00E9l\u00E9v\\programoz\u00E1si alapok\\2025_09_30_maxhomerseklet\\2025_09_30_maxhomerseklet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC8D6D5F-5BF1-47CF-80E3-3B387FD406BF}|2025_09_30_maxhomerseklet\\2025_09_30_maxhomerseklet.csproj|solutionrelative:2025_09_30_maxhomerseklet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\ELTE repo mukodj\\1.f\u00E9l\u00E9v\\Programoz\u00E1si alapok\\2025_09_30_maxhomerseklet\\2025_09_30_maxhomerseklet\\Program.cs",
+              "RelativeDocumentMoniker": "2025_09_30_maxhomerseklet\\Program.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\ELTE repo mukodj\\1.f\u00E9l\u00E9v\\Programoz\u00E1si alapok\\2025_09_30_maxhomerseklet\\2025_09_30_maxhomerseklet\\Program.cs*",
+              "RelativeToolTip": "2025_09_30_maxhomerseklet\\Program.cs*",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T13:59:58.171Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1491 @@
+(window["canvasWebpackJsonp"]=window["canvasWebpackJsonp"]||[]).push([[443,102,584],{"/iD7":function(e,t,n){"use strict"
+var s=n("pQTu")
+var i=n("m0r6")
+Object(i["a"])(JSON.parse('{"de":{"editor":{"keyboard_shortcuts":{"dialog_title":"Tastenkombinationen","keybindings":{"close_submenu":"Schließen des Menüs oder Dialogs bringt Sie ebenfalls in den Editor-Bereich zurück.","navigate_toolbar":"Links/rechts Navigation durch Menü/Symbolleiste","open_menubar":"Editor-Menüleiste öffnen","open_toolbar":"Symbolleiste des Editors öffnen"}}},"open_this_keyboard_shortcuts_dialog_9658b83a":"Diesen Tastenkombinationsdialog öffnen"},"hu":{"editor":{"keyboard_shortcuts":{"dialog_title":"Billentyűparancsok","keybindings":{"close_submenu":"Menü vagy párbeszédablak bezárása, visszavisz a szerkesztő felületre","navigate_toolbar":"Navigáljon balra/jobbra a menün/eszköztáron át","open_menubar":"Szerkesztői menüsor megnyitása","open_toolbar":"Szerkesztői eszköztár megnyitása"}}}}}'))
+n("jQeR")
+n("0sPK")
+var a=s["default"].scoped("editor.keyboard_shortcuts")
+var r=n("ouhR")
+var o=n.n(r)
+var l=n("FIFq")
+var c=n.n(l)
+var d=n("3O+N")
+var u=n.n(d)
+n("DfGn")
+var h=n("EvX+")
+var p=u.a.default
+var _=p.template,g=p.templates=p.templates||{}
+var b="editor/KeyboardShortcuts"
+g[b]=_((function(e,t,n,s,i){this.compilerInfo=[4,">= 1.0.0"]
+n=this.merge(n,e.helpers)
+i=i||{}
+var a,r="",o="function",l=this.escapeExpression,c=this
+function d(e,t){var s,i,a=""
+a+="\n    <li>\n      <code>"
+if(i=n.key)s=i.call(e,{hash:{},data:t})
+else{i=e&&e.key
+s=typeof i===o?i.call(e,{hash:{},data:t}):i}a+=l(s)+"</code>\n      <span>"
+if(i=n.description)s=i.call(e,{hash:{},data:t})
+else{i=e&&e.description
+s=typeof i===o?i.call(e,{hash:{},data:t}):i}a+=l(s)+"</span>\n    </li>\n  "
+return a}r+='<ul class="tinymce-keyboard-shortcuts">\n  '
+a=n.each.call(t,t&&t.keybindings,{hash:{},inverse:c.noop,fn:c.program(1,d,i),data:i});(a||0===a)&&(r+=a)
+r+="\n</ul>\n"
+return r}))
+h["a"].loadStylesheet("jst/editor/KeyboardShortcuts",{new_styles_normal_contrast:{combinedChecksum:"f4493af988"},new_styles_high_contrast:{combinedChecksum:"f4493af988"},responsive_layout_normal_contrast:{combinedChecksum:"f4493af988"},responsive_layout_high_contrast:{combinedChecksum:"f4493af988"},new_styles_normal_contrast_rtl:{combinedChecksum:"9b568bbcaf"},new_styles_high_contrast_rtl:{combinedChecksum:"9b568bbcaf"},responsive_layout_normal_contrast_rtl:{combinedChecksum:"9b568bbcaf"},responsive_layout_high_contrast_rtl:{combinedChecksum:"9b568bbcaf"}}[h["a"].getCssVariant()])
+var m=g[b]
+var f,v
+f=[48,119]
+v=c.a.View.extend({className:"tinymce-keyboard-shortcuts-toggle",tagName:"a",events:{click:"openDialog"},keybindings:[{key:"ALT+F9",description:a.t("keybindings.open_menubar","Open the editor's menubar")},{key:"ALT+F10",description:a.t("keybindings.open_toolbar","Open the editor's toolbar")},{key:"ESC",description:a.t("keybindings.close_submenu","Close menu or dialog, also gets you back to editor area")},{key:"TAB/Arrows",description:a.t("keybindings.navigate_toolbar","Navigate left/right through menu/toolbar")},{key:"ALT+F8",description:a.t("Open this keyboard shortcuts dialog")}],template:m,initialize:function(){this.el.href="#"
+o()(this.el).attr("title",a.t("dialog_title","Keyboard Shortcuts"))
+o()('<i class="icon-keyboard-shortcuts" aria-hidden="true" />').appendTo(this.el)
+return o()('<span class="screenreader-only" />').text(a.t("dialog_title","Keyboard Shortcuts")).appendTo(this.el)},render:function(){var e
+e={keybindings:this.keybindings}
+this.$dialog=o()(this.template(e)).dialog({title:a.t("dialog_title","Keyboard Shortcuts"),width:600,resizable:true,autoOpen:false})
+this.bindEvents()
+return this},bindEvents:function(){if(!ENV.use_rce_enhancements){o()(document).on("keyup.tinymce_keyboard_shortcuts",this.openDialogByKeybinding.bind(this))
+return o()(document).on("editorKeyUp",function(e,t){return this.openDialogByKeybinding(t)}.bind(this))}},remove:function(){o()(document).off("keyup.tinymce_keyboard_shortcuts")
+o()(document).off("editorKeyUp")
+return this.$dialog.dialog("destroy")},openDialog:function(){if(!this.$dialog.dialog("isOpen"))return this.$dialog.dialog("open")},openDialogByKeybinding:function(e){if(f.indexOf(e.keyCode)>-1&&e.altKey)return this.openDialog()}})
+t["a"]=v},"/j35":function(e,t,n){"use strict"
+n.r(t)
+var s=n("ouhR")
+var i=n.n(s)
+var a=n("3O+N")
+var r=n.n(a)
+var o=n("pQTu")
+var l=n("m0r6")
+Object(l["a"])(JSON.parse('{"de":{"jquery":{"module_sequence_footer":{"next":"Nächste/r","previous":"Vorherige"}},"module_navigation_97043417":"Modul-Navigation"},"hu":{"jquery":{"module_sequence_footer":{"next":"Következő","previous":"Előző"}},"module_navigation_97043417":"Modulnavigáció"}}'))
+n("jQeR")
+n("0sPK")
+o["default"].scoped("jquery.module_sequence_footer")
+n("DfGn")
+var c=r.a.default
+var d=c.template,u=c.templates=c.templates||{}
+var h="jquery/ModuleSequenceFooter"
+u[h]=d((function(e,t,n,s,i){this.compilerInfo=[4,">= 1.0.0"]
+n=this.merge(n,e.helpers)
+i=i||{}
+var a,r,o,l="",c="function",d=this.escapeExpression,u=n.helperMissing,h=this
+function p(e,t){var s,i,a,r=""
+r+='\n      <a\n        href="'+d((s=(s=e&&e.previous,null==s||false===s?s:s.url),typeof s===c?s.apply(e):s))+'"\n        role="button"\n        class="Button module-sequence-footer-button--previous"\n        data-tooltip="right"\n        data-html-tooltip-title="'+d((s=(s=e&&e.previous,null==s||false===s?s:s.tooltip),typeof s===c?s.apply(e):s))+'"\n        aria-describedby="msf'
+if(i=n.instanceNumber)s=i.call(e,{hash:{},data:t})
+else{i=e&&e.instanceNumber
+s=typeof i===c?i.call(e,{hash:{},data:t}):i}r+=d(s)+'-previous-desc"\n      >\n        <i class="icon-mini-arrow-left"></i>'+d((i=n.t||e&&e.t,a={hash:{scope:"jquery.module_sequence_footer"},data:t},i?i.call(e,"previous","Previous",a):u.call(e,"t","previous","Previous",a)))+'\n        <span id="msf'
+if(i=n.instanceNumber)s=i.call(e,{hash:{},data:t})
+else{i=e&&e.instanceNumber
+s=typeof i===c?i.call(e,{hash:{},data:t}):i}r+=d(s)+'-previous-desc" class="hidden" hidden>'+d((s=(s=e&&e.previous,null==s||false===s?s:s.tooltipText),typeof s===c?s.apply(e):s))+"</span>\n      </a>\n    "
+return r}function _(e,t){var s,i,a,r=""
+r+='\n      <span class="module-sequence-footer-button--next" data-tooltip="left" data-html-tooltip-title="'+d((s=(s=e&&e.next,null==s||false===s?s:s.tooltip),typeof s===c?s.apply(e):s))+'">\n        <a\n          href="'+d((s=(s=e&&e.next,null==s||false===s?s:s.url),typeof s===c?s.apply(e):s))+'"\n          role="button"\n          class="Button"\n          aria-describedby="msf'
+if(i=n.instanceNumber)s=i.call(e,{hash:{},data:t})
+else{i=e&&e.instanceNumber
+s=typeof i===c?i.call(e,{hash:{},data:t}):i}r+=d(s)+'-next-desc"\n          '
+s=n["if"].call(e,(s=e&&e.next,null==s||false===s?s:s.modules_tab_disabled),{hash:{},inverse:h.noop,fn:h.program(4,g,t),data:t});(s||0===s)&&(r+=s)
+r+="\n          "+d((i=n.disabledIf||e&&e.disabledIf,a={hash:{},data:t},i?i.call(e,(s=e&&e.next,null==s||false===s?s:s.modules_tab_disabled),a):u.call(e,"disabledIf",(s=e&&e.next,null==s||false===s?s:s.modules_tab_disabled),a)))+"\n        >\n          "+d((i=n.t||e&&e.t,a={hash:{scope:"jquery.module_sequence_footer"},data:t},i?i.call(e,"next","Next",a):u.call(e,"t","next","Next",a)))+'<i class="icon-mini-arrow-right"></i>\n          <span id="msf'
+if(i=n.instanceNumber)s=i.call(e,{hash:{},data:t})
+else{i=e&&e.instanceNumber
+s=typeof i===c?i.call(e,{hash:{},data:t}):i}r+=d(s)+'-next-desc" class="hidden" hidden>'+d((s=(s=e&&e.next,null==s||false===s?s:s.tooltipText),typeof s===c?s.apply(e):s))+"</span>\n        </a>\n      </span>\n    "
+return r}function g(e,t){return' aria-disabled="true" '}l+="<div class='module-sequence-padding'></div>\n<div class='module-sequence-footer' role=\"navigation\" aria-label=\""+d((r=n.t||t&&t.t,o={hash:{i18n_inferred_key:true},data:i},r?r.call(t,"module_navigation_97043417","Module Navigation",o):u.call(t,"t","module_navigation_97043417","Module Navigation",o)))+'">\n  <div class="module-sequence-footer-content">\n    '
+a=n["if"].call(t,(a=t&&t.previous,null==a||false===a?a:a.show),{hash:{},inverse:h.noop,fn:h.program(1,p,i),data:i});(a||0===a)&&(l+=a)
+l+="\n\n    "
+a=n["if"].call(t,(a=t&&t.next,null==a||false===a?a:a.show),{hash:{},inverse:h.noop,fn:h.program(3,_,i),data:i});(a||0===a)&&(l+=a)
+l+="\n  </div>\n</div>\n"
+return l}))
+var p=u[h]
+var _=n("GLiE")
+var g=n.n(_)
+Object(l["a"])(JSON.parse('{"de":{"choose_the_next_mastery_path_b035b727":"Wählen Sie den nächsten Leistungsziel-Pfad","next_item_2d1ddc96":"Weiter: *Objekt*","next_mastery_path_is_currently_locked_a9253711":"Der nächste Leistungsziel-Pfad ist derzeit gesperrt.","next_mastery_path_is_still_processing_please_perio_bb0121af":"Der nächste Leistungsziel-Pfad ist noch in Bearbeitung, bitte aktualisieren Sie regelmäßig die Seite.","sequence_footer":{"next_module":"Nächstes Modul:","next_module_desc":"Nächstes Modul: *module*","prev_module":"Vorheriges Modul:","prev_module_desc":"Vorheriges Modul: *module*","prev_module_item_desc":"Vorheriges: *item*"}},"hu":{"sequence_footer":{"next_module":"Következő modul:","next_module_desc":"Következő modul: *module*","prev_module":"Előző modul:","prev_module_desc":"Előző modul: *modul*","prev_module_item_desc":"Előző: *elem*"}}}'))
+var b=o["default"].scoped("sequence_footer")
+var m=n("5Ky4")
+n("jYyc")
+n.d(t,"default",(function(){return v}))
+let f=0
+i.a.fn.moduleSequenceFooter=function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{}
+if(!e.assetType||!e.assetID)throw"Option must be set with assetType and assetID"
+this.msfAnimation=e=>this.find(".module-sequence-padding, .module-sequence-footer").toggleClass("no-animation",!e)
+if(!this.data("msfInstance")){this.msfInstance=new i.a.fn.moduleSequenceFooter.MSFClass(e)
+this.data("msfInstance",this.msfInstance)
+this.msfInstance.fetch().done(()=>{if(this.msfInstance.hide){this.hide()
+return}this.html(p({instanceNumber:this.msfInstance.instanceNumber,previous:this.msfInstance.previous,next:this.msfInstance.next}))
+e&&void 0!==e.animation&&this.msfAnimation(e.animation)
+this.show()
+i()(window).triggerHandler("resize")})}return this}
+class v{constructor(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{}
+this.iconClasses={ModuleItem:"icon-module",File:"icon-paperclip",Page:"icon-document",Discussion:"icon-discussion",Assignment:"icon-assignment",Quiz:"icon-quiz",ExternalTool:"icon-link","Lti::MessageHandler":"icon-link"}
+this.success=e=>{this.modules=e.modules
+if(!(e&&e.items&&1===e.items.length)){this.hide=true
+return}this.item=e.items[0];(this.previous.show=this.item.prev)&&this.buildPreviousData()
+if(this.item.next||this.awaitingPathProgress()){this.next.show=true
+const e=this.awaitingPathProgress()
+e?this.buildNextPathData():this.buildNextData()}}
+this.instanceNumber=f++
+this.courseID=e.courseID||"undefined"!==typeof ENV&&ENV.course_id
+this.assetID=e.assetID
+this.assetType=e.assetType
+this.location=e.location||document.location
+this.previous={}
+this.next={}
+this.url="/api/v1/courses/".concat(this.courseID,"/module_item_sequence")}getQueryParams(e){let t
+e=e.split("+").join(" ")
+const n={}
+const s=/[?&]?([^=]+)=([^&]*)/g
+while(t=s.exec(e))n[decodeURIComponent(t[1])]=decodeURIComponent(t[2])
+return n}fetch(){const e=this.getQueryParams(this.location.search)
+return e.module_item_id?i.a.ajaxJSON(this.url,"GET",{asset_type:"ModuleItem",asset_id:e.module_item_id,frame_external_urls:true},this.success,null,{}):i.a.ajaxJSON(this.url,"GET",{asset_type:this.assetType,asset_id:this.assetID,frame_external_urls:true},this.success,null,{})}buildPreviousData(){this.previous.url=this.item.prev.html_url
+if(this.item.current.module_id===this.item.prev.module_id){this.previous.tooltip="<i class='".concat(Object(m["a"])(this.iconClasses[this.item.prev.type]),"'></i> ").concat(Object(m["a"])(this.item.prev.title))
+this.previous.tooltipText=b.t("prev_module_item_desc","Previous: *item*",{wrapper:this.item.prev.title})}else{const e=g.a.find(this.modules,e=>e.id===this.item.prev.module_id)
+this.previous.tooltip="<strong style='float:left'>".concat(Object(m["a"])(b.t("prev_module","Previous Module:")),"</strong> <br> ").concat(Object(m["a"])(e.name))
+this.previous.tooltipText=b.t("prev_module_desc","Previous Module: *module*",{wrapper:e.name})}}buildNextPathData(){const e=this.item.mastery_path
+if(e.awaiting_choice){this.next.url=e.choose_url
+this.next.tooltipText=b.t("Choose the next mastery path")}else{const t=b.t("Next mastery path is currently locked")
+const n=b.t("Next mastery path is still processing, please periodically refresh the page")
+const s=e.locked?t:n
+this.next.modules_tab_disabled=e.modules_tab_disabled
+this.next.url=e.modules_url
+this.next.tooltipText=s}this.next.tooltip="<i class='".concat(Object(m["a"])(this.iconClasses.ModuleItem),"'/> ").concat(this.next.tooltipText)}buildNextData(){this.next.url=this.item.next.html_url
+if(this.item.current.module_id===this.item.next.module_id){this.next.tooltip="<i class='".concat(Object(m["a"])(this.iconClasses[this.item.next.type]),"'></i> ").concat(Object(m["a"])(this.item.next.title))
+this.next.tooltipText=b.t("Next: *item*",{wrapper:this.item.next.title})}else{const e=g.a.find(this.modules,e=>e.id===this.item.next.module_id)
+this.next.tooltip="<strong style='float:left'>".concat(Object(m["a"])(b.t("next_module","Next Module:")),"</strong> <br> ").concat(Object(m["a"])(e.name))
+this.next.tooltipText=b.t("next_module_desc","Next Module: *module*",{wrapper:e.name})}}awaitingPathProgress(){const e=this.item.mastery_path
+if(e&&e.is_student)return e.awaiting_choice||e.locked||e.still_processing}}i.a.fn.moduleSequenceFooter.MSFClass=v},"1Lgu":function(e,t,n){"use strict"
+var s=n("ODXe")
+var i=n("pQTu")
+var a=n("m0r6")
+Object(a["a"])(JSON.parse('{"de":{"message_sent_9ff3a79d":"Nachricht versandt!","message_students_for_course_name_e55f8077":"Studenten benachrichtigen wegen %{course_name}","public_message_students":{"send_message":"Nachricht senden"},"remove_student_from_recipients_4b206e35":"%{student} aus den Empfängern entfernen","send_message_6ccc90e8":"Nachricht senden","sending_message_8ac5bc90":"Nachricht wird gesendet ...","sending_message_failed_please_try_again_b53cc904":"Senden der Nachrichten ist fehlgeschlagen. Bitte erneut versuchen"},"hu":{"message_sent_9ff3a79d":"Az üzenet elküldve!","message_students_for_course_name_e55f8077":"Üzenet a következő kurzus hallgatóinak: %{course_name}","public_message_students":{"send_message":"Üzenetküldés"},"remove_student_from_recipients_4b206e35":"%{student} nevű címzett eltávolítása","send_message_6ccc90e8":"Üzenetküldés","sending_message_8ac5bc90":"Üzenet küldése...","sending_message_failed_please_try_again_b53cc904":"Az üzenet küldése sikertelen, kérjük, próbálja újra!"}}'))
+n("jQeR")
+n("0sPK")
+var r=i["default"].scoped("public_message_students")
+var o=n("ouhR")
+var l=n.n(o)
+var c=n("yE80")
+var d=n("HbFp")
+n("Z+Ib")
+n("YGE8")
+n("p6Wi")
+let u={}
+function h(){const e=g()
+_(0==e.find("#body").val().length||0==e.find(".student:not(.blank):visible").length)}window.messageStudents=function(e){const t=g()
+u=e
+t.find(".message_types").empty()
+for(let n=0,s=e.options.length;n<s;n++){const s=l()("<option/>")
+const i=e.options[n]
+s.val(n).text(i.text)
+t.find(".message_types").append(s)}const n=e.title,s=t.find("ul li.blank:first"),i=t.find("ul"),a={}
+t.find("ul li:not(.blank)").remove()
+const o=e.students.slice()
+o.sort(c["a"].byKey("sortableName"))
+for(let e=0;e<o.length;e++){const t=o[e]
+const n=s.clone(true).removeClass("blank")
+n.find(".name").text(t.name)
+n.find(".score").text(t.score)
+const c=r.t("Remove %{student} from recipients",{student:t.name})
+const d=n.find(".remove-button")
+d.attr("title",c).append(l()("<span class='screenreader-only'></span>").text(c))
+d.click((function(e){e.preventDefault()
+const t=l()(this).closest("li")
+t.hide("fast",h)
+const n=t.nextAll(":visible:first")
+n.length?l()("button",n).focus():l()("#message_assignment_recipients #subject").focus()}))
+n.data("id",t.id)
+n.user_data=t
+i.append(n.show())
+a[t.id]=n}i.show()
+const d=r.t("Message Students for %{course_name}",{course_name:n})
+t.data("students_hash",a),t.find(".asset_title").text(n)
+t.find(".out_of").showIf(null!=e.points_possible)
+t.find(".send_button").text(r.t("send_message","Send Message"))
+t.find(".points_possible").text(r.n(e.points_possible))
+t.find("[name=context_code]").val(e.context_code)
+t.find("textarea").val("")
+t.find("select")[0].selectedIndex=0
+t.find("select").change()
+t.dialog({width:600,modal:true,open:(e,n)=>{t.closest(".ui-dialog").attr("role","dialog").attr("aria-label",d)},close:(e,n)=>{t.closest(".ui-dialog").removeAttr("role").removeAttr("aria-label")}}).dialog("open").dialog("option","title",d).on("dialogclose",e.onClose)}
+l()(document).ready(()=>{const e=g()
+e.find("button").click(e=>{const t=l()(e.target)
+if(t.hasClass("disabled")){e.preventDefault()
+e.stopPropagation()}})
+l()("#message_assignment_recipients").formSubmit({processData(e){const t=[]
+l()(this).find(".student:visible").each((function(){t.push(l()(this).data("id"))}))
+if(0==t.length)return false
+e.recipients=t.join(",")
+return e},beforeSubmit(e){p(true)
+l()(this).find(".send_button").text(r.t("Sending Message..."))},success(e){l.a.flashMessage(r.t("Message sent!"))
+p(false)
+l()(this).find(".send_button").text(r.t("Send Message"))
+l()("#message_students_dialog").dialog("close")},error(e){p(false)
+l()(this).find(".send_button").text(r.t("Sending Message Failed, please try again"))}})
+const t=function(){const t=parseInt(e.find("select").val(),10)||0
+const n=u.options[t]
+const i=e.data("students_hash")
+let a=d["a"].parse(e.find(".cutoff_score").val())
+isNaN(a)&&(a=null)
+const r=Object.values(i)
+let o=[]
+i&&(n&&n.callback?o=n.callback.call(window.messageStudents,a,r):u.callback&&(o=u.callback.call(window.messageStudents,n.text,a,r)))
+u.subjectCallback&&e.find("[name=subject]").val(u.subjectCallback(n.text,a))
+e.find(".cutoff_holder").showIf(n.cutoff)
+e.find(".student_list").toggleClass("show_score",!!(n.cutoff||n.score))
+p(0===o.length)
+const l=new Set(o)
+Object.entries(i).forEach(e=>{let t=Object(s["a"])(e,2),n=t[0],i=t[1]
+i.showIf(l.has(n))})}
+const n=function(){e.dialog("close")}
+e.find(".cancel_button").click(n)
+e.find("select").change(t).change(h)
+e.find(".cutoff_score").bind("change blur keyup",t).bind("change blur keyup",h)
+e.find("#body").bind("change blur keyup",h)})
+function p(e,t){null==t&&(t=g().find("button"))
+t.toggleClass("disabled",e).attr("aria-disabled",e)}function _(e){p(e,g().find(".send_button"))}function g(){return l()("#message_students_dialog")}t["a"]=messageStudents},"1xB4":function(e,t,n){"use strict"
+var s={EVT_PAGE_FOCUSED:"page_focused",EVT_PAGE_BLURRED:"page_blurred",EVT_QUESTION_VIEWED:"question_viewed",EVT_QUESTION_FLAGGED:"question_flagged",EVT_SESSION_STARTED:"session_started",EVT_PRIORITY_LOW:0,EVT_PRIORITY_HIGH:100,EVT_STATE_PENDING_DELIVERY:"pending_delivery",EVT_STATE_IN_DELIVERY:"in_delivery",EVT_STATE_DELIVERED:"delivered",EVT_STORAGE_KEY:"qla_events",EVT_STORAGE_MEMORY:"memory",EVT_STORAGE_LOCAL_STORAGE:"localStorage"}
+var i=n("GLiE")
+function a(){let e=Date.now()
+return"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,t=>{const n=(e+16*Math.random())%16|0
+e=Math.floor(e/16)
+const s="x"===t?n:7&n|8
+return s.toString(16)})}class r{static fromJSON(e){const t=new r(e.event_type,e.event_data)
+t.recordedAt=new Date(e.client_timestamp)
+return t}constructor(e,t){if(!e)throw new Error("An event type must be specified.")
+this._id=a()
+this._state=s.EVT_STATE_PENDING_DELIVERY
+this.type=e
+this.data=Object(i["clone"])(t)
+this.recordedAt=new Date}isPendingDelivery(){return this._state===s.EVT_STATE_PENDING_DELIVERY}isBeingDelivered(){return this._state===s.EVT_STATE_IN_DELIVERY}wasDelivered(){return this._state===s.EVT_STATE_DELIVERED}toJSON(){return{event_type:this.type,event_data:this.data,client_timestamp:this.recordedAt}}toString(){return JSON.stringify(this.toJSON())}}class o{constructor(e){this._events=e}isEmpty(){return 0===this._events.length}markPendingDelivery(){return this._events.forEach(e=>e._state=s.EVT_STATE_PENDING_DELIVERY)}markBeingDelivered(){return this._events.forEach(e=>e._state=s.EVT_STATE_IN_DELIVERY)}toJSON(){return this._events.map(e=>e.toJSON())}}var l=n("zrOs")
+var c=n.n(l)
+const d=[s.EVT_STORAGE_MEMORY,s.EVT_STORAGE_LOCAL_STORAGE]
+class u{static setStorageAdapter(e){if(-1===d.indexOf(e))throw new Error('Unsupported storage adapter "'.concat(e,'". Available adapters are:\n').concat(d.join(", ")))
+return u.STORAGE_ADAPTER=e}constructor(){this.useLocalStorage=u.STORAGE_ADAPTER===s.EVT_STORAGE_LOCAL_STORAGE
+this._events=this._load()||[]
+c.a.debug("EventBuffer: using",this.constructor.STORAGE_ADAPTER,"for storage")}push(e){this._events.push(e)
+return this._save()}isEmpty(){return 0===this._events.length}getLength(){return this._events.length}filter(e){return new o(this._events.filter(e))}discard(e){const t=e._events.map(e=>e._id)
+this._events=this._events.filter(e=>-1===t.indexOf(e._id))
+this._save()
+return}toJSON(){return this._events.map(e=>e.toJSON())}_save(){if(this.useLocalStorage)try{localStorage.setItem(s.EVT_STORAGE_KEY,JSON.stringify(this.toJSON()))}catch(e){c.a.warn("Unable to save to localStorage, likely because we're out of space.")}return}_load(){if(this.useLocalStorage){const e=JSON.parse(localStorage.getItem(s.EVT_STORAGE_KEY)||"[]")
+return e.map(e=>r.fromJSON(e))}return}}u.STORAGE_ADAPTER=s.EVT_STORAGE_MEMORY
+var h=n("ouhR")
+var p=n.n(h)
+var _=n("w8vW")
+const g={Accept:"application/json; charset=UTF-8","Content-Type":"application/json; charset=UTF-8"}
+class b{constructor(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{}
+this.options=Object(i["extend"])({},b.options,e)
+this._trackerFactories=[]
+this._state={trackers:[],buffer:null,deliveryAgent:null,deliveries:[]}}registerTracker(e){return this._trackerFactories.push(e)}unregisterAllTrackers(){return this._trackerFactories=[]}start(){const e=this._state
+e.buffer=new u
+const t=this.options
+const n=this._enqueue.bind(this)
+function s(e,t){const s=new r(e.getEventType(),t)
+return n(s,e.getDeliveryPriority())}e.trackers=this._trackerFactories.map(e=>{const t=new e
+t.install(s.bind(null,t))
+return t})
+if(t.autoDeliver)return this._startDeliveryAgent()}isRunning(){return!!this._state.buffer}isDirty(){return this.isRunning()&&!this._state.buffer.isEmpty()}isDelivering(){return this._state.deliveries.length>0}deliver(){const e=this._state.buffer
+const t=this._state.deliveries
+const n=this.options
+const s=e.filter(e=>e.isPendingDelivery())
+if(s.isEmpty())return Object(h["when"])()
+s.markBeingDelivered()
+const i=Object(h["ajax"])({url:n.deliveryUrl,type:"POST",global:false,headers:g,data:JSON.stringify({quiz_submission_events:s.toJSON()})})
+i.then(()=>e.discard(s),()=>s.markPendingDelivery())
+const a=()=>Object(_["a"])(t,i)
+i.then(a,a)
+t.push(i)
+return i}stop(){let e=arguments.length>0&&void 0!==arguments[0]&&arguments[0]
+const t=this._state
+if(this.isDelivering()&&!e){console.warn("You are attempting to stop the QuizLogAuditing module while a delivery is in progress.")
+return Object(h["when"])(t.deliveries).done(this.stop.bind(this,true))}t.buffer=null
+t.deliveryAgent&&this._stopDeliveryAgent()
+t.trackers.forEach(e=>e.uninstall())
+t.trackers=[]
+return Object(h["when"])()}_startDeliveryAgent(){return this._state.deliveryAgent=setInterval(this.deliver.bind(this),this.options.autoDeliveryFrequency)}_enqueue(e,t){this._state.buffer.push(e)
+c.a.log("Enqueuing ".concat(e," for delivery."))
+if(t===s.EVT_PRIORITY_HIGH)return this.isDelivering()?Object(h["when"])(this._state.deliveries).done(this.deliver.bind(this)):this.deliver()}_stopDeliveryAgent(){return this._state.deliveryAgent=clearInterval(this._state.deliveryAgent)}}b.options={autoDeliver:true,autoDeliveryFrequency:15e3,deliveryUrl:"/quiz_submission_events"}
+class m{constructor(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{}
+this.eventType||(this.eventType=null)
+this.priority||(this.priority=s.EVT_PRIORITY_LOW)
+this._options=Object(i["extend"])({},this.options,e)
+this.uid="".concat(this.eventType,"_").concat(Object(i["uniqueId"])())}install(e){throw new Error("Not implemented!")}getEventType(){return this.eventType}getDeliveryPriority(){return this.priority}getOption(e){return this._options[e]}uninstall(){if(this._bindings){this._bindings.forEach(e=>p()(e.selector).off(e.eventName))
+return this._bindings=null}}bind(e,t,n){let s=arguments.length>3&&void 0!==arguments[3]?arguments[3]:{}
+this._bindings||(this._bindings=[])
+this._bindings.push({selector:e,eventName:t})
+const a=parseInt(s.throttle||0,10)
+a>0&&(n=Object(i["throttle"])(n,a,{leading:true,trailing:false}))
+p()(e).on("".concat(t,".").concat(this.eventType),n)}}class f extends m{install(e){return this.bind(window,"focus",()=>e(),{throttle:this.getOption("frequency")})}}f.prototype.eventType=s.EVT_PAGE_FOCUSED
+f.prototype.options={frequency:5e3}
+class v extends m{install(e){return this.bind(window,"blur",()=>{if("IFRAME"!==document.activeElement.tagName)return e()},{throttle:this.getOption("frequency")})}}v.prototype.eventType=s.EVT_PAGE_BLURRED
+v.prototype.options={frequency:5e3}
+const y=p()(window)
+function S(e){const t=p()(e)
+const n=y.scrollTop()
+const s=n+y.height()
+const i=t.offset().top
+const a=i+t.height()
+return n<i&&s>a}p.a.extend(p.a.expr[":"],{in_viewport:S})
+var w=n("VTHg")
+var O=n.n(w)
+class E extends m{install(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:window
+let n=[]
+return this.bind(t,"scroll",()=>{const t=this.identifyVisibleQuestions().filter(e=>-1===n.indexOf(e))
+if(t.length>0){n=n.concat(t)
+c.a.log("Student has just viewed the following questions: ".concat(t,". (Questions viewed up until now are: ").concat(n,")"))
+return e(t)}},{throttle:this.getOption("frequency")})}identifyVisibleQuestions(){return p()(".question[id]:visible").filter(":in_viewport").toArray().map(O.a)}}E.prototype.eventType=s.EVT_QUESTION_VIEWED
+E.prototype.options={frequency:2500}
+class k extends m{install(e){p()(document.body).on("click.".concat(this.uid),this.getOption("buttonSelector"),t=>{const n=p()(t.target).closest(this.getOption("questionSelector"))
+const s=n.hasClass(this.getOption("questionMarkedClass"))
+const i=O()(n[0])
+c.a.log("Question ".concat(i," ").concat(s?"is now flagged":"is no longer flagged","."))
+return e({flagged:s,questionId:i})})}}k.prototype.eventType=s.EVT_QUESTION_FLAGGED
+k.prototype.options={buttonSelector:".flag_question",questionSelector:".question",questionMarkedClass:"marked"}
+class T extends m{install(e){const t=navigator,n=t.userAgent
+c.a.log("I've been loaded by ".concat(n,"."))
+if(-1===location.href.indexOf("question")&&location.href.indexOf("take")>0)return e({user_agent:n})}}T.prototype.eventType=s.EVT_SESSION_STARTED
+T.prototype.options={}
+const x=[f,v,E,k,T]
+const N=new b
+x.forEach(e=>N.registerTracker(e))
+c.a.debug("QuizLogAuditing: will be using localStorage.")
+u.setStorageAdapter(s.EVT_STORAGE_LOCAL_STORAGE)
+N.options.deliveryUrl=ENV.QUIZ_SUBMISSION_EVENTS_URL
+t["a"]=N},"2wuA":function(e,t,n){"use strict"
+var s=n("pQTu")
+var i=n("m0r6")
+Object(i["a"])(JSON.parse('{"de":{"quizzes":{"rubric":{"loading":"Wird geladen ...","titles":{"details":"Bewertungsschemadetails der Aufgabe"}}}},"hu":{"quizzes":{"rubric":{"loading":"Töltődik...","titles":{"details":"Feladat értékelőtáblájának részletei"}}}}}'))
+n("jQeR")
+n("0sPK")
+var a=s["default"].scoped("quizzes.rubric")
+var r=n("ouhR")
+var o=n.n(r)
+n("YGE8")
+n("T3Mz")
+var l={ready(){const e=o()("#rubrics.rubric_dialog")
+e.dialog({title:a.t("titles.details","Assignment Rubric Details"),width:600,resizable:true})},buildLoadingDialog(){const e=o()("<div/>")
+e.text(a.t("loading","Loading..."))
+o()("body").append(e)
+e.dialog({width:400,height:200})
+return e},replaceLoadingDialog(e,t){o()("body").append(e)
+t.dialog("close")
+t.remove()
+l.ready()},createRubricDialog(e,t){const n=o()("#rubrics.rubric_dialog")
+if(n.length)l.ready()
+else{const n=l.buildLoadingDialog()
+void 0===t||null===t?o.a.get(e,e=>{l.replaceLoadingDialog(e,n)}):l.replaceLoadingDialog(t,n)}}}
+o()(document).ready((function(){o()(".show_rubric_link").click((function(e){e.preventDefault()
+const t=o()(this).attr("rel")
+l.createRubricDialog(t)}))}))},"3UD+":function(e,t){e.exports=function(e){if(!e.webpackPolyfill){var t=Object.create(e)
+t.children||(t.children=[])
+Object.defineProperty(t,"loaded",{enumerable:true,get:function(){return t.l}})
+Object.defineProperty(t,"id",{enumerable:true,get:function(){return t.i}})
+Object.defineProperty(t,"exports",{enumerable:true})
+t.webpackPolyfill=1}return t}},"5nFh":function(e,t,n){"use strict"
+n.d(t,"a",(function(){return b}))
+var s=n("VTBJ")
+var i=n("1OyB")
+var a=n("vuIU")
+var r=n("md7G")
+var o=n("foSv")
+var l=n("Ji7U")
+var c=n("q1tI")
+var d=n("17x9")
+var u=n.n(d)
+var h=n("cClk")
+var p=n("BTe1")
+var _=n("9yTY")
+var g=function(e){var t=e.expanded
+return{expanded:!t}}
+var b=function(e){Object(l["a"])(t,e)
+function t(e){var n
+Object(i["a"])(this,t)
+n=Object(r["a"])(this,Object(o["a"])(t).call(this))
+n.handleToggle=function(e){n.isControlled()||n.setState(g)
+n.props.onToggle(e,!n.expanded)}
+n.state={expanded:n.isControlled(e)?e.expanded:!!e.defaultExpanded}
+n._contentId=Object(p["a"])("Expandable__content")
+return n}Object(a["a"])(t,[{key:"isControlled",value:function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:this.props
+return"boolean"===typeof e.expanded}},{key:"componentWillReceiveProps",value:function(e){this.isControlled()&&!this.isControlled(e)&&this.props.expanded!==this.state.expanded&&this.setState(g)}},{key:"render",value:function(){var e=this
+var t=this.props,n=t.children,i=t.render,a=void 0===i?n:i
+return"function"===typeof a?a({expanded:this.expanded,getToggleProps:function(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{}
+return Object(s["a"])({"aria-controls":e._contentId,"aria-expanded":e.expanded,onClick:Object(_["a"])(e.handleToggle,t.onClick)},t)},getDetailsProps:function(t){return{id:e._contentId}}}):null}},{key:"expanded",get:function(){return this.isControlled()?this.props.expanded:this.state.expanded}}])
+t.displayName="Expandable"
+return t}(c["Component"])
+b.propTypes={expanded:Object(h["a"])(u.a.bool,"onToggle","defaultExpanded"),defaultExpanded:u.a.bool,onToggle:u.a.func,children:u.a.func,render:u.a.func}
+b.defaultProps={defaultExpanded:false,onToggle:function(e,t){},expanded:void 0,children:null,render:void 0}},"6V2X":function(e,t,n){"use strict"
+var s=n("An8g")
+var i=n("Ff2n")
+var a=n("pQTu")
+var r=n("m0r6")
+Object(r["a"])(JSON.parse('{"de":{"copy_to_64f8456b":"Kopieren nach ..."}}'))
+n("jQeR")
+n("0sPK")
+var o=a["default"].scoped("direct_share_course_tray")
+var l=n("q1tI")
+var c=n.n(l)
+var d=n("xGaD")
+n.d(t,"a",(function(){return h}))
+const u=Object(l["lazy"])(()=>Promise.all([n.e(5),n.e(6),n.e(8),n.e(23),n.e(106),n.e(513)]).then(n.bind(null,"mftS")))
+function h(e){let t=e.sourceCourseId,n=e.contentSelection,a=e.onDismiss,r=Object(i["a"])(e,["sourceCourseId","contentSelection","onDismiss"])
+return c.a.createElement(d["a"],Object.assign({label:o.t("Copy To..."),placement:"end",onDismiss:a,padding:"0 1.5rem"},r),Object(s["a"])(u,{sourceCourseId:t,contentSelection:n,onCancel:a}))}},"7FZx":function(e,t,n){"use strict"
+var s=n("pQTu")
+var i=n("m0r6")
+Object(i["a"])(JSON.parse('{"de":{"publish_btn_module":{"buttons":{"publish":"Veröffentlichen","published":"Veröffentlicht","publishing":"Wird veröffentlicht ...","unpublish":"Veröffentlichung rückgängig machen","unpublishing":"Veröffentlichung wird rückgängig gemacht ..."}},"published_click_to_unpublish_db016671":"Veröffentlicht.  Klicken Sie auf die Option „Veröffentlichung zurücknehmen“.","published_click_to_unpublish_title_358122a":"Veröffentlicht.  Hier klicken, um die Veröffentlichung von %{title} zurückzunehmen","unpublished_click_to_publish_6a6d12e1":"Veröffentlichung zurückgenommen.  Klicken Sie, um zu veröffentlichen.","unpublished_click_to_publish_title_7c57293f":"Veröffentlichung zurückgenommen.  Klicken Sie, um %{title} zu veröffentlichen."},"hu":{"publish_btn_module":{"buttons":{"publish":"Publikálás","published":"Publikálva","publishing":"Publikálás alatt...","unpublish":"Publikálás visszavonása","unpublishing":"Publikálás visszavonása folyamatban..."}}}}'))
+n("jQeR")
+n("0sPK")
+var a=s["default"].scoped("publish_btn_module")
+var r=n("ouhR")
+var o=n.n(r)
+var l=n("FIFq")
+var c=n.n(l)
+var d=n("5Ky4")
+n("Z+Ib")
+var u=function(e,t){for(var n in t)h.call(t,n)&&(e[n]=t[n])
+function s(){this.constructor=e}s.prototype=t.prototype
+e.prototype=new s
+e.__super__=t.prototype
+return e},h={}.hasOwnProperty
+t["a"]=function(e){u(t,e)
+function t(){return t.__super__.constructor.apply(this,arguments)}t.prototype.disabledClass="disabled"
+t.prototype.publishClass="btn-publish"
+t.prototype.publishedClass="btn-published"
+t.prototype.unpublishClass="btn-unpublish"
+t.optionProperty("title")
+t.optionProperty("publishText")
+t.optionProperty("unpublishText")
+t.optionProperty("disabledForModeration")
+t.prototype.tagName="button"
+t.prototype.className="btn"
+t.prototype.events={click:"click",hover:"hover"}
+t.prototype.els={i:"$icon",".publish-text":"$text"}
+t.prototype.initialize=function(){var e
+t.__super__.initialize.apply(this,arguments)
+return null!=(e=this.model)?e.on("change:unpublishable",(n=this,function(){if(!n.model.get("unpublishable")&&n.model.get("published"))return n.disable()})):void 0
+var n}
+t.prototype.setElement=function(){t.__super__.setElement.apply(this,arguments)
+this.$el.attr("data-tooltip","")
+if(!this.model.get("unpublishable")&&this.model.get("published"))return this.disable()}
+t.prototype.hover=function(e){var t
+t=e.type
+if("mouseenter"===t){if(this.keepState||this.isPublish()||this.isDisabled())return
+this.renderUnpublish()
+return this.keepState=true}this.keepState=false
+if(!(this.isPublish()||this.isDisabled()))return this.renderPublished()}
+t.prototype.click=function(e){e.preventDefault()
+e.stopPropagation()
+if(this.isDisabled())return
+this.keepState=true
+if(this.isPublish())return this.publish()
+if(this.isUnpublish()||this.isPublished())return this.unpublish()}
+t.prototype.addAriaLabel=function(e){var t
+t=this.$el.find("span.screenreader-only.accessible_label")
+t.length||(t=o()('<span class="screenreader-only accessible_label"></span>').appendTo(this.$el))
+t.text(e)
+return this.$el.attr("aria-label",e)}
+t.prototype.setFocusToElement=function(){return this.$el.focus()}
+t.prototype.publish=function(e){this.renderPublishing()
+return this.model.publish().always((t=this,function(){t.trigger("publish")
+t.enable()
+t.render()
+return t.setFocusToElement()}))
+var t}
+t.prototype.unpublish=function(e){this.renderUnpublishing()
+return this.model.unpublish().done((t=this,function(){t.trigger("unpublish")
+t.disable()
+t.render()
+return t.setFocusToElement()})).fail(function(e){return function(t){403===t.status&&o.a.flashError(e.model.disabledMessage())
+e.disable()
+e.renderPublished()
+return e.setFocusToElement()}}(this))
+var t}
+t.prototype.isPublish=function(){return this.$el.hasClass(this.publishClass)}
+t.prototype.isPublished=function(){return this.$el.hasClass(this.publishedClass)}
+t.prototype.isUnpublish=function(){return this.$el.hasClass(this.unpublishClass)}
+t.prototype.isDisabled=function(){return this.$el.hasClass(this.disabledClass)}
+t.prototype.disable=function(){return this.$el.addClass(this.disabledClass)}
+t.prototype.enable=function(){return this.$el.removeClass(this.disabledClass)}
+t.prototype.reset=function(){this.$el.removeClass(this.publishClass+" "+this.publishedClass+" "+this.unpublishClass)
+this.$icon.removeClass("icon-publish icon-unpublish icon-unpublished")
+return this.$el.removeAttr("aria-label")}
+t.prototype.publishLabel=function(){if(this.publishText)return this.publishText
+if(this.title)return a.t("Unpublished.  Click to publish %{title}.",{title:this.title})
+return a.t("Unpublished.  Click to publish.")}
+t.prototype.unpublishLabel=function(){if(this.unpublishText)return this.unpublishText
+if(this.title)return a.t("Published.  Click to unpublish %{title}.",{title:this.title})
+return a.t("Published.  Click to unpublish.")}
+t.prototype.render=function(){this.$el.attr("role","button")
+this.$el.attr("tabindex","0")
+this.$el.html('<i></i><span class="publish-text"></span>')
+this.cacheEls()
+this.$text.attr("tabindex","-1")
+this.model.get("published")?this.renderPublished():this.renderPublish()
+return this}
+t.prototype.renderPublish=function(){return this.renderState({text:a.t("buttons.publish","Publish"),label:this.publishLabel(),buttonClass:this.publishClass,iconClass:"icon-unpublish"})}
+t.prototype.renderPublished=function(){return this.renderState({text:a.t("buttons.published","Published"),label:this.unpublishLabel(),buttonClass:this.publishedClass,iconClass:"icon-publish icon-Solid"})}
+t.prototype.renderUnpublish=function(){var e
+e=a.t("buttons.unpublish","Unpublish")
+return this.renderState({text:e,buttonClass:this.unpublishClass,iconClass:"icon-unpublish"})}
+t.prototype.renderPublishing=function(){var e
+this.disable()
+e=a.t("buttons.publishing","Publishing...")
+return this.renderState({text:e,buttonClass:this.publishClass,iconClass:"icon-publish icon-Solid"})}
+t.prototype.renderUnpublishing=function(){var e
+this.disable()
+e=a.t("buttons.unpublishing","Unpublishing...")
+return this.renderState({text:e,buttonClass:this.unpublishClass,iconClass:"icon-unpublished"})}
+t.prototype.renderState=function(e){this.reset()
+this.$el.addClass(e.buttonClass)
+this.$el.attr("aria-pressed",e.buttonClass===this.publishedClass)
+this.$icon.addClass(e.iconClass)
+this.$text.html("&nbsp;"+Object(d["a"])(e.text))
+if(this.model.get("disabledForModeration"))return this.disableWithMessage("You do not have permissions to edit this moderated assignment")
+if(null==this.model.get("unpublishable")||this.model.get("unpublishable")){this.enable()
+this.$el.attr("title",e.text)
+if(e.label)return this.addAriaLabel(e.label)}else if(this.model.get("published"))return this.disableWithMessage(this.model.disabledMessage())}
+t.prototype.disableWithMessage=function(e){this.disable()
+this.$el.attr("aria-disabled",true)
+this.$el.attr("title",e)
+return this.addAriaLabel(e)}
+return t}(c.a.View)},CyXg:function(e,t,n){"use strict"
+n.d(t,"a",(function(){return p}))
+var s=n("VTBJ")
+var i=n("1OyB")
+var a=n("vuIU")
+var r=n("md7G")
+var o=n("foSv")
+var l=n("Ji7U")
+var c=n("q1tI")
+var d=n.n(c)
+var u=n("hPGw")
+var h=d.a.createElement("path",{d:"M994.034 1226.26c-18.796 27.296-49.269 27.3-68.067 0L574.893 716.424C556.096 689.128 567.713 667 600.852 667h718.297c33.133 0 44.757 22.125 25.959 49.424L994.034 1226.26z",fillRule:"evenodd",stroke:"none",strokeWidth:"1"})
+var p=function(e){Object(l["a"])(t,e)
+function t(){Object(i["a"])(this,t)
+return Object(r["a"])(this,Object(o["a"])(t).apply(this,arguments))}Object(a["a"])(t,[{key:"render",value:function(){return d.a.createElement(u["a"],Object.assign({},this.props,{name:"IconMiniArrowDown",viewBox:"0 0 1920 1920"}),h)}}])
+t.displayName="IconMiniArrowDownSolid"
+return t}(c["Component"])
+p.glyphName="mini-arrow-down"
+p.variant="Solid"
+p.propTypes=Object(s["a"])({},u["a"].propTypes)},"EvX+":function(e,t,n){"use strict"
+var s=n("HIhM")
+const i={}
+const a={getCssVariant(){const e=window.ENV.use_responsive_layout?"responsive_layout":"new_styles"
+const t=window.ENV.use_high_contrast?"high_contrast":"normal_contrast"
+const n=Object(s["c"])()?"_rtl":""
+return"".concat(e,"_").concat(t).concat(n)},urlFor(e,t){let n=t.combinedChecksum,s=t.includesNoVariables
+const i=s?"no_variables":a.getCssVariant()
+return[window.ENV.ASSET_HOST||"","dist","brandable_css",i,"".concat(e,"-").concat(n,".css")].join("/")},loadStylesheet(e,t){if(e in i)return
+const n=document.createElement("link")
+n.rel="stylesheet"
+n.href=a.urlFor(e,t)
+n.setAttribute("data-loaded-by-brandableCss",true)
+document.head.appendChild(n)
+window.canvasCssVariablesPolyfill&&window.canvasCssVariablesPolyfill(n)}}
+t["a"]=a},GXQz:function(e,t,n){"use strict"
+n.r(t)
+var s=n("ANjH")
+var i=n("An8g")
+var a=n("q1tI")
+var r=n.n(a)
+var o=n("i8i4")
+var l=n.n(o)
+var c=n("/MKj")
+var d=n("17x9")
+var u=n.n(d)
+var h=n("VTJ5")
+var p=n("pQTu")
+var _=n("m0r6")
+Object(_["a"])(JSON.parse('{"de":{"loading_bde52856":"Wird geladen","loading_data_ecd89ba":"Daten werden geladen ...","mastery_paths_breakdown_6e0b5fce":"Übersicht der Leistungsziel-Pfade"},"hu":{"loading_bde52856":"Töltődik","loading_data_ecd89ba":"Adatok betöltése...","mastery_paths_breakdown_6e0b5fce":"Jártassági útvonal üzemzavar"}}'))
+n("jQeR")
+n("0sPK")
+var g=p["default"].scoped("cyoe_assignment_sidebar_breakdown_graphs")
+var b=n("MdYG")
+Object(_["a"])(JSON.parse('{"de":{"lowerbound_to_upperbound_352a3c0b":"%{lowerBound}+ bis %{upperBound}","rangestudents_out_of_totalstudents_students_e5ee60e1":"%{rangeStudents} von %{totalStudents} Studenten","view_range_student_details_8116d68a":"Studentendetails nach Bereichen anzeigen"},"hu":{"lowerbound_to_upperbound_352a3c0b":"%{lowerBound}+ - %{upperBound}"}}'))
+var m=p["default"].scoped("cyoe_assignment_sidebar_breakdown_graph_bar")
+u.a.string,u.a.number,u.a.func
+var f=Object(i["a"])("div",{className:"crs-bar__horizontal-inside"})
+class v extends r.a.Component{constructor(){super(...arguments)
+this.selectRange=e=>{this.props.openSidebar(e.target)
+this.props.selectRange(this.props.rangeIndex)}}renderInnerBar(){const e=Math.min(this.props.rangeStudents/this.props.totalStudents*100,100)
+const t={width:e+"%"}
+return e>0?Object(i["a"])("div",{style:t,className:"crs-bar__horizontal-inside-fill"}):null}render(){const e=this.props,t=e.rangeStudents,n=e.totalStudents
+return Object(i["a"])("div",{className:"crs-bar__container"},void 0,Object(i["a"])("div",{className:"crs-bar__horizontal-outside"},void 0,f,this.renderInnerBar()),Object(i["a"])("div",{className:"crs-bar__bottom"},void 0,Object(i["a"])("span",{className:"crs-bar__info"},void 0,m.t("%{lowerBound}+ to %{upperBound}",{upperBound:this.props.upperBound,lowerBound:this.props.lowerBound})),Object(i["a"])("button",{className:"crs-link-button",onClick:this.selectRange,title:m.t("View range student details")},void 0,m.t("%{rangeStudents} out of %{totalStudents} students",{rangeStudents:t,totalStudents:n}))))}}var y=v
+u.a.object,u.a.array,u.a.func,u.a.number,u.a.bool
+class S extends r.a.Component{renderContent(){return this.props.isLoading?Object(i["a"])("div",{className:"crs-breakdown-graph__loading"},void 0,Object(i["a"])(h["a"],{renderTitle:g.t("Loading"),size:"small"}),Object(i["a"])("p",{},void 0,g.t("Loading Data.."))):this.renderBars()}renderBars(){const e=this.props,t=e.ranges,n=e.assignment,s=e.enrolled,a=e.openSidebar,r=e.selectRange
+return t.map((e,t)=>{let o=e.size,l=e.scoring_range
+return Object(i["a"])(y,{rangeIndex:t,rangeStudents:o,totalStudents:s,upperBound:Object(b["b"])(l.upper_bound,n,true),lowerBound:Object(b["b"])(l.lower_bound,n,false),openSidebar:a,selectRange:r},t)})}render(){return Object(i["a"])("div",{className:"crs-breakdown-graph"},void 0,Object(i["a"])("h2",{},void 0,g.t("Mastery Paths Breakdown")),this.renderContent())}}var w=S
+var O=n("Xx/m")
+var E=n("7Hz5")
+var k=n("IRk9")
+Object(_["a"])(JSON.parse('{"de":{"close_details_sidebar_ff8f663d":"Details-Seitenleiste schließen"}}'))
+var T=p["default"].scoped("cyoe_assignment_sidebar_breakdown_details")
+var x=n("KIj7")
+var N=n("S4Kx")
+var j=n("CyXg")
+var z=n("HsON")
+var A=n("TSYQ")
+var I=n.n(A)
+Object(_["a"])(JSON.parse('{"de":{"mastery_paths_breakdown_6e0b5fce":"Übersicht der Leistungsziel-Pfade"},"hu":{"mastery_paths_breakdown_6e0b5fce":"Jártassági útvonal üzemzavar"}}'))
+var D=p["default"].scoped("cyoe_assignment_sidebar_student_ranges_view")
+const C=u.a.shape,M=u.a.string
+C({course_id:M.isRequired,trigger_assignment:M.isRequired})
+const q=u.a.shape,R=u.a.arrayOf,P=u.a.string,L=u.a.number
+q({course_id:L,name:P,title:P,grading_scheme:P,grading_type:P.isRequired,points_possible:L.isRequired,submission_types:R(P)})
+const J=u.a.shape,B=u.a.number
+J({range:B,student:B})
+const V=u.a.shape,U=u.a.string,G=u.a.number
+V({id:G.isRequired,name:U.isRequired,avatar_url:U})
+Object(_["a"])(JSON.parse('{"de":{"select_student_name_caaff244":"Student auswählen %{name}"}}'))
+var F=p["default"].scoped("cyoe_assignment_sidebar_student_range_itme")
+class Q extends r.a.Component{constructor(){super(...arguments)
+this.selectStudent=()=>{this.props.selectStudent(this.props.studentIndex)}}render(){const e=this.props.student.user.avatar_image_url||"/images/messages/avatar-50.png"
+const t=this.props.student.trend
+const n=I()({"crs-student__trend-icon":true,"crs-student__trend-icon__positive":1===t,"crs-student__trend-icon__neutral":0===t,"crs-student__trend-icon__negative":-1===t})
+const s=null!==t&&void 0!==t
+return Object(i["a"])("div",{className:"crs-student-range__item"},void 0,Object(i["a"])("img",{src:e,className:"crs-student__avatar",onClick:this.selectStudent}),Object(i["a"])("button",{className:"crs-student__name crs-link-button",onClick:this.selectStudent,"aria-label":F.t("Select student %{name}",{name:this.props.student.user.name})},void 0,this.props.student.user.name),s&&Object(i["a"])("span",{className:n}))}}u.a.object,u.a.func
+class W extends r.a.Component{render(){this.props.range.students
+return Object(i["a"])("div",{className:"crs-student-range"},void 0,this.props.range.students.map((e,t)=>Object(i["a"])(Q,{student:e,studentIndex:t,selectStudent:this.props.onStudentSelect},e.user.id)))}}u.a.array,u.a.func,u.a.object
+class K extends r.a.Component{constructor(e){super()
+this.handleToggle=e=>{this.setState({selectedRange:e})}
+this.state={selectedRange:e.selectedPath.range}}renderTabs(){return this.props.ranges.map((e,t)=>{const n=this.state.selectedRange===t
+const s=Object(b["b"])(e.scoring_range.lower_bound,this.props.assignment,false)
+const a=Object(b["b"])(e.scoring_range.upper_bound,this.props.assignment,true)
+const r="> ".concat(s," - ").concat(a)
+return Object(i["a"])(N["a"],{as:"div",padding:"xxx-small"},void 0,Object(i["a"])(x["a"],{variant:"filled",expanded:n,summary:r,onToggle:()=>this.handleToggle(t),size:"large",iconExpanded:j["a"],icon:z["a"]},t,Object(i["a"])(W,{range:e,onStudentSelect:this.props.selectStudent})))})}render(){const e=!!this.props.student
+const t=I()({"crs-ranges-view":true,"crs-ranges-view__hidden":e})
+return Object(i["a"])("div",{className:t},void 0,Object(i["a"])("header",{className:"crs-ranges-view__header"},void 0,Object(i["a"])("h4",{},void 0,D.t("Mastery Paths Breakdown"))),this.renderTabs())}}Object(_["a"])(JSON.parse('{"de":{"back_2900f52a":"Zurück","loading_bde52856":"Wird geladen","loading_data_ecd89ba":"Daten werden geladen ...","not_submitted_7d05fdb4":"Nicht abgegeben","send_message_6ccc90e8":"Nachricht senden","submitted_submitdate_bdd3bf09":"Abgegeben am: %{submitDate}","view_next_student_9fc72fef":"Nächsten Studenten anzeigen","view_previous_student_90000459":"Vorherigen Studenten anzeigen","view_submission_ff3da5d":"Abgabe anzeigen"},"hu":{"back_2900f52a":"Vissza","loading_bde52856":"Töltődik","loading_data_ecd89ba":"Adatok betöltése...","not_submitted_7d05fdb4":"Nincs beküldve","send_message_6ccc90e8":"Üzenetküldés","view_next_student_9fc72fef":"következő hallgató megtekintése","view_previous_student_90000459":"előző hallgató megtekintése","view_submission_ff3da5d":"Beadandó megtekintése"}}'))
+var H=p["default"].scoped("cyoe_assignment_sidebar_student_details_view")
+var $=n("Pm+R")
+u.a.object,u.a.number
+class Y extends r.a.Component{render(){const e=this.props.trend
+const t=I()({"crs-student__trend-icon":true,"crs-student__trend-icon__positive":1===e,"crs-student__trend-icon__neutral":0===e,"crs-student__trend-icon__negative":-1===e})
+const n=null!==e&&void 0!==e
+const s=$["a"].getCategory(this.props.assignment).id
+return Object(i["a"])("div",{className:"crs-student-details__assignment"},void 0,Object(i["a"])("i",{className:"icon-".concat(s," crs-student-details__assignment-icon crs-icon-").concat(s)}),Object(i["a"])("div",{className:"crs-student-details__assignment-name"},void 0,this.props.assignment.name),Object(i["a"])("div",{className:"crs-student-details__assignment-score"},void 0,Object(i["a"])("div",{},void 0,Object(b["b"])(this.props.assignment.score,this.props.assignment,true)),n&&Object(i["a"])("span",{className:t})))}}u.a.shape,u.a.string,u.a.number,u.a.arrayOf,u.a.func,u.a.bool
+var Z=Object(i["a"])("i",{"aria-hidden":true,className:"icon-arrow-open-left"})
+var X=Object(i["a"])("i",{"aria-hidden":true,className:"icon-arrow-open-left"})
+var ee=Object(i["a"])("i",{"aria-hidden":true,className:"icon-email crs-icon-email"})
+var te=Object(i["a"])("i",{"aria-hidden":true,className:"icon-arrow-open-right"})
+class ne extends r.a.Component{componentDidUpdate(e){this.props.student&&!e.student&&setTimeout(()=>this.backButton.focus(),100)}renderHeader(){if(!this.props.student)return null
+return Object(i["a"])("header",{className:"crs-student-details__header"},void 0,r.a.createElement("button",{className:"crs-breakdown__link crs-back-button",ref:e=>{this.backButton=e},onClick:this.props.unselectStudent},Z,H.t("Back")))}renderStudentProfile(){const e=this.props,t=e.student,n=e.triggerAssignment
+const s=n.assignment
+const a=t.avatar_image_url||"/images/messages/avatar-50.png"
+const r="/conversations?context_id=course_".concat(s.course_id,"&user_id=").concat(t.id,"&user_name=").concat(t.name)
+return Object(i["a"])("section",{className:"crs-student-details__profile-content"},void 0,Object(i["a"])("button",{className:"Button Button--icon-action student-details__prev-student","aria-label":H.t("view previous student"),onClick:this.props.selectPrevStudent,type:"button"},void 0,X),Object(i["a"])("div",{className:"crs-student-details__profile-inner-content"},void 0,Object(i["a"])("img",{src:a,"aria-hidden":true,className:"crs-student-details__profile-image"}),Object(i["a"])("h3",{className:"crs-student-details__name"},void 0,t.name),Object(i["a"])("a",{target:"_blank",rel:"noopener noreferrer",href:r,className:"crs-breakdown__link"},void 0,ee,H.t("Send Message"))),Object(i["a"])("button",{className:"Button Button--icon-action student-details__next-student","aria-label":H.t("view next student"),onClick:this.props.selectNextStudent,type:"button"},void 0,te))}renderTriggerAssignment(){const e=this.props,t=e.student,n=e.triggerAssignment
+const s=n||{},a=s.assignment,r=s.submission
+const o="/courses/".concat(a.course_id,"/assignments/").concat(a.id,"/submissions/").concat(t.id)
+let l=null
+l=r?r.submitted_at?H.l("date.formats.long",new Date(r.submitted_at)):null:H.t("Not Submitted")
+return Object(i["a"])("section",{className:"crs-student-details__score-content"},void 0,Object(i["a"])("h3",{className:"crs-student-details__score-number"},void 0,Object(b["a"])(r.grade,a)),Object(i["a"])("div",{className:"crs-student-details__score-title"},void 0,a.name),l?Object(i["a"])("div",{className:"crs-student-details__score-date"},void 0,H.t("Submitted: %{submitDate}",{submitDate:l})):null,Object(i["a"])("a",{target:"_blank",rel:"noopener noreferrer",href:o,className:"crs-breakdown__link"},void 0,H.t("View Submission")))}renderFollowOnAssignments(){const e=this.props.followOnAssignments||[]
+return Object(i["a"])("section",{},void 0,e.map((e,t)=>Object(i["a"])(Y,{assignment:e.assignment,score:e.score,trend:e.trend},t)))}renderContent(){if(this.props.isLoading)return Object(i["a"])("div",{className:"crs-student-details__loading"},void 0,Object(i["a"])(h["a"],{renderTitle:H.t("Loading"),size:"small"}),Object(i["a"])("p",{},void 0,H.t("Loading Data..")))
+if(this.props.student)return Object(i["a"])("div",{},void 0,this.renderStudentProfile(),this.renderTriggerAssignment(),this.renderFollowOnAssignments())
+return null}render(){const e=!this.props.student
+const t=I()({"crs-student-details":true,"crs-student-details__hidden":e})
+return Object(i["a"])("div",{className:t},void 0,this.renderHeader(),this.renderContent())}}u.a.array,u.a.object,u.a.func,u.a.bool
+class se extends r.a.Component{constructor(){super(...arguments)
+this.unselectStudent=()=>{this.props.selectStudent(null)}
+this.selectPrevStudent=()=>{let e=this.props.selectedPath.student
+const t=this.props.ranges[this.props.selectedPath.range]
+e>0?e-=1:e=t.size-1
+this.props.selectStudent(e)}
+this.selectNextStudent=()=>{let e=this.props.selectedPath.student
+const t=this.props.ranges[this.props.selectedPath.range]
+e<t.size-1?e+=1:e=0
+this.props.selectStudent(e)}}render(){const e=this.props,t=e.selectedPath,n=e.ranges,s=e.students
+const a=null!==t.student?n[t.range].students[t.student].user:null
+const o=null!==t.student&&a?s[a.id]:null
+return Object(i["a"])(E["a"],{open:this.props.showDetails,placement:"end",shouldContainFocus:true,defaultFocusElement:()=>this.closeButton},void 0,Object(i["a"])("div",{className:"crs-breakdown-details"},void 0,Object(i["a"])("div",{className:"crs-breakdown-details__content"},void 0,Object(i["a"])("span",{className:"crs-breakdown-details__closeButton"},void 0,r.a.createElement(O["a"],{variant:"icon",ref:e=>{this.closeButton=e},onClick:this.props.closeSidebar},Object(i["a"])("span",{className:"crs-breakdown-details__closeButtonIcon"},void 0,Object(i["a"])(k["a"],{title:T.t("Close details sidebar")})))),Object(i["a"])(K,{assignment:this.props.assignment,ranges:n,selectedPath:t,selectStudent:this.props.selectStudent,student:a}),Object(i["a"])(ne,{isLoading:this.props.isStudentDetailsLoading,student:a,triggerAssignment:o&&o.triggerAssignment,followOnAssignments:o&&o.followOnAssignments,selectPrevStudent:this.selectPrevStudent,selectNextStudent:this.selectNextStudent,unselectStudent:this.unselectStudent}))))}}const ie=Object(c["connect"])(e=>({assignment:e.assignment,ranges:e.ranges,enrolled:e.enrolled,isLoading:e.isInitialDataLoading}))(w)
+const ae=Object(c["connect"])(e=>({isStudentDetailsLoading:e.isStudentDetailsLoading,selectedPath:e.selectedPath,assignment:e.assignment,ranges:e.ranges,students:e.studentCache,showDetails:e.showDetails}))(se)
+class re{constructor(e,t){this.store=e
+this.actions=t}renderGraphs(e){const t={openSidebar:this.actions.openSidebar,selectRange:this.actions.selectRange}
+l.a.render(Object(i["a"])(c["Provider"],{store:this.store},void 0,r.a.createElement(ie,t)),e)}renderDetails(e){const t={selectRange:this.actions.selectRange,selectStudent:this.actions.selectStudent,closeSidebar:this.actions.closeSidebar}
+l.a.render(Object(i["a"])(c["Provider"],{store:this.store},void 0,r.a.createElement(ae,t)),e)}}var oe=n("sINF")
+var le=n("VTBJ")
+var ce=n("GLiE")
+var de=n.n(ce)
+const ue=(e,t)=>(n,s)=>{n=void 0===n?t:n
+if(e[s.type]){let t=n
+de.a.isObject(n)?t=Object(le["a"])({},n):Array.isArray(n)&&(t=n.slice())
+return e[s.type](t,s)}return n}
+const he=(e,t)=>t.payload
+const pe=function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:""
+return(t,n)=>void 0===t?e:t}
+var _e=n("x1Tw")
+const ge={call(e,t){let n=e.apiUrl,s=e.jwt
+return Object(_e["a"])({url:n+t,dataType:"json",headers:{Authorization:"Bearer "+s}}).then(e=>e.data)},loadInitialData(e){const t="/students_per_range?trigger_assignment=".concat(e.assignment.id)
+return ge.call(e,t)},loadStudent(e,t){const n="/student_details?trigger_assignment=".concat(e.assignment.id,"&student_id=").concat(t)
+return ge.call(e,n)}}
+var be=ge
+function me(e){const t=e.split("_")
+return t.map((e,t)=>0!==t&&e.length?e.charAt(0).toUpperCase()+e.slice(1).toLowerCase():e.toLowerCase()).join("")}function fe(e){const t=t=>({type:e,payload:t})
+t.type=e
+t.toString=()=>e
+return t}function ve(e){const t={}
+const n={}
+e.forEach(e=>{const s=fe(e)
+const i=me(s.type)
+n[i]=s
+t[s.type]=s.type})
+return{actionTypes:t,actions:n}}const ye=["SET_INITIAL_DATA","SET_SCORING_RANGES","SET_RULE","SET_ENROLLED","SET_ASSIGNMENT","SET_ERRORS","SET_STUDENT_DETAILS","SELECT_RANGE","ADD_STUDENT_TO_CACHE","SELECT_STUDENT","OPEN_SIDEBAR","CLOSE_SIDEBAR","LOAD_INITIAL_DATA_START","LOAD_INITIAL_DATA_END","LOAD_STUDENT_DETAILS_START","LOAD_STUDENT_DETAILS_END"]
+const Se=ve(ye),we=Se.actions,Oe=Se.actionTypes
+we.closeSidebarFrd=we.closeSidebar
+we.closeSidebar=()=>(e,t)=>{const n=t().sidebarTrigger
+e(we.closeSidebarFrd())
+n.focus()}
+we.loadInitialData=e=>(e,t)=>{e(we.loadInitialDataStart())
+be.loadInitialData(t()).then(t=>{e(we.setInitialData(t))
+e(we.loadInitialDataEnd())}).catch(t=>{e(we.setErrors(t))
+e(we.loadInitialDataEnd())})}
+we.loadStudent=e=>(t,n)=>{t(we.loadStudentDetailsStart())
+be.loadStudent(n(),e).then(n=>{t(we.addStudentToCache({studentId:e,data:n}))
+t(we.loadStudentDetailsEnd())}).catch(e=>{t(we.loadStudentDetailsEnd())
+t(we.setErrors(e))})}
+we.selectStudent=e=>(t,n)=>{t({type:Oe.SELECT_STUDENT,payload:e})
+const s=n(),i=s.studentCache,a=s.ranges,r=s.selectedPath
+const o=a[r.range].students[e]
+o&&!i[o.user.id.toString()]&&t(we.loadStudent(o.user.id.toString()))}
+const Ee=ue({[Oe.ADD_STUDENT_TO_CACHE]:(e,t)=>{const n=t.payload,s=n.studentId,i=n.data
+e[s]={followOnAssignments:i.follow_on_assignments,triggerAssignment:i.trigger_assignment}
+return e}},{})
+const ke=ue({[Oe.LOAD_INITIAL_DATA_START]:()=>true,[Oe.LOAD_INITIAL_DATA_END]:()=>false},false)
+const Te=ue({[Oe.LOAD_STUDENT_DETAILS_START]:()=>true,[Oe.LOAD_STUDENT_DETAILS_END]:()=>false},false)
+const xe=ue({[Oe.SET_ERRORS]:(e,t)=>[...Array.from(t.payload),...Array.from(e)]},[])
+const Ne=ue({[Oe.SET_INITIAL_DATA]:(e,t)=>t.payload.ranges,[Oe.SET_SCORING_RANGES]:he},[])
+const je=ue({[Oe.SET_ASSIGNMENT]:he},{})
+const ze=ue({[Oe.SET_INITIAL_DATA]:(e,t)=>t.payload.rule,[Oe.SET_RULE]:he},{course_id:"",trigger_assignment:""})
+const Ae=ue({[Oe.SET_INITIAL_DATA]:(e,t)=>t.payload.enrolled,[Oe.SET_ENROLLED]:he},0)
+const Ie=ue({[Oe.OPEN_SIDEBAR]:(e,t)=>t.payload,[Oe.CLOSE_SIDEBAR]:()=>null},null)
+const De=ue({[Oe.OPEN_SIDEBAR]:()=>true,[Oe.CLOSE_SIDEBAR]:()=>false,[Oe.SELECT_RANGE]:(e,t)=>null!==t.payload},false)
+const Ce=ue({[Oe.SELECT_RANGE]:(e,t)=>{e.range=t.payload
+return e},[Oe.SELECT_STUDENT]:(e,t)=>{e.student=t.payload
+return e},[Oe.CLOSE_SIDEBAR]:e=>{e.student=null
+return e}},{range:0,student:null})
+var Me=Object(s["combineReducers"])({apiUrl:pe(),jwt:pe(),studentCache:Ee,isInitialDataLoading:ke,isStudentDetailsLoading:Te,errors:xe,ranges:Ne,assignment:je,rule:ze,enrolled:Ae,sidebarTrigger:Ie,showDetails:De,selectedPath:Ce})
+const qe=Object(s["applyMiddleware"])(oe["default"])(s["createStore"])
+function Re(e){return qe(Me,e)}var Pe=Re
+const Le={init:(e,t)=>{const n=window.ENV
+if(null!=e&&n.CONDITIONAL_RELEASE_SERVICE_ENABLED&&null!=n.CONDITIONAL_RELEASE_ENV.rule){const i=n.CONDITIONAL_RELEASE_ENV,a=i.assignment,r=i.jwt,o=i.stats_url
+const l=document.createElement("div")
+l.setAttribute("id","crs-details")
+t.appendChild(l)
+a.submission_types=Array.isArray(a.submission_types)?a.submission_types:[a.submission_types]
+const c={assignment:a,jwt:r,apiUrl:o}
+const d=Pe(c)
+const u=Object(s["bindActionCreators"])(we,d.dispatch)
+const h=new re(d,u)
+h.renderGraphs(e)
+h.renderDetails(l)
+u.loadInitialData()
+return h}}}
+t["default"]=Le},H4Sz:function(e,t,n){"use strict"
+var s=n("An8g")
+var i=n("ouhR")
+var a=n.n(i)
+var r=n("q1tI")
+var o=n.n(r)
+n("17x9")
+var l=n("i8i4")
+var c=n.n(l)
+var d=n("P4VU")
+n("MWZS")
+var u=n("mykf")
+var h=n("etQE")
+var p=Object(s["a"])("div",{className:"ic-flash__icon","aria-hidden":"true"},void 0,Object(s["a"])("i",{className:"icon-info"}))
+var _=Object(s["a"])("div",{className:"ic-flash__icon","aria-hidden":"true"},void 0,Object(s["a"])("i",{className:"icon-info"}))
+var g=Object(s["a"])("div",{})
+class b extends o.a.Component{constructor(e){super(e)
+this.getMaxIFrameWidth=()=>{if(this.state.tools){let e=0
+for(let t=0;t<this.state.tools.length;t++){const n=this.state.tools[t]
+const s=this["tool_iframe_".concat(n.definition_id)].offsetWidth
+s>e&&(e=s)}return e}return null}
+this.handleAlertFocus=e=>{const t={iframeStyle:{border:"2px solid #008EE2",width:"".concat(this.getMaxIFrameWidth()-4,"px")}}
+e.target.className.search("before")>-1?t.beforeExternalContentAlertClass="":e.target.className.search("after")>-1&&(t.afterExternalContentAlertClass="")
+this.setState(t)}
+this.handleAlertBlur=e=>{const t={iframeStyle:{border:"none",width:"100%"}}
+e.target.className.search("before")>-1?t.beforeExternalContentAlertClass="screenreader-only":e.target.className.search("after")>-1&&(t.afterExternalContentAlertClass="screenreader-only")
+this.setState(t)}
+this.state={tools:[],beforeExternalContentAlertClass:"screenreader-only",afterExternalContentAlertClass:"screenreader-only",iframeStyle:{}}}componentWillMount(){this.getTools()}componentDidMount(){if(this.state.tools)for(let e=0;e<this.state.tools.length;e++){const t=this.state.tools[e]
+this["tool_iframe_".concat(t.definition_id)].setAttribute("allow",Object(u["a"])())}}async getTools(){const e=encodeURI("".concat(this.getDefinitionsUrl(),"?placements[]=").concat(this.props.placement))
+try{const t=Object(h["e"])(e)||fetch(e,h["d"])
+const n=await Object(h["b"])(t)
+n.forEach(e=>e.launch=this.getLaunch(e))
+this.setState({tools:n})}catch(e){a.a.flashError(d["a"].t("Error retrieving assignment external tools"))}}getDefinitionsUrl(){return"/api/v1/courses/".concat(this.props.courseId,"/lti_apps/launch_definitions")}getLaunch(e){const t=e.placements[this.props.placement].url
+let n="?borderless=true&url=".concat(encodeURIComponent(t),"&placement=").concat(this.props.placement)
+this.props.assignmentId&&(n+="&assignment_id=".concat(this.props.assignmentId))
+const s="/courses/".concat(this.props.courseId,"/external_tools/retrieve")
+return s+n}renderTool(e){const t={}
+a.a.extend(t,this.state.iframeStyle)
+if(e.placements[this.props.placement].launch_height){t.height=e.placements[this.props.placement].launch_height
+t.minHeight="unset"}e.placements[this.props.placement].launch_width&&(t.width=e.placements[this.props.placement].launch_width)
+return o.a.createElement("iframe",{src:e.launch,className:"tool_launch",style:t,key:e.definition_id,title:d["a"].t("External Tool %{tool_id}",{tool_id:e.definition_id}),ref:t=>{this["tool_iframe_".concat(e.definition_id)]=t},"data-lti-launch":"true"})}renderToolsContainer(){const e="before_external_content_info_alert ".concat(this.state.beforeExternalContentAlertClass)
+const t="after_external_content_info_alert ".concat(this.state.afterExternalContentAlertClass)
+return Object(s["a"])("div",{style:{display:"about:blank"===this.state.toolLaunchUrl?"none":"block"}},void 0,Object(s["a"])("div",{onFocus:this.handleAlertFocus,onBlur:this.handleAlertBlur,className:e,tabIndex:"0"},void 0,Object(s["a"])("div",{className:"ic-flash-info",style:{width:"auto",margin:"20px"}},void 0,p,d["a"].t("The following content is partner provided"))),this.state.tools.map(e=>this.renderTool(e)),Object(s["a"])("div",{onFocus:this.handleAlertFocus,onBlur:this.handleAlertBlur,className:t,tabIndex:"0"},void 0,Object(s["a"])("div",{className:"ic-flash-info",style:{width:"auto",margin:"20px"}},void 0,_,d["a"].t("The preceding content is partner provided"))))}render(){if(0===this.state.tools.length)return g
+return Object(s["a"])("div",{},void 0,Object(s["a"])("div",{className:"border border-trbl border-round"},void 0,this.renderToolsContainer()))}}b.defaultProps={assignmentId:void 0}
+const m=function(e,t,n,i){const a=Object(s["a"])(b,{placement:t,courseId:n,assignmentId:i})
+c.a.render(a,e)}
+const f={configTools:b,attach:m}
+t["a"]=f},HsON:function(e,t,n){"use strict"
+n.d(t,"a",(function(){return p}))
+var s=n("VTBJ")
+var i=n("1OyB")
+var a=n("vuIU")
+var r=n("md7G")
+var o=n("foSv")
+var l=n("Ji7U")
+var c=n("q1tI")
+var d=n.n(c)
+var u=n("hPGw")
+var h=d.a.createElement("path",{d:"M1225.982 926.244c27.296 18.796 27.3 49.268 0 68.067l-509.835 351.074c-27.297 18.796-49.425 7.18-49.425-25.96V601.13c0-33.133 22.125-44.758 49.425-25.96l509.835 351.075z",fillRule:"evenodd",stroke:"none",strokeWidth:"1"})
+var p=function(e){Object(l["a"])(t,e)
+function t(){Object(i["a"])(this,t)
+return Object(r["a"])(this,Object(o["a"])(t).apply(this,arguments))}Object(a["a"])(t,[{key:"render",value:function(){return d.a.createElement(u["a"],Object.assign({},this.props,{name:"IconMiniArrowEnd",viewBox:"0 0 1920 1920",bidirectional:true}),h)}}])
+t.displayName="IconMiniArrowEndSolid"
+return t}(c["Component"])
+p.glyphName="mini-arrow-end"
+p.variant="Solid"
+p.propTypes=Object(s["a"])({},u["a"].propTypes)},KIj7:function(e,t,n){"use strict"
+var s=n("rePB")
+var i=n("VTBJ")
+var a=n("1OyB")
+var r=n("vuIU")
+var o=n("md7G")
+var l=n("foSv")
+var c=n("Ji7U")
+var d=n("q1tI")
+var u=n.n(d)
+var h=n("17x9")
+var p=n.n(h)
+var _=n("TSYQ")
+var g=n.n(_)
+var b=n("Xx/m")
+var m=n("rf+m")
+var f=n("y2yB")
+var v=n("5nFh")
+var y=n("J2CL")
+var S=n("cClk")
+var w=n("jtGx")
+var O=n("/UXv")
+var E=n("oXx0")
+function k(e){var t=e.colors,n=e.spacing,s=e.borders,i=e.typography
+return{fontFamily:i.fontFamily,fontWeight:i.fontWeightNormal,lineHeight:i.lineHeight,textColor:t.textDarkest,fontSizeSmall:i.fontSizeSmall,fontSizeMedium:i.fontSizeMedium,fontSizeLarge:i.fontSizeLarge,smallIconSize:"0.5rem",mediumIconSize:"0.75rem",largeIconSize:"1rem",iconMargin:n.xxSmall,iconColor:t.textDarkest,togglePadding:n.xxSmall,toggleBorderRadius:s.radiusMedium,toggleBorderWidth:s.widthMedium,toggleBorderStyle:s.style,toggleFocusBorderColor:t.borderBrand,filledBackgroundColor:t.backgroundLight,filledBorderWidth:s.widthSmall,filledBorderStyle:s.style,filledBorderColor:t.borderMedium,filledBorderRadius:s.radiusMedium,filledPadding:n.small}}k["canvas"]=function(e){return{toggleFocusBorderColor:e["ic-brand-primary"],iconColor:e["ic-brand-font-color-dark"],textColor:e["ic-brand-font-color-dark"]}}
+n.d(t,"a",(function(){return I}))
+var T,x,N,j,z
+var A={componentId:"MlJlv",template:function(e){return"\n\n.MlJlv_bGBk{font-family:".concat(e.fontFamily||"inherit",";font-weight:").concat(e.fontWeight||"inherit",";line-height:").concat(e.lineHeight||"inherit","}\n\n.MlJlv_doqw .MlJlv_ebWM,.MlJlv_doqw .MlJlv_cjSw{font-size:").concat(e.fontSizeSmall||"inherit","}\n\n.MlJlv_doqw .MlJlv_dnnz{font-size:").concat(e.smallIconSize||"inherit","}\n\n.MlJlv_doqw .MlJlv_dUEG{-webkit-padding-end:0;-webkit-padding-start:calc(").concat(e.smallIconSize||"inherit"," + ").concat(e.togglePadding||"inherit",");padding-inline-end:0;padding-inline-start:calc(").concat(e.smallIconSize||"inherit"," + ").concat(e.togglePadding||"inherit",")}\n\n[dir=ltr] .MlJlv_doqw .MlJlv_dUEG{padding-left:calc(").concat(e.smallIconSize||"inherit"," + ").concat(e.togglePadding||"inherit",");padding-right:0}\n\n[dir=rtl] .MlJlv_doqw .MlJlv_dUEG{padding-left:0;padding-right:calc(").concat(e.smallIconSize||"inherit"," + ").concat(e.togglePadding||"inherit",")}\n\n.MlJlv_ycrn .MlJlv_ebWM,.MlJlv_ycrn .MlJlv_cjSw{font-size:").concat(e.fontSizeMedium||"inherit","}\n\n.MlJlv_ycrn .MlJlv_dnnz{font-size:").concat(e.mediumIconSize||"inherit","}\n\n.MlJlv_ycrn .MlJlv_dUEG{-webkit-padding-end:0;-webkit-padding-start:calc(").concat(e.mediumIconSize||"inherit"," + ").concat(e.togglePadding||"inherit",");padding-inline-end:0;padding-inline-start:calc(").concat(e.mediumIconSize||"inherit"," + ").concat(e.togglePadding||"inherit",")}\n\n[dir=ltr] .MlJlv_ycrn .MlJlv_dUEG{padding-left:calc(").concat(e.mediumIconSize||"inherit"," + ").concat(e.togglePadding||"inherit",");padding-right:0}\n\n[dir=rtl] .MlJlv_ycrn .MlJlv_dUEG{padding-left:0;padding-right:calc(").concat(e.mediumIconSize||"inherit"," + ").concat(e.togglePadding||"inherit",")}\n\n.MlJlv_cMDj .MlJlv_ebWM,.MlJlv_cMDj .MlJlv_cjSw{font-size:").concat(e.fontSizeLarge||"inherit","}\n\n.MlJlv_cMDj .MlJlv_dnnz{font-size:").concat(e.largeIconSize||"inherit","}\n\n.MlJlv_cMDj .MlJlv_dUEG{-webkit-padding-end:0;-webkit-padding-start:calc(").concat(e.largeIconSize||"inherit"," + ").concat(e.togglePadding||"inherit",");padding-inline-end:0;padding-inline-start:calc(").concat(e.largeIconSize||"inherit"," + ").concat(e.togglePadding||"inherit",")}\n\n[dir=ltr] .MlJlv_cMDj .MlJlv_dUEG{padding-left:calc(").concat(e.largeIconSize||"inherit"," + ").concat(e.togglePadding||"inherit",");padding-right:0}\n\n[dir=rtl] .MlJlv_cMDj .MlJlv_dUEG{padding-left:0;padding-right:calc(").concat(e.largeIconSize||"inherit"," + ").concat(e.togglePadding||"inherit",")}\n\n.MlJlv_cjSw{-moz-appearance:none;-moz-user-select:none;-ms-user-select:none;-webkit-appearance:none;-webkit-user-select:none;appearance:none;background:transparent;border:none;box-sizing:border-box;color:").concat(e.textColor||"inherit",";cursor:pointer;font-family:").concat(e.fontFamily||"inherit",";margin:0;outline:none;overflow:visible;padding:0;position:relative;text-decoration:none;touch-action:manipulation;user-select:none}\n\n.MlJlv_cjSw::-moz-focus-inner{margin:0;padding:0}\n\n.MlJlv_cjSw:before{border:").concat(e.toggleBorderWidth||"inherit"," ").concat(e.toggleBorderStyle||"inherit"," ").concat(e.toggleFocusBorderColor||"inherit",";border-radius:calc(").concat(e.toggleBorderRadius||"inherit",'*1.5);bottom:-0.375rem;content:"";left:-0.375rem;opacity:0;pointer-events:none;position:absolute;right:-0.375rem;top:-0.375rem}\n\n.MlJlv_cjSw:focus:before{opacity:1}\n\n.MlJlv_cjSw:active,.MlJlv_cjSw:focus,.MlJlv_cjSw:hover{color:').concat(e.textColor||"inherit",";text-decoration:none}\n\n.MlJlv_cvfe{display:block;width:100%}\n\n.MlJlv_doNn{align-items:center;box-sizing:border-box;display:flex;position:relative;text-align:start}\n\n[dir=ltr] .MlJlv_doNn{text-align:left}\n\n[dir=rtl] .MlJlv_doNn{text-align:right}\n\n.MlJlv_dnnz{color:").concat(e.iconColor||"inherit","}\n\n.MlJlv_dnnz>svg{display:block}\n\n.MlJlv_fuNk{-webkit-margin-end:").concat(e.iconMargin||"inherit",";-webkit-margin-start:0;margin-inline-end:").concat(e.iconMargin||"inherit",";margin-inline-start:0}\n\n[dir=ltr] .MlJlv_fuNk{margin-left:0;margin-right:").concat(e.iconMargin||"inherit","}\n\n[dir=rtl] .MlJlv_fuNk{margin-left:").concat(e.iconMargin||"inherit",";margin-right:0}\n\n.MlJlv_fhZl{-webkit-margin-end:0;-webkit-margin-start:").concat(e.iconMargin||"inherit",";margin-inline-end:0;margin-inline-start:").concat(e.iconMargin||"inherit","}\n\n[dir=ltr] .MlJlv_fhZl{margin-left:").concat(e.iconMargin||"inherit",";margin-right:0}\n\n[dir=rtl] .MlJlv_fhZl{margin-left:0;margin-right:").concat(e.iconMargin||"inherit","}\n\n.MlJlv_btWg{flex-grow:1;min-width:0.0625rem}\n\n.MlJlv_fFWz .MlJlv_btWg{flex:1}\n\n.MlJlv_ebWM{box-sizing:border-box;color:").concat(e.textColor||"inherit",";padding-top:").concat(e.togglePadding||"inherit","}\n\n.MlJlv_eFWP{display:none}\n\n.MlJlv_cMGi{display:block}\n\n@keyframes MlJlv_dFUU{to{opacity:1}}\n\n.MlJlv_caGd{animation-duration:0.3s;animation-fill-mode:forwards;animation-name:MlJlv_dFUU;opacity:0.01}")},root:"MlJlv_bGBk",small:"MlJlv_doqw",details:"MlJlv_ebWM",toggle:"MlJlv_cjSw",icon:"MlJlv_dnnz",indentDetails:"MlJlv_dUEG",medium:"MlJlv_ycrn",large:"MlJlv_cMDj",fluidWidth:"MlJlv_cvfe",summary:"MlJlv_doNn",iconStart:"MlJlv_fuNk",iconEnd:"MlJlv_fhZl",summaryText:"MlJlv_btWg",positionIconAtEnd:"MlJlv_fFWz",hiddenDetails:"MlJlv_eFWP",expandedDetails:"MlJlv_cMGi",content:"MlJlv_caGd",contentAnimation:"MlJlv_dFUU"}
+var I=(T=Object(E["a"])(),x=Object(y["themeable"])(k,A),T(N=x(N=(z=j=function(e){Object(c["a"])(t,e)
+function t(){var e
+var n
+Object(a["a"])(this,t)
+for(var s=arguments.length,i=new Array(s),r=0;r<s;r++)i[r]=arguments[r]
+n=Object(o["a"])(this,(e=Object(l["a"])(t)).call.apply(e,[this].concat(i)))
+n.shouldAnimateContent=false
+n.getButtonRef=function(e){return n._button=e}
+return n}Object(r["a"])(t,[{key:"focus",value:function(){this._button.focus()}},{key:"componentDidMount",value:function(){this.shouldAnimateContent=true}},{key:"renderSummary",value:function(e){var t=this.props,n=t.summary,s=t.iconPosition
+return u.a.createElement("span",{className:A.summary},"start"===s&&this.renderIcon(e),u.a.createElement("span",{className:A.summaryText},n),"end"===s&&this.renderIcon(e))}},{key:"renderToggle",value:function(e,n){var a=this.props,r=a.variant,o=a.fluidWidth
+var l=Object(i["a"])({},Object(w["a"])(this.props,t.propTypes),{},e,{children:this.renderSummary()})
+var c=this.renderSummary(n)
+return"filled"===r?u.a.createElement(b["a"],Object.assign({},l,{fluidWidth:true,buttonRef:this.getButtonRef}),c):l.href?u.a.createElement("a",Object.assign({},l,{className:g()(A.toggle,A[r],Object(s["a"])({},A.fluidWidth,o)),ref:this.getButtonRef}),c):u.a.createElement("button",Object.assign({},l,{type:"button",className:g()(A.toggle,A[r],Object(s["a"])({},A.fluidWidth,o)),ref:this.getButtonRef}),c)}},{key:"renderIcon",value:function(e){var t
+var n=this.props.iconPosition
+var i=e?this.props.iconExpanded:this.props.icon
+return this.props.children?u.a.createElement("span",{className:g()(A.icon,(t={},Object(s["a"])(t,A.iconStart,"start"===n),Object(s["a"])(t,A.iconEnd,"end"===n),t))},u.a.createElement(i,null)):null}},{key:"renderDetails",value:function(e,t){var n
+var i=this.props,a=i.children,r=i.size,o=i.iconPosition,l=i.fluidWidth
+return u.a.createElement("div",Object.assign({},t,{className:g()(A.details,(n={},Object(s["a"])(n,A[r],r),Object(s["a"])(n,A.hiddenDetails,!e),Object(s["a"])(n,A.expandedDetails,e),Object(s["a"])(n,A.indentDetails,"start"===o&&!l),n))}),a&&e&&this.renderContent())}},{key:"renderContent",value:function(){return u.a.createElement("div",{className:g()(Object(s["a"])({},A.content,this.shouldAnimateContent))},this.props.children)}},{key:"render",value:function(){var e,t=this
+var n=this.props,i=n.variant,a=n.iconPosition,r=n.fluidWidth
+var o="end"===a&&("filled"===i||r)
+var l=(e={},Object(s["a"])(e,A.root,true),Object(s["a"])(e,A[this.props.size],true),Object(s["a"])(e,A.positionIconAtEnd,o),e)
+return u.a.createElement(v["a"],Object(w["c"])(this.props,v["a"].propTypes),(function(e){var n=e.expanded,s=e.getToggleProps,i=e.getDetailsProps
+return u.a.createElement("div",{className:g()(l)},t.renderToggle(s(),n),t.renderDetails(n,i()))}))}},{key:"focused",get:function(){return Object(O["a"])(this._button)}}])
+t.displayName="ToggleDetails"
+return t}(d["Component"]),j.propTypes={variant:p.a.oneOf(["default","filled"]),summary:p.a.node.isRequired,expanded:Object(S["a"])(p.a.bool,"onToggle","defaultExpanded"),defaultExpanded:p.a.bool,onToggle:p.a.func,icon:p.a.func,iconExpanded:p.a.func,iconPosition:p.a.oneOf(["start","end"]),fluidWidth:p.a.bool,children:p.a.node,size:p.a.oneOf(["small","medium","large"])},j.defaultProps={variant:"default",size:"medium",fluidWidth:false,icon:m["a"],iconExpanded:f["a"],iconPosition:"start",defaultExpanded:false,onToggle:function(e,t){},children:null,expanded:void 0},z))||N)||N)},LqrG:function(e,t,n){"use strict"
+n.d(t,"a",(function(){return o}))
+var s=n("qx8k")
+var i=n("ouhR")
+var a=n.n(i)
+var r=n("HIhM")
+class o{constructor(){this.idGenerator=0
+this.$questions=a()("#questions.show_correct_answers:not(.survey_quiz)")
+this.rightAnswers=this.$questions.find(".selected_answer.correct_answer")
+this.wrongAnswers=this.$questions.find(".selected_answer.wrong_answer")
+this.correctAnswers=this.$questions.find(".question:not(.short_answer_question, .numerical_question, .matching_question) .correct_answer:not(.selected_answer)")
+this.editableMatches=a()("#quiz_edit_wrapper").find(this.$questions.selector).find(".question.matching_question .correct_answer:not(.selected_answer)")
+this.readOnlyMatches=a()("#quiz_show").find(this.$questions.selector).find(".question.matching_question .correct_answer:not(.selected_answer)")
+this.shortAnswers=this.$questions.filter(":not(.survey_results)").find(".short_answer_question .answers_wrapper, #questions.show_correct_answers:not(.survey_results):not(.survey_quiz) .numerical_question .answers_wrapper, #questions.show_correct_answers:not(.survey_results):not(.survey_quiz) .equation_combinations_holder_holder.calculated_question_answers")
+this.unansweredQ=a()(".question.unanswered .header .question_name")
+this.creditPartial=a()("#questions.suppress_correct_answers:not(.survey_results) .question.partial_credit .header .question_name")
+this.creditFull=a()("#questions.suppress_correct_answers:not(.survey_results) .question.correct .header .question_name")
+this.creditNone=a()("#questions.suppress_correct_answers:not(.survey_results) .question.incorrect:not(.unanswered) .header .question_name")
+this.surveyAnswers=a()("#questions.survey_results .selected_answer")
+this.rightTpl=a()("<span />",{class:"answer_arrow correct"})
+this.wrongTpl=a()("<span />",{class:"answer_arrow incorrect"})
+this.correctTpl=a()("<span />",{class:"answer_arrow info"})
+this.shortTpl=a()("<span />",{class:"answer_arrow info"})
+this.unansweredTpl=a()("<span />",{class:"answer_arrow incorrect"})
+this.creditFullTpl=a()("<span />",{class:"answer_arrow correct"})
+this.creditPartialTpl=a()("<span />",{class:"answer_arrow incorrect"})
+this.creditNoneTpl=a()("<span />",{class:"answer_arrow incorrect"})
+this.surveyAnswerTpl=a()("<span />",{class:"answer_arrow info"})}applyCSS(){a.a.each([this.rightTpl,this.wrongTpl,this.correctTpl,this.shortTpl,this.surveyAnswerTpl],(function(){this.css({[Object(r["a"])("left")]:-128,top:5})}))
+a.a.each([this.unansweredTpl,this.creditFullTpl,this.creditNoneTpl,this.creditPartialTpl],(function(){this.css({[Object(r["a"])("left")]:-108,top:9})}))}applyCorrectAndIncorrectArrows(){this.rightTpl.text(s["a"].t("answers.correct","Correct!"))
+this.wrongTpl.text(s["a"].t("answers.you_answered","You Answered"))
+this.correctTpl.text(s["a"].t("answers.right","Correct Answer"))
+this.shortTpl.text(s["a"].t("answers.correct_answers","Correct Answers"))
+this.creditFullTpl.text(s["a"].t("answers.correct","Correct!"))
+this.creditPartialTpl.text(s["a"].t("answers.partial","Partial"))
+this.creditNoneTpl.text(s["a"].t("answers.incorrect","Incorrect"))
+this.rightAnswers.prepend(this.rightTpl)
+this.wrongAnswers.prepend(this.wrongTpl)
+this.correctAnswers.prepend(this.correctTpl)
+this.editableMatches.parent().before(this.correctTpl.clone())
+this.readOnlyMatches.prepend(this.correctTpl.clone())
+this.shortAnswers.prepend(this.shortTpl)
+this.creditPartial.prepend(this.creditPartialTpl)
+this.creditFull.prepend(this.creditFullTpl)
+this.creditNone.prepend(this.creditNoneTpl)}applyAnsweredAndUnansweredArrows(){this.unansweredTpl.text(s["a"].t("answers.unanswered","Unanswered"))
+this.surveyAnswerTpl.text(s["a"].t("answers.you_answered","You Answered"))
+this.unansweredQ.prepend(this.unansweredTpl)
+this.surveyAnswers.prepend(this.surveyAnswerTpl)}makeArrowsAccessible(){a()(".short_answer_question .answer_arrow").css("top",5)
+a()("#questions .answer_arrow").each((function(){const e=a()(this)
+const t=e.parent()
+let n=a()()
+let s=t.prop("id")
+s||(s=["user_answer",++this.idGenerator].join("_"))
+s=[s,"arrow"].join("_")
+e.prop("id",s)
+n=t.find("input:visible")
+n.length||(n=t)
+n.attr("aria-describedby",s)}))}applyArrows(){this.applyCSS()
+ENV.IS_SURVEY||this.applyCorrectAndIncorrectArrows()
+this.applyAnsweredAndUnansweredArrows()
+this.makeArrowsAccessible()}}},MdYG:function(e,t,n){"use strict"
+var s=n("pQTu")
+var i=n("m0r6")
+Object(i["a"])(JSON.parse('{"de":{"gpa_scale_6710e2ee":"GPA-Skala","letter_grade_f00fedc4":"Buchstaben-Note","other_ddacb37d":"sonstige","percent_448ea947":"Prozent","points_bceb5005":"Punkte"},"hu":{"gpa_scale_6710e2ee":"GPA skála","letter_grade_f00fedc4":"Betű alapú érdemjegy ","other_ddacb37d":"Egyéb","percent_448ea947":"százalék","points_bceb5005":"pontszám"}}'))
+n("jQeR")
+n("0sPK")
+var a=s["default"].scoped("cyoe_assignment_sidebar_grading_types")
+const r={points:{get label(){return a.t("points")},key:"points"},percent:{get label(){return a.t("percent")},key:"percent"},letter_grade:{get label(){return a.t("letter grade")},key:"letter_grade"},gpa_scale:{get label(){return a.t("GPA scale")},key:"gpa_scale"},other:{get label(){return a.t("other")},key:"other"}}
+var o=r
+Object(i["a"])(JSON.parse('{"de":{"score_pts_adcb1af3":"%{score} Pkte."},"hu":{"score_pts_adcb1af3":"%{score} pont"}}'))
+var l=s["default"].scoped("cyoe_assignment_sidebar_score")
+var c=n("HbFp")
+n.d(t,"b",(function(){return _}))
+n.d(t,"a",(function(){return v}))
+const d=e=>{const t=c["a"].parse(e)
+return!isNaN(t)&&isFinite(t)}
+const u=e=>!!e&&!!e.grading_scheme
+const h=e=>{const t=e?e.grading_type:o.percent.key
+if((t===o.letter_grade.key||t===o.gpa_scale.key)&&!u(e))return o.percent.key
+return t}
+const p=(e,t)=>{const n=h(t)
+return n===o.points.key?b(e,t):n===o.letter_grade.key||n===o.gpa_scale.key?m(e,t):f(e)}
+const _=(e,t,n)=>{e||(e=n?"1":"0")
+return g(p(e,t),t)}
+const g=(e,t)=>{const n=h(t)
+return n===o.points.key?l.t("%{score} pts",{score:l.n(e,{precision:2,strip_insignificant_zeros:true})}):n===o.letter_grade.key||n===o.gpa_scale.key?e:l.n(e,{precision:2,percentage:true,strip_insignificant_zeros:true})}
+const b=(e,t)=>{if(!d(e))return e
+if(0===e)return"0"
+const n=c["a"].parse(e)
+const s=Number(t.points_possible)||100
+return parseFloat((n*s).toFixed(2))}
+const m=(e,t)=>{if(""===e)return""
+const n=c["a"].parse(e)
+const s={letter:null,score:-Infinity}
+for(const e in t.grading_scheme){const i=c["a"].parse(t.grading_scheme[e])
+if(i<=n&&i>s.score||0===i&&i>n){s.score=i
+s.letter=e}}return s.letter?s.letter:n}
+const f=e=>{if(!d(e))return e
+return Math.floor(100*e)}
+const v=(e,t)=>{if("string"===typeof e&&t.grading_type!==o.letter_grade.key&&t.grading_type!==o.gpa_scale.key){const n=c["a"].parse(e.replace(/%$/,""))
+if(!isNaN(n))return g(n,t)}return e}},P4VU:function(e,t,n){"use strict"
+var s=n("pQTu")
+var i=n("m0r6")
+Object(i["a"])(JSON.parse('{"de":{"error_retrieving_assignment_external_tools_9102d343":"Fehler beim Abrufen aufgabenexterner-Tools","error_retrieving_similarity_detection_tools_d6d4f9e9":"Fehler beim Abrufen der Similarity-Detection-Tools","external_tool_tool_id_6028b3b1":"Externes Tool %{tool_id}","the_following_content_is_partner_provided_ed1da756":"Der folgende Content stammt von einem Partner.","the_preceding_content_is_partner_provided_d753928c":"Der vorhergehende Content stammt von einem Partner."}}'))
+n("jQeR")
+n("0sPK")
+t["a"]=s["default"].scoped("moderated_grading")},PHBv:function(e,t,n){"use strict"
+var s=n("VTBJ")
+var i=n("ouhR")
+var a=n.n(i)
+var r=n("GLiE")
+var o=n.n(r)
+var l=n("FIFq")
+var c=n.n(l)
+var d=n("Et5h")
+var u=n("TRyN")
+var h=n("OzZ7")
+var p=n("Lox5")
+var _=n("pQTu")
+var g=n("m0r6")
+Object(g["a"])(JSON.parse('{"de":{"modelsQuiz":{"assignment_points_possible":{"one":"1 Pkt.","other":"%{count} Pkte."},"cant_unpublish_when_students_submit":"Veröffentlichung kann nicht rückgängig gemacht werden, wenn es Abgaben von Studenten gibt.","question_count":{"one":"1 Frage","other":"%{count} Fragen"}}},"hu":{"modelsQuiz":{"cant_unpublish_when_students_submit":"Nem lehet visszavonni a publikálást, ha vannak a hallgatóknak beadandói"}}}'))
+n("jQeR")
+n("0sPK")
+var b=_["default"].scoped("modelsQuiz")
+n("jYyc")
+n("JI1W")
+var m=n("oNm9")
+n.d(t,"a",(function(){return f}))
+class f extends c.a.Model{initialize(){this.publish=this.publish.bind(this)
+this.unpublish=this.unpublish.bind(this)
+this.dueAt=this.dueAt.bind(this)
+this.unlockAt=this.unlockAt.bind(this)
+this.lockAt=this.lockAt.bind(this)
+this.name=this.name.bind(this)
+this.htmlUrl=this.htmlUrl.bind(this)
+this.defaultDates=this.defaultDates.bind(this)
+this.multipleDueDates=this.multipleDueDates.bind(this)
+this.nonBaseDates=this.nonBaseDates.bind(this)
+this.allDates=this.allDates.bind(this)
+this.singleSectionDueDate=this.singleSectionDueDate.bind(this)
+this.postToSIS=this.postToSIS.bind(this)
+this.postToSISName=this.postToSISName.bind(this)
+this.sisIntegrationSettingsEnabled=this.sisIntegrationSettingsEnabled.bind(this)
+this.maxNameLength=this.maxNameLength.bind(this)
+this.maxNameLengthRequiredForAccount=this.maxNameLengthRequiredForAccount.bind(this)
+this.dueDateRequiredForAccount=this.dueDateRequiredForAccount.bind(this)
+this.toView=this.toView.bind(this)
+this.postToSISEnabled=this.postToSISEnabled.bind(this)
+this.objectType=this.objectType.bind(this)
+this.isDuplicating=this.isDuplicating.bind(this)
+this.isMigrating=this.isMigrating.bind(this)
+super.initialize(...arguments)
+this.initId()
+this.initAssignment()
+this.initAssignmentOverrides()
+this.initUrls()
+this.initTitleLabel()
+this.initUnpublishable()
+this.initQuestionsCount()
+this.initPointsCount()
+return this.initAllDates()}initId(){this.id=this.isQuizzesNext()?"assignment_".concat(this.get("id")):this.get("id")}initAssignment(){this.attributes.assignment&&this.set("assignment",new d["a"](this.attributes.assignment))
+return this.set("post_to_sis_enabled",this.postToSISEnabled())}initAssignmentOverrides(){if(this.attributes.assignment_overrides){const e=new h["a"](this.attributes.assignment_overrides)
+return this.set("assignment_overrides",e,{silent:true})}}initUrls(){if(this.get("html_url")){this.set("base_url",this.get("html_url").replace(/(quizzes|assignments)\/\d+/,"$1"))
+this.set("url","".concat(this.get("base_url"),"/").concat(this.get("id")))
+this.set("edit_url",this.edit_url())
+this.set("publish_url",this.publish_url())
+this.set("unpublish_url",this.unpublish_url())
+this.set("toggle_post_to_sis_url","".concat(this.get("base_url"),"/").concat(this.get("id"),"/toggle_post_to_sis"))}}initTitleLabel(){return this.set("title_label",this.get("title")||this.get("readable_type"))}initUnpublishable(){if(false===this.get("can_unpublish")&&this.get("published"))return this.set("unpublishable",false)}initQuestionsCount(){const e=this.get("question_count")
+e&&this.set("question_count_label",b.t("question_count","Question",{count:e}))}initPointsCount(){const e=this.get("points_possible")
+let t=""
+e&&e>0&&!this.isUngradedSurvey()&&(t=b.t("assignment_points_possible","pt",{count:e}))
+return this.set("possible_points_label",t)}isQuizzesNext(){return"quizzes.next"===this.get("quiz_type")}isUngradedSurvey(){return"survey"===this.get("quiz_type")}publish_url(){if(this.isQuizzesNext())return"".concat(this.get("base_url"),"/publish/quiz")
+return"".concat(this.get("base_url"),"/publish")}unpublish_url(){if(this.isQuizzesNext())return"".concat(this.get("base_url"),"/unpublish/quiz")
+return"".concat(this.get("base_url"),"/unpublish")}edit_url(){const e=this.isQuizzesNext()?"?quiz_lti":""
+return"".concat(this.get("base_url"),"/").concat(this.get("id"),"/edit").concat(e)}initAllDates(){let e
+if(null!=(e=this.get("all_dates")))return this.set("all_dates",new p["a"](e))}publish(){this.set("published",true)
+return a.a.ajaxJSON(this.get("publish_url"),"POST",{quizzes:[this.get("id")]})}unpublish(){this.set("published",false)
+return a.a.ajaxJSON(this.get("unpublish_url"),"POST",{quizzes:[this.get("id")]})}disabledMessage(){return b.t("cant_unpublish_when_students_submit","Can't unpublish if there are student submissions")}dueAt(e){if(!(arguments.length>0))return this.get("due_at")
+return this.set("due_at",e)}unlockAt(e){if(!(arguments.length>0))return this.get("unlock_at")
+return this.set("unlock_at",e)}lockAt(e){if(!(arguments.length>0))return this.get("lock_at")
+return this.set("lock_at",e)}isDuplicating(){return"duplicating"===this.get("workflow_state")}isMigrating(){return"migrating"===this.get("workflow_state")}name(e){if(!(arguments.length>0))return this.get("title")
+return this.set("title",e)}htmlUrl(){return this.get("url")}destroy(e){const t=Object(s["a"])({url:this.htmlUrl()},e)
+c.a.Model.prototype.destroy.call(this,t)}defaultDates(){return new u["a"]({due_at:this.get("due_at"),unlock_at:this.get("unlock_at"),lock_at:this.get("lock_at")})}duplicate(e){const t=this.get("course_id")
+const n=this.get("id")
+return a.a.ajaxJSON("/api/v1/courses/".concat(t,"/assignments/").concat(n,"/duplicate"),"POST",{quizzes:[n],result_type:"Quiz"},e)}duplicate_failed(e){const t=this.get("course_id")
+const n=this.get("id")
+const s=this.get("original_course_id")
+const i=this.get("original_assignment_id")
+let r="?target_assignment_id=".concat(n)
+s!==t&&(r+="&target_course_id=".concat(t))
+a.a.ajaxJSON("/api/v1/courses/".concat(s,"/assignments/").concat(i,"/duplicate").concat(r),"POST",{},e)}retry_migration(e){const t=this.get("course_id")
+const n=this.get("original_quiz_id")
+a.a.ajaxJSON("/api/v1/courses/".concat(t,"/content_exports?export_type=quizzes2&quiz_id=").concat(n,"&include[]=migrated_quiz"),"POST",{},e)}pollUntilFinishedLoading(e){this.isDuplicating()&&this.pollUntilFinished(e,this.isDuplicating)
+this.isMigrating()&&this.pollUntilFinished(e,this.isMigrating)}pollUntilFinished(e,t){const n=this.get("course_id")
+const s=this.get("id")
+const i=new m["a"](e,5*e,e=>{this.fetch({url:"/api/v1/courses/".concat(n,"/assignments/").concat(s,"?result_type=Quiz")}).always(()=>{e()
+if(!t())return i.stop()})})
+i.start()}multipleDueDates(){const e=this.get("all_dates")
+return e&&e.length>1}nonBaseDates(){const e=this.get("all_dates")
+if(!e)return false
+const t=o.a.filter(e,e=>e&&!e.get("base"))
+return t.length>0}allDates(){const e=this.get("all_dates")
+const t=e&&e.models||[]
+return o.a.map(t,e=>e.toJSON())}singleSectionDueDate(){return v(o.a.find(this.allDates(),"dueAt"),e=>e.dueAt.toISOString())||this.dueAt()}isOnlyVisibleToOverrides(e){if(!(arguments.length>0))return this.get("only_visible_to_overrides")||false
+return this.set("only_visible_to_overrides",e)}postToSIS(e){if(!(arguments.length>0))return this.get("post_to_sis")
+return this.set("post_to_sis",e)}postToSISName(){return ENV.SIS_NAME}sisIntegrationSettingsEnabled(){return ENV.SIS_INTEGRATION_SETTINGS_ENABLED}maxNameLength(){return ENV.MAX_NAME_LENGTH}maxNameLengthRequiredForAccount(){return ENV.MAX_NAME_LENGTH_REQUIRED_FOR_ACCOUNT}dueDateRequiredForAccount(){return ENV.DUE_DATE_REQUIRED_FOR_ACCOUNT}toView(){const e=["htmlUrl","multipleDueDates","nonBaseDates","allDates","dueAt","lockAt","unlockAt","singleSectionDueDate"]
+const t={id:this.get("id")}
+for(const n of e)t[n]=this[n]()
+return t}postToSISEnabled(){return ENV.FLAGS&&ENV.FLAGS.post_to_sis_enabled}objectType(){return"Quiz"}}f.prototype.resourceName="quizzes"
+f.prototype.defaults={due_at:null,unlock_at:null,lock_at:null,unpublishable:true,points_possible:null,post_to_sis:false,require_lockdown_browser:false}
+function v(e,t){return"undefined"!==typeof e&&null!==e?t(e):void 0}},"Pm+R":function(e,t,n){"use strict"
+var s=n("GLiE")
+var i=n.n(s)
+var a=n("pQTu")
+var r=n("m0r6")
+Object(r["a"])(JSON.parse('{"de":{"assignments_1e02582c":"Aufgaben","discussions_a5f96392":"Diskussionen","other_1c6d9c79":"Sonstige","quizzes_7e598f57":"Quizze","wiki_6603e81b":"Wiki"},"hu":{"assignments_1e02582c":"Feladatok","discussions_a5f96392":"Fórumok","other_1c6d9c79":"Egyéb","quizzes_7e598f57":"Kvízek","wiki_6603e81b":"Wiki"}}'))
+n("jQeR")
+n("0sPK")
+var o=a["default"].scoped("assignment_categories")
+const l={label:o.t("Other"),id:"other",submissionTypes:[""]}
+const c={list:[{label:o.t("Assignments"),id:"assignment",contentTypeClass:"assignment",submissionTypes:["online_upload","online_text_entry","online_url","on_paper","external_tool","not_graded","media_recording","none"]},{label:o.t("Quizzes"),id:"quiz",contentTypeClass:"quiz",submissionTypes:["online_quiz"]},{label:o.t("Discussions"),id:"discussion",contentTypeClass:"discussion_topic",submissionTypes:["discussion_topic"]},{label:o.t("Wiki"),id:"document",contentTypeClass:"wiki_page",submissionTypes:["wiki_page"]},l]}
+c.getCategory=e=>{const t=i.a.find(c.list,t=>e.submission_types.length&&i.a.find(e.submission_types,e=>-1!==t.submissionTypes.indexOf(e)))
+return t||c.OTHER}
+t["a"]=c},RMh6:function(e,t,n){"use strict"
+var s=n("3O+N")
+var i=n.n(s)
+n("DfGn")
+var a=i.a.default
+var r=a.template,o=a.templates=a.templates||{}
+var l="EmptyDialogFormWrapper"
+o[l]=r((function(e,t,n,s,i){this.compilerInfo=[4,">= 1.0.0"]
+n=this.merge(n,e.helpers)
+i=i||{}
+return'<div class="outlet"></div>\n'}))
+t["a"]=o[l]},SLVX:function(e,t,n){"use strict"
+n.d(t,"a",(function(){return s}))
+function s(e){var t
+var n=e.Symbol
+if("function"===typeof n)if(n.observable)t=n.observable
+else{t=n("observable")
+n.observable=t}else t="@@observable"
+return t}},VS9R:function(e,t,n){"use strict"
+var s=n("pQTu")
+var i=n("m0r6")
+Object(i["a"])(JSON.parse('{"de":{"message_sent_5e328899":"Nachricht wurde gesendet.","message_students_37ba5dd5":"Studenten benachrichtigen","message_students_for_context_ee62ff92":"Studenten benachrichtigen wegen %{context}"},"hu":{"message_sent_5e328899":"Az üzenet elküldve!","message_students_37ba5dd5":"Üzenet a hallgatóknak","message_students_for_context_ee62ff92":"Üzenet a hallgatóknak: %{context}"}}'))
+n("jQeR")
+n("0sPK")
+var a=s["default"].scoped("viewsMessageStudentsDialog")
+var r=n("ouhR")
+var o=n.n(r)
+var l=n("faZh")
+var c=n("3O+N")
+var d=n.n(c)
+n("DfGn")
+var u=d.a.default
+var h=u.template,p=u.templates=u.templates||{}
+var _="-messageStudentsWhoRecipientList"
+p[_]=h((function(e,t,n,s,i){this.compilerInfo=[4,">= 1.0.0"]
+n=this.merge(n,e.helpers)
+i=i||{}
+var a,r="",o="function",l=this.escapeExpression,c=this
+function d(e,t){var s,i,a=""
+a+='\n  <span class="label">\n    '
+if(i=n.short_name)s=i.call(e,{hash:{},data:t})
+else{i=e&&e.short_name
+s=typeof i===o?i.call(e,{hash:{},data:t}):i}a+=l(s)+"\n  </span>\n"
+return a}a=n.each.call(t,t&&t.recipients,{hash:{},inverse:c.noop,fn:c.program(1,d,i),data:i});(a||0===a)&&(r+=a)
+r+="\n"
+return r}))
+u.registerPartial("messageStudentsWhoRecipientList",p["-messageStudentsWhoRecipientList"])
+var g=p[_]
+Object(i["a"])(JSON.parse('{"de":{"cancel_caeb1e68":"Abbrechen","recipients_a69b5e55":"Empfänger:","send_message_6ccc90e8":"Nachricht senden","sending_bf324366":"Wird gesendet ...","sent_f4ee89ec":"Gesendet"},"hu":{"cancel_caeb1e68":"Mégse","recipients_a69b5e55":"Címzettek:","send_message_6ccc90e8":"Üzenetküldés","sending_bf324366":"Küldés...","sent_f4ee89ec":"Elküldve!"}}'))
+s["default"].scoped("message_students_dialog")
+var b=n("EvX+")
+var m=d.a.default
+var f=m.template,v=m.templates=m.templates||{}
+var y="messageStudentsDialog"
+v[y]=f((function(e,t,n,s,i){this.compilerInfo=[4,">= 1.0.0"]
+n=this.merge(n,e.helpers)
+s=this.merge(s,e.partials)
+i=i||{}
+var a,r,o,l="",c="function",d=this.escapeExpression,u=this,h=n.helperMissing
+function p(e,t){var n,s=""
+s+="\n      "+d((n=(n=(n=e&&e.recipientGroups,null==n||false===n?n:n[0]),null==n||false===n?n:n.name),typeof n===c?n.apply(e):n))+'\n      <input type="hidden" name="recipientGroupName" value="'+d((n=(n=(n=e&&e.recipientGroups,null==n||false===n?n:n[0]),null==n||false===n?n:n.name),typeof n===c?n.apply(e):n))+'" />\n    '
+return s}function _(e,t){var s,i=""
+i+='\n      <select name="recipientGroupName" id="message-recipients-group">\n        '
+s=n.each.call(e,e&&e.recipientGroups,{hash:{},inverse:u.noop,fn:u.program(4,g,t),data:t});(s||0===s)&&(i+=s)
+i+="\n      </select>\n    "
+return i}function g(e,t){var s,i,a=""
+a+='\n          <option value="'
+if(i=n.name)s=i.call(e,{hash:{},data:t})
+else{i=e&&e.name
+s=typeof i===c?i.call(e,{hash:{},data:t}):i}a+=d(s)+'">'
+if(i=n.name)s=i.call(e,{hash:{},data:t})
+else{i=e&&e.name
+s=typeof i===c?i.call(e,{hash:{},data:t}):i}a+=d(s)+"</option>\n        "
+return a}l+='<div class="message-students-dialog form-dialog-content">\n  <div class="message-recipients-group-container">\n    <label for="message-recipients-group">\n     '+d((r=n.t||t&&t.t,o={hash:{i18n_inferred_key:true},data:i},r?r.call(t,"recipients_a69b5e55","Recipients:",o):h.call(t,"t","recipients_a69b5e55","Recipients:",o)))+"\n    </label>\n\n    "
+a=(r=n.ifEqual||t&&t.ifEqual,o={hash:{},inverse:u.program(3,_,i),fn:u.program(1,p,i),data:i},r?r.call(t,(a=t&&t.recipientGroups,null==a||false===a?a:a.length),1,o):h.call(t,"ifEqual",(a=t&&t.recipientGroups,null==a||false===a?a:a.length),1,o));(a||0===a)&&(l+=a)
+l+='\n  </div>\n\n  <div id="message-recipients">\n    '
+a=u.invokePartial(s.messageStudentsWhoRecipientList,"messageStudentsWhoRecipientList",t,n,s,i);(a||0===a)&&(l+=a)
+l+='\n  </div>\n\n  <textarea name=body></textarea>\n\n</div>\n<div class="form-controls">\n  <button class="btn dialog_closer btn-secondary" type="button"\n    data-text-while-loading=\''+d((r=n.t||t&&t.t,o={hash:{i18n_inferred_key:true},data:i},r?r.call(t,"sending_bf324366","Sending...",o):h.call(t,"t","sending_bf324366","Sending...",o)))+"'>\n    "+d((r=n.t||t&&t.t,o={hash:{i18n_inferred_key:true},data:i},r?r.call(t,"cancel_caeb1e68","Cancel",o):h.call(t,"t","cancel_caeb1e68","Cancel",o)))+'\n  </button>\n  <button class="btn btn-primary"\n    data-text-while-loading=\''+d((r=n.t||t&&t.t,o={hash:{i18n_inferred_key:true},data:i},r?r.call(t,"sending_bf324366","Sending...",o):h.call(t,"t","sending_bf324366","Sending...",o)))+"'\n    data-text-when-loaded='"+d((r=n.t||t&&t.t,o={hash:{i18n_inferred_key:true},data:i},r?r.call(t,"sent_f4ee89ec","Sent!",o):h.call(t,"t","sent_f4ee89ec","Sent!",o)))+"'>\n    "+d((r=n.t||t&&t.t,o={hash:{i18n_inferred_key:true},data:i},r?r.call(t,"send_message_6ccc90e8","Send Message",o):h.call(t,"t","send_message_6ccc90e8","Send Message",o)))+"\n  </button>\n\n</div>\n"
+return l}))
+b["a"].loadStylesheet("jst/messageStudentsDialog",{combinedChecksum:"71cf06c9a8",includesNoVariables:true})
+var S=v[y]
+var w=n("RMh6")
+var O=n("LvDl")
+var E=n.n(O)
+Object(i["a"])(JSON.parse('{"de":{"models_conversations":{"cannot_be_empty":"Nachricht darf nicht leer sein.","no_recipients_choose_another_group":"In dieser Gruppe gibt es keine Empfänger. Bitte wählen Sie eine andere Gruppe."}},"hu":{"models_conversations":{"cannot_be_empty":"Az üzenet nem lehet üres","no_recipients_choose_another_group":"Nincsenek címzettek ebben a csoportban. Kérjük, válasszon egy másik csoportot."}}}'))
+var k=s["default"].scoped("models_conversations")
+var T=n("FIFq")
+var x=function(e,t){for(var n in t)N.call(t,n)&&(e[n]=t[n])
+function s(){this.constructor=e}s.prototype=t.prototype
+e.prototype=new s
+e.__super__=t.prototype
+return e},N={}.hasOwnProperty
+var j=function(e){var t,n
+x(s,e)
+function s(){return s.__super__.constructor.apply(this,arguments)}s.prototype.url="/api/v1/conversations"
+t=k.t("cannot_be_empty","Message cannot be blank")
+n=k.t("no_recipients_choose_another_group","No recipients are in this group. Please choose another group.")
+s.prototype.validate=function(e,s){var i
+i={}
+e.body&&o.a.trim(e.body.toString())||(i.body=[{message:t}])
+e.recipients&&e.recipients.length||(i.recipients=[{message:n}])
+return Object.keys(i).length?i:void 0}
+return s}(T["Model"])
+var z=function(){function e(e){this.chunkSize=e.chunkSize||100}e.prototype.save=function(e,t){var n
+e.context_code=ENV.context_asset_string
+n=E.a.chunk(e.recipients,this.chunkSize).map((function(n){var s
+s=Object.assign({},e,{recipients:n})
+return(new j).save(s,t)}))
+return o.a.when.apply(o.a,n)}
+e.prototype.validate=function(e,t){return(new j).validate(e,t)}
+return e}()
+var A=n("GLiE")
+var I=n.n(A)
+n("BYL3")
+var D=function(e,t){return function(){return e.apply(t,arguments)}},C=function(e,t){for(var n in t)M.call(t,n)&&(e[n]=t[n])
+function s(){this.constructor=e}s.prototype=t.prototype
+e.prototype=new s
+e.__super__=t.prototype
+return e},M={}.hasOwnProperty
+t["a"]=function(e){C(t,e)
+function t(){this.updateListOfRecipients=D(this.updateListOfRecipients,this)
+this.getFormData=D(this.getFormData,this)
+this._findRecipientGroupByName=D(this._findRecipientGroupByName,this)
+this.validateBeforeSave=D(this.validateBeforeSave,this)
+this.toJSON=D(this.toJSON,this)
+return t.__super__.constructor.apply(this,arguments)}t.optionProperty("recipientGroups")
+t.optionProperty("context")
+t.prototype.template=S
+t.prototype.wrapperTemplate=w["a"]
+t.prototype.className="validated-form-view form-dialog"
+t.prototype.defaults={height:500,width:500}
+t.prototype.els={"[name=recipientGroupName]":"$recipientGroupName","#message-recipients":"$messageRecipients","[name=body]":"$messageBody"}
+t.prototype.events=I.a.extend({},l["a"].prototype.events,{"change [name=recipientGroupName]":"updateListOfRecipients","click .dialog_closer":"close",dialogclose:"close"})
+t.prototype.initialize=function(e){t.__super__.initialize.apply(this,arguments)
+this.options.title=this.context?a.t("Message students for %{context}",{context:this.context}):a.t("Message students")
+this.recipients=this.recipientGroups[0].recipients
+return this.model||(this.model=new z({chunkSize:ENV.MAX_GROUP_CONVERSATION_SIZE}))}
+t.prototype.toJSON=function(){var e,t,n,s,i
+t={}
+i=["title","recipients","recipientGroups"]
+for(e=0,s=i.length;e<s;e++){n=i[e]
+t[n]=this[n]}return t}
+t.prototype.validateBeforeSave=function(e,t){var n
+n=this.model.validate(e)
+if(n){n.body&&(t.body=n.body)
+n.recipients&&(t.recipientGroupName=n.recipients)}return t}
+t.prototype._findRecipientGroupByName=function(e){return I.a.detect(this.recipientGroups,(function(t){return t.name===e}))}
+t.prototype.getFormData=function(){var e,t,n,s
+s=this.$el.toJSON(),t=s.recipientGroupName,e=s.body
+n=this._findRecipientGroupByName(t).recipients
+return{body:e,recipients:I.a.pluck(n,"id")}}
+t.prototype.updateListOfRecipients=function(){var e,t
+e=this.$recipientGroupName.val()
+t=this._findRecipientGroupByName(e).recipients
+return this.$messageRecipients.html(g({recipients:t}))}
+t.prototype.onSaveSuccess=function(){this.close()
+return o.a.flashMessage(a.t("Message Sent!"))}
+t.prototype.close=function(){t.__super__.close.apply(this,arguments)
+this.hideErrors()
+return this.remove()}
+return t}(l["a"])},VTHg:function(e,t){e.exports=e=>e.id.replace(/^question_/,"")},bCCX:function(e,t,n){"use strict"
+n.r(t);(function(e,s){var i=n("SLVX")
+var a
+if("undefined"!==typeof self)a=self
+else if("undefined"!==typeof window)a=window
+else if("undefined"!==typeof e)a=e
+else{a=s}var r=Object(i["a"])(a)
+t["default"]=r}).call(this,n("yLpj"),n("3UD+")(e))},dTie:function(e,t,n){"use strict"
+var s=n("An8g")
+var i=n("Ff2n")
+var a=n("q1tI")
+var r=n.n(a)
+n("17x9")
+var o=n("Mmr1")
+var l=n("msMH")
+var c=n("pQTu")
+var d=n("m0r6")
+Object(d["a"])(JSON.parse('{"de":{"close_d634289d":"Schließen"},"hu":{"close_d634289d":"Bezárás"}}'))
+n("jQeR")
+n("0sPK")
+var u=c["default"].scoped("modal")
+var h=n("98st")
+n.d(t,"a",(function(){return _}))
+function p(){return document.getElementById("flash_screenreader_holder")}function _(e){let t=e.label,n=e.closeButtonLabel,a=e.onDismiss,c=e.children,d=Object(i["a"])(e,["label","closeButtonLabel","onDismiss","children"])
+return r.a.createElement(h["a"],Object.assign({liveRegion:p},d,{label:t,onDismiss:a}),Object(s["a"])(h["a"].Header,{},void 0,Object(s["a"])(o["a"],{placement:"end",offset:"medium",onClick:a},void 0,n||u.t("Close")),Object(s["a"])(l["a"],{},void 0,t)),c)}["Header","Body","Footer"].forEach(e=>_[e]=h["a"][e])
+_.defaultProps={closeButtonLabel:void 0}},"gl9/":function(e,t,n){"use strict"
+var s=n("1xB4")
+t["a"]=function(e){e&&s["a"].unregisterAllTrackers()
+s["a"].isRunning()||s["a"].start()
+if(s["a"].isDirty())return s["a"].deliver()}},lkPJ:function(e,t,n){"use strict"
+var s=n("ouhR")
+var i=n.n(s)
+const a={disableInputs(e){const t=i()("body"),n=i()("<div />",{class:"input_cover"})
+n.on("mouseleave",(function(e){i()(this).remove()}))
+i()(e).on("mouseenter",(function(e){const s=i()(this),a=n.clone(true)
+a.css({height:s.height()+12,width:s.width()+12,position:"absolute",left:s.offset().left-6,top:s.offset().top-6,zIndex:15,background:"url(/images/blank.png) 0 0 repeat"})
+t.append(a)}))},setWidths(e){i()(e||".answer input[type=text]").each((function(){i()(this).width(9.5*i()(this).val().length)}))}}
+t["a"]=a},ppA4:function(e,t,n){"use strict"
+var s=n("An8g")
+var i=n("VTBJ")
+var a=n("ODXe")
+var r=n("Ff2n")
+var o=n("pQTu")
+var l=n("m0r6")
+Object(l["a"])(JSON.parse('{"de":{"cancel_caeb1e68":"Abbrechen","content_share_started_successfully_2c37fb79":"Inhaltsfreigabe erfolgreich gestartet","error_starting_content_share_18fb1532":"Fehler beim Starten der Inhaltsfreigabe","loading_25990131":"Wird geladen ...","send_e3bd0ed0":"Senden","send_to_b940900a":"Senden an ...","starting_content_share_2d8c2999":"Starten der Inhaltsfreigabe"},"hu":{"cancel_caeb1e68":"Mégse","loading_25990131":"Töltődik...","send_e3bd0ed0":"Küldés"}}'))
+n("jQeR")
+n("0sPK")
+var c=o["default"].scoped("direct_share_user_modal")
+var d=n("q1tI")
+var u=n.n(d)
+n("17x9")
+var h=n("L+/K")
+var p=n("Xx/m")
+var _=n("VTJ5")
+var g=n("S4Kx")
+var b=n("BxIY")
+n("qBwj")
+var m=n("4Ogu")
+n.d(t,"a",(function(){return y}))
+const f=Object(d["lazy"])(()=>Promise.all([n.e(5),n.e(6),n.e(8),n.e(23),n.e(120),n.e(505)]).then(n.bind(null,"FB/m")))
+var v=Object(s["a"])(_["a"],{renderTitle:"",size:"x-small"})
+function y(e){let t=e.contentShare,n=e.courseId,o=Object(r["a"])(e,["contentShare","courseId"])
+const l=Object(d["useState"])([]),y=Object(a["a"])(l,2),S=y[0],w=y[1]
+const O=Object(d["useState"])(null),E=Object(a["a"])(O,2),k=E[0],T=E[1]
+const x=Object(d["useRef"])(o.open)
+function N(){w([])
+T(null)}function j(e){S.find(t=>t.id===e.id)||w(S.concat([e]))}function z(e){w(S.filter(t=>t.id!==e.id))}function A(){return Object(m["a"])({method:"POST",path:"/api/v1/users/self/content_shares",body:Object(i["a"])({},t,{receiver_ids:S.map(e=>e.id)})})}function I(){T("info")
+A().then(()=>T("success")).catch(e=>{console.error(e)
+e.response&&console.error(e.response)
+T("error")})}function D(){return u.a.createElement(u.a.Fragment,null,Object(s["a"])(p["a"],{onClick:o.onDismiss},void 0,c.t("Cancel")),Object(s["a"])(p["a"],{disabled:0===S.length||null!==k,variant:"primary",margin:"0 0 0 x-small",onClick:I},void 0,c.t("Send")))}const C=Object(s["a"])(g["a"],{as:"div",textAlign:"center"},void 0,Object(s["a"])(_["a"],{renderTitle:c.t("Loading...")}))
+if(o.open!==x.current){x.current=o.open
+N()}let M=""
+"info"===k?M=c.t("Starting content share"):"success"===k?M=c.t("Content share started successfully"):"error"===k&&(M=c.t("Error starting content share"))
+const q=M?Object(s["a"])(h["a"],{variant:k},void 0,Object(s["a"])("div",{role:"alert","aria-live":"assertive","aria-atomic":true},void 0,M),"info"===k?v:null):null
+return u.a.createElement(b["a"],Object.assign({label:c.t("Send To..."),size:"medium"},o,{footer:Object(s["a"])(D,{})}),Object(s["a"])(d["Suspense"],{fallback:C},void 0,q,Object(s["a"])(f,{courseId:n,selectedUsers:S,onUserSelected:j,onUserRemoved:z})))}},qx8k:function(e,t,n){"use strict"
+var s=n("pQTu")
+var i=n("m0r6")
+Object(i["a"])(JSON.parse('{"de":{"quizzes":{"show":{"answers":{"correct":"Richtig!","correct_answers":"Richtige Antworten","incorrect":"Falsch","partial":"Teilweise","right":"Richtige Antwort","unanswered":"Unbeantwortet","you_answered":"Sie antworteten"},"buttons":{"already_published":"Veröffentlicht!","publishing":"Wird veröffentlicht ..."},"confirms":{"delete_quiz":"Möchten Sie dieses Quiz wirklich löschen?","delete_quiz_submissions_warning":{"one":"Warnung: 1 Student hat an diesem Quiz bereits teilgenommen. Wenn Sie dieses Quiz löschen, werden alle Abgaben ebenfalls gelöscht und nicht länger im Notenbuch angezeigt.","other":"Warnung: %{count} Studenten haben an diesem Quiz bereits teilgenommen. Wenn Sie dieses Quiz löschen, werden alle Abgaben ebenfalls gelöscht und nicht länger im Notenbuch angezeigt."}},"links":{"hide_student_quiz_results":"Quiz-Ergebnisse des Studenten ausblenden","hide_student_survey_results":"Befragungsergebnisse des Studenten ausblenden","show_student_quiz_results":"Quizergebnisse des Studenten anzeigen","show_student_survey_results":"Befragungsergebnisse des Student anzeigen"},"students_who_have_not_taken_the_quiz":"Studenten, die das Quiz NICHT absolviert haben","students_who_have_taken_the_quiz":"Studenten, die das Quiz absolviert haben"}}},"hu":{"quizzes":{"show":{"answers":{"correct":"Helyes!","correct_answers":"Helyes válaszok","incorrect":"Helytelen","partial":"Részleges","right":"Helyes válasz","unanswered":"Nincs megválaszolva","you_answered":"Megadott válasz"},"buttons":{"already_published":"Publikálva!","publishing":"Publikálás alatt..."},"confirms":{"delete_quiz":"Biztos, hogy törölni szeretné ezt a kvízt?","delete_quiz_submissions_warning":{"one":"Figyelmeztetés: 1 hallgató már kitöltötte ezt a kvízt. Ha törli, minden teljesített feladat törlődik és többé nem jelenik meg az eredménye a naplóban.","other":"Figyelem! %{count} hallgató már kitöltötte ezt a kvízt. Ha ezt törli, minden beadott feladat törlődik, és többé nem jelenik meg az eredmény az osztálynaplóban."}},"links":{"hide_student_quiz_results":"A hallgató kvízeredményeinek elrejtése","hide_student_survey_results":"A hallgatói felmérés eredményeinek elrejtése","show_student_quiz_results":"A hallgatói kvíz eredményeinek megjelenítése","show_student_survey_results":"A hallgatói felmérés eredményeinek megjelenítése"},"students_who_have_not_taken_the_quiz":"Hallgatók, akik NEM töltötték ki a kvízt","students_who_have_taken_the_quiz":"Hallgatók, akik kitöltötték a kvízt"}}}}'))
+n("jQeR")
+n("0sPK")
+t["a"]=s["default"].scoped("quizzes.show")},teYS:function(e,t,n){const s=n("ouhR")
+var i,a,r,o=s({})
+s.subscribe=i=function(e,t){if(s.isPlainObject(e))return s.each(e,(function(e,t){i(e,t)}))
+function n(){return t.apply(this,Array.prototype.slice.call(arguments,1))}n.guid=t.guid=t.guid||s.guid++
+o.bind(e,n)}
+s.unsubscribe=a=function(){o.unbind.apply(o,arguments)}
+s.publish=r=function(){o.trigger.apply(o,arguments)}
+e.exports={subscribe:i,unsubscribe:a,publish:r}},w8vW:function(e,t,n){"use strict"
+n.d(t,"a",(function(){return s}))
+function s(e,t){for(let n=0;n<e.length;n++){const s=e[n]
+if(s===t){e.splice(n,1)
+break}}return e}},wWL5:function(e,t,n){"use strict"
+n.r(t)
+var s=n("ouhR")
+var i=n.n(s)
+var a=n("lkPJ")
+var r=n("An8g")
+var o=n("qx8k")
+n("q1tI")
+var l=n("i8i4")
+var c=n.n(l)
+var d=n("VS9R")
+var u=n("LqrG")
+var h=n("PHBv")
+var p=n("7FZx")
+var _=n("gl9/")
+var g=n("GXQz")
+n("UlQx")
+n("YGE8")
+n("TBRb")
+n("MWZS")
+n("p6Wi")
+n("vpJZ")
+n("1Lgu")
+var b=n("H4Sz")
+var m=n("ppA4")
+var f=n("6V2X")
+i()(document).ready((function(){ENV.QUIZ_SUBMISSION_EVENTS_URL&&Object(_["a"])(true)
+i()("#preview_quiz_button").click(e=>{i()("#js-sequential-warning-dialogue div a").attr("href",i()("#preview_quiz_button").attr("href"))})
+function e(e){return i()("#quiz_details").length?e():i.a.get(ENV.QUIZ_DETAILS_URL,t=>{i()("#quiz_details_wrapper").html(t)
+e()})}const t=new u["a"]
+t.applyArrows()
+if(!i()(".allow-inputs").length){a["a"].disableInputs("[type=radio], [type=checkbox]")
+a["a"].setWidths()}i()("form.edit_quizzes_quiz").on("submit",(function(e){e.preventDefault()
+e.stopImmediatePropagation()
+i()(this).find(".loading").removeClass("hidden")
+const t=i()(this).serializeArray()
+const n=i()(this).attr("action")
+i.a.ajax({url:n,data:t,type:"POST",success(){i()(".edit_quizzes_quiz").parents(".alert").hide()}})}))
+i()(".delete_quiz_link").click((function(e){e.preventDefault()
+let t=o["a"].t("confirms.delete_quiz","Are you sure you want to delete this quiz?")
+const n=parseInt(i()("#quiz_details_wrapper").data("submitted-count"))
+n>0&&(t+="\n\n"+o["a"].t("confirms.delete_quiz_submissions_warning",{one:"Warning: 1 student has already taken this quiz. If you delete it, any completed submissions will be deleted and no longer appear in the gradebook.",other:"Warning: %{count} students have already taken this quiz. If you delete it, any completed submissions will be deleted and no longer appear in the gradebook."},{count:n}))
+i()("nothing").confirmDelete({url:i()(this).attr("href"),message:t,success(){window.location.href=ENV.QUIZZES_URL}})}))
+let n=false
+i()(".quiz_details_link").click(t=>{t.preventDefault()
+i()("#quiz_details_wrapper").disableWhileLoading(e(()=>{const e=i()("#quiz_details_text")
+i()("#quiz_details").slideToggle()
+n?ENV.IS_SURVEY?e.text(o["a"].t("links.show_student_survey_results","Show Student Survey Results")):e.text(o["a"].t("links.show_student_quiz_results","Show Student Quiz Results")):ENV.IS_SURVEY?e.text(o["a"].t("links.hide_student_survey_results","Hide Student Survey Results")):e.text(o["a"].t("links.hide_student_quiz_results","Hide Student Quiz Results"))
+n=!n}))})
+i()(".message_students_link").click(t=>{t.preventDefault()
+e(()=>{const e=ENV.QUIZ_SUBMISSION_LIST
+const t=e.UNSUBMITTED_STUDENTS
+const n=e.SUBMITTED_STUDENTS
+const s=o["a"].t("students_who_have_taken_the_quiz","Students who have taken the quiz")
+const i=o["a"].t("students_who_have_not_taken_the_quiz","Students who have NOT taken the quiz")
+const a=new d["a"]({context:ENV.QUIZ.title,recipientGroups:[{name:s,recipients:n},{name:i,recipients:t}]})
+a.open()})})
+function s(e){let t=!(arguments.length>1&&void 0!==arguments[1])||arguments[1]
+e&&e.preventDefault()
+c.a.render(Object(r["a"])(m["a"],{open:t,sourceCourseId:ENV.COURSE_ID,contentShare:{content_type:"quiz",content_id:ENV.QUIZ.id},onDismiss:()=>{s(null,false)
+i()(".al-trigger").focus()}}),document.getElementById("direct-share-mount-point"))}i()(".direct-share-send-to-menu-item").click(s)
+function l(e){let t=!(arguments.length>1&&void 0!==arguments[1])||arguments[1]
+e&&e.preventDefault()
+c.a.render(Object(r["a"])(f["a"],{open:t,sourceCourseId:ENV.COURSE_ID,contentSelection:{quizzes:[ENV.QUIZ.id]},onDismiss:()=>{l(null,false)
+i()(".al-trigger").focus()}}),document.getElementById("direct-share-mount-point"))}i()(".direct-share-copy-to-menu-item").click(l)
+i()("#let_students_take_this_quiz_button").ifExists((function(e){const t=i()("#unlock_for_how_long_dialog")
+e.click(()=>{t.dialog("open")
+return false})
+const n=i()(this).find(".datetime_field")
+t.dialog({autoOpen:false,modal:true,resizable:false,width:400,buttons:{Unlock(){i()("#quiz_unlock_form").append(i()(this).dialog("destroy")).find("#quiz_lock_at").val(n.data("iso8601")).end().submit()}}})
+n.datetime_field()}))
+i()("#lock_this_quiz_now_link").ifExists(e=>{e.click(e=>{e.preventDefault()
+i()("#quiz_lock_form").submit()})})
+i()("ul.page-action-list").find("li").length>0&&i()("ul.page-action-list").show()
+i()("#publish_quiz_form").formSubmit({beforeSubmit(e){i()(this).find("button").attr("disabled",true).text(o["a"].t("buttons.publishing","Publishing..."))},success(e){i()(this).find("button").text(o["a"].t("buttons.already_published","Published!"))
+location.reload()}})
+const v=i()("#quiz-publish-link")
+const y=new h["a"](i.a.extend(ENV.QUIZ,{unpublishable:!v.hasClass("disabled")}))
+const S=new p["a"]({model:y,el:v})
+const w=function(){location.href=location.href}
+S.on("publish",w)
+S.on("unpublish",w)
+S.render()
+const O=document.getElementById("crs-graphs")
+const E=document.getElementById("not_right_side")
+g["default"].init(O,E)
+i()("#assignment_external_tools").length&&b["a"].attach(i()("#assignment_external_tools")[0],"assignment_view",parseInt(ENV.COURSE_ID,10),parseInt(ENV.QUIZ.assignment_id,10))}))
+n("2wuA")
+n("/j35")
+var v=n("y8OA")
+const y=new v["default"]
+y.init({itemType:"quiz",page:"show"})
+i()(()=>{a["a"].setWidths()
+i()(".answer input[type=text]").each((function(){i()(this).width(9.5*(i()(this).val().length||11))}))
+i()(".download_submissions_link").click((function(e){e.preventDefault()
+INST.downloadSubmissions(i()(this).attr("href"))}))
+if(ENV.SUBMISSION_VERSIONS_URL&&!ENV.IS_SURVEY){const e=i()("#quiz-submission-version-table")
+e.css({height:"100px"})
+const t=i.a.get(ENV.SUBMISSION_VERSIONS_URL,t=>{e.html(t)
+e.css({height:"auto"})})
+e.disableWhileLoading(t)}i()("#module_sequence_footer").moduleSequenceFooter({courseID:ENV.COURSE_ID,assetType:"Quiz",assetID:ENV.QUIZ.id,location:location})})},y2yB:function(e,t,n){"use strict"
+n.d(t,"a",(function(){return p}))
+var s=n("VTBJ")
+var i=n("1OyB")
+var a=n("vuIU")
+var r=n("md7G")
+var o=n("foSv")
+var l=n("Ji7U")
+var c=n("q1tI")
+var d=n.n(c)
+var u=n("hPGw")
+var h=d.a.createElement("path",{d:"M.08 568.062l176.13-176.13 783.988 783.865 783.74-783.864 176.13 176.13-959.87 960.118z",fillRule:"evenodd",stroke:"none",strokeWidth:"1"})
+var p=function(e){Object(l["a"])(t,e)
+function t(){Object(i["a"])(this,t)
+return Object(r["a"])(this,Object(o["a"])(t).apply(this,arguments))}Object(a["a"])(t,[{key:"render",value:function(){return d.a.createElement(u["a"],Object.assign({},this.props,{name:"IconArrowOpenDown",viewBox:"0 0 1920 1920"}),h)}}])
+t.displayName="IconArrowOpenDownSolid"
+return t}(c["Component"])
+p.glyphName="arrow-open-down"
+p.variant="Solid"
+p.propTypes=Object(s["a"])({},u["a"].propTypes)},yE80:function(e,t,n){"use strict"
+var s=n("pQTu")
+t["a"]={strings(e,t){let n=s["default"].locale||"en-US"
+const i={zh_Hant:"zh-Hant"}
+n=i[n]||n
+return e.localeCompare(t,n,{sensitivity:"variant",ignorePunctuation:false,numeric:true})},by(e){return(t,n)=>this.strings(e(t),e(n))},byKey(e){return this.by(t=>t[e])},byGet(e){return this.by(t=>t.get(e))}}},zrOs:function(e,t){if("".concat(location.search).match(/[?&]debug_js=1/))e.exports=console
+else{function n(){}e.exports=["debug","info","log","warn","error"].reduce((e,t)=>{e[t]=n
+return e},{})}}}])
+
+//# sourceMappingURL=quiz_show-c-6a1702d8c7.js.map

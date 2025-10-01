@@ -39,3 +39,32 @@ grep -E '[-0-9+*/^]' minden.txt (kiszedi a számokat és műveleteket)
 
 cat minden.txt | tr '[:lower:]' '[:upper:]' >> minden_nagybetus.txt (átrakja nagybetűsként)
 grep -E '^[a-zA-z].*[0-9]$' minden.txt
+2025.10.01:
+okt 7:
+1: zh:
+új mappa/ fájl
+fájl átnevezés
+fájl törlés
+fájlban keresés
+regex nem lesz
+
+ls -a1 (a mint all , hogy mindent külön sorba )
+ls -la | wc -l( hány féjl van)
+ls -la ( all és )
+ls -la | grep '^d' (csak a direktorik)
+ls -la | grep '^d' | wc -l (direktorik száma)
+find . -type d (kiir minden könyvtárat)
+find . -type f (kiir minden fájlt)
+
+hány fájl tartalmazz a TODO-t:
+echo "TODO" >> test1.txt (egy nyil ha már van ilyen fájl, több ha még nincs) (egy nyíl hozzáfűz, kettő felülír)
+grep -rl "TODO"
+
+
+
+kiir minden txt:
+ls -a | grep -rl "TODO" | grep ".*.txt"
+hány db txt vam:
+ls -a | grep -rl "TODO" | grep ".*.txt" | wc -l
+
+

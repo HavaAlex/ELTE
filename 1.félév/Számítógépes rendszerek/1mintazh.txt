@@ -1,0 +1,45 @@
+mkdir zoldseges_feladat
+mkdir bevetelek raktarkeszlet kiadasok vasarlok
+touch 2025_Q3.txt
+touch 2025_Q2.txt
+nano 2025_Q2.txt
+chmod 000 2025_Q3.txt
+touch legkevesbe_kedvelt.txt
+echo "ILYEN NEM LETEZIK" >> legkevesbe_kedvelt.txt
+cat legkevesbe_kedvelt.txt
+touch legjobban_kedvelt.txt
+nano legjobban_kedvelt.txt
+cp legjobban_kedvelt.txt biztonsago_mentes.txt
+winscp cuccos 
+wc --help
+man wc
+wc -mlw almafajták.txt
+sort almafajták.txt >> rendezett_almafajtak.txt
+cat rendezett_almafajtak.txt
+cut -c1 almafajták.txt | sort | uniq -c | sort -nr | head -5
+grep -E "István|Éva" leggyakoribb_vásárlók.txt
+grep -E "1[0-9]{3}Ft|2000Ft" leggyakoribb_vásárlók.txt
+grep "Éva" leggyakoribb_vásárlók.txt
+grep "Éva" leggyakoribb_vásárlók.txt  | cut -d " " -f2
+ grep "Éva" leggyakoribb_vásárlók.txt  | cut -d " " -f2 | cut -d "F" -f1 | paste -sd+ - | bc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

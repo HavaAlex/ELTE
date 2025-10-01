@@ -1,0 +1,25 @@
+(window["canvasWebpackJsonp"]=window["canvasWebpackJsonp"]||[]).push([[277],{vwFW:function(e,t,s){"use strict"
+var n=s("ouhR")
+var i=s.n(n)
+i()(".question select").bind("mousewheel",e=>e.preventDefault())},vzpB:function(e,t,s){"use strict"
+s.r(t)
+var n=s("pQTu")
+var i=s("m0r6")
+Object(i["a"])(JSON.parse('{"de":{"quizzes":{"quiz_submission":{"titles":{"this_is_an_external_element":"Dies ist ein externes Element, kein Text, und könnte seit der letzten Abgabe des Studenten geändert worden sein.","this_is_an_external_frame":"Dies ist ein externer Frame, kein Text, und könnte seit der letzten Abgabe des Studenten geändert worden sein.","this_is_an_image":"Dies ist ein Bild, kein Text, und könnte seit der letzten Abgabe des Studenten geändert worden sein."}}}},"hu":{"quizzes":{"quiz_submission":{"titles":{"this_is_an_external_element":"Ez egy külső elem, nem szöveg, és megváltozhatott, mióta a hallgató beadta azt","this_is_an_external_frame":"Ez egy külső keret, nem pedig szöveg, és megváltozhatott, mióta a hallgató beadta azt","this_is_an_image":"Ez egy kép, nem szöveg, és megváltozhatott, mióta a hallgató beadta azt"}}}}}'))
+s("jQeR")
+s("0sPK")
+var a=n["default"].scoped("quizzes.quiz_submission")
+var r=s("ouhR")
+var d=s.n(r)
+s("vwFW")
+d()(document).ready(()=>{d()("#questions.assessment_results .question").hover((function(){d()(this).addClass("hover")}),(function(){d()(this).removeClass("hover")}))
+d()(".quiz_response_text img").each((function(){d()(this).css({borderColor:"#f44",borderStyle:"solid",borderWidth:"2px",padding:2}).attr("title",a.t("titles.this_is_an_image","This is an image, not text, and could have changed since the student submitted"))}))
+d()(".quiz_response_text iframe").each((function(){d()(this).css({borderColor:"#f44",borderStyle:"solid",borderWidth:"2px",padding:2}).attr("title",a.t("titles.this_is_an_external_frame","This is an external frame, not text, and could have changed since the student submitted"))}))
+const e=d()("nothing")
+d()(".quiz_response_text").find("object,embed").each((function(){return e.add(d()(this).parents("object,embed:first"))}))
+return e.each((function(){const e=d()("<span/>").css("display","inline-block")
+e.before(d()(this))
+e.append(d()(this))
+return e.css({borderColor:"#f44",borderStyle:"solid",borderWidth:"2px",padding:2}).attr("title",a.t("titles.this_is_an_external_element","This is an external element, not text, and could have changed since the student submitted"))}))})}}])
+
+//# sourceMappingURL=quiz_submission-c-85b231fd4b.js.map

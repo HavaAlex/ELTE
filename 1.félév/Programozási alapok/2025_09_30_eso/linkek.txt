@@ -1,0 +1,8 @@
+https://progalap.elte.hu/specifikacio/v1/?uuid=5a7169d3-b71a-4537-95b6-fd52286c736e
+https://progalap.elte.hu/stuki/v1/?uuid=7ee22c35-3672-4429-92da-be6a35bb859f
+
+
+Be: n∈Z, m∈Z[1..n]
+Ki: db∈N
+Ef:0<=n<=100 és ∀i∈[1..n]:(0<=m[i]<=1000)
+Uf: db=DARAB(i=1..n, m[i]>0)
