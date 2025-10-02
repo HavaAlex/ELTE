@@ -9,7 +9,7 @@ void operator( void ){ //ures parameter lista
 
     i = 6;   
     j = i++;
-    printf("Postfix (j=++i) i=%d, j=%d\n",i,j); //előszőr j = 6 aztán lesz csak i++
+    printf("Postfix (j=i++) i=%d, j=%d\n",i,j); //előszőr j = 6 aztán lesz csak i++
 }
 
 void little_big( void );
@@ -70,8 +70,8 @@ void bitSwap(int a){
     //printf("%d\n",bits);
 }
 int main(){
-    /*
-    operator();
+    
+    operator();/*
     //operator(42); //némely fordito  nem szeretja be 
 */
     //little_big();
