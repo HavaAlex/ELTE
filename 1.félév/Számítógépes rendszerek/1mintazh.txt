@@ -21,7 +21,7 @@ grep -E "István|Éva" leggyakoribb_vásárlók.txt
 grep -E "1[0-9]{3}Ft|2000Ft" leggyakoribb_vásárlók.txt
 grep "Éva" leggyakoribb_vásárlók.txt
 grep "Éva" leggyakoribb_vásárlók.txt  | cut -d " " -f2
- grep "Éva" leggyakoribb_vásárlók.txt  | cut -d " " -f2 | cut -d "F" -f1 | paste -sd+ - | bc
+grep "Éva" leggyakoribb_vásárlók.txt  | cut -d " " -f2 | cut -d "F" -f1 | paste -sd+ - | bc
 
 
 

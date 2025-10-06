@@ -14,15 +14,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
@@ -32,7 +28,7 @@
               "RelativeDocumentMoniker": "2025_09_16_elsoNnegyzetszam\\Program.cs",
               "ToolTip": "C:\\Users\\admin\\Desktop\\ELTE repo mukodj\\1.f\u00E9l\u00E9v\\Programoz\u00E1si alapok\\2025_09_16_elsoNnegyzetszam\\2025_09_16_elsoNnegyzetszam\\Program.cs",
               "RelativeToolTip": "2025_09_16_elsoNnegyzetszam\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAIwCoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAIwBkAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-16T14:05:05.299Z",
               "EditorCaption": ""

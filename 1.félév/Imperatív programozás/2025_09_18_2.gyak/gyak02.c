@@ -55,7 +55,7 @@ int main()
     }
     
     int n = 0;
-    printf("Az int merete : %lld \n ",sizeof(n));
+    printf("Az int merete : %lld \n",sizeof(n));
     printf("Abrazolhato max min ertek: %d-tol , %d-ig\n",INT_MIN,INT_MAX);
     int min = -pow(2,31); 
     int max = pow(2,31)-1; // -1 a nullábak

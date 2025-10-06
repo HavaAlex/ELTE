@@ -66,6 +66,7 @@ void intSwap(int a, int b)
 
 void bitSwap(int a){
     //int bits = ~a;
+    printf("a = %u\n", a);
     printf("~a = %u\n", a = ~a);
     //printf("%d\n",bits);
 }
