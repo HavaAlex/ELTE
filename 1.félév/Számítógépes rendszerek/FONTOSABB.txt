@@ -1,6 +1,6 @@
 ssh fxemow@szamrend.inf.elte.hu 
 jelszót beírni minden esetbeee
-ls -l
+ls -l (long format = sok infó)
 ls -a (hidden dolgok)
 clear
 touch text.txt (új txt fájl)
@@ -48,9 +48,9 @@ fájl törlés
 fájlban keresés
 regex nem lesz
 
-ls -a1 (a mint all , hogy mindent külön sorba )
-ls -la | wc -l( hány féjl van)
-ls -la ( all és )
+ls -a1 (a mint all , 1 hogy mindent külön sorba )
+ls -la | wc -l (hány féjl van)
+ls -la ( all és a sok infót ad)
 ls -la | grep '^d' (csak a direktorik)
 ls -la | grep '^d' | wc -l (direktorik száma)
 find . -type d (kiir minden könyvtárat)

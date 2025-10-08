@@ -1,0 +1,62 @@
+ls (list, azaz fájlok mappák)
+ls -1 (mindent egy egy sorba)
+ls -a (sok infó)
+ls -l(long format = sok infó)
+ls -la | wc -l (hány féjl van)
+ls -la ( all és a sok infót ad)
+ls -la | grep '^d' (csak a direktorik)
+ls -la | grep '^d' | wc -l (direktorik száma)
+
+mkdir (make directory)
+touch (make file)
+cat (fájl tartalma)
+nano (fájl szerkesztése)
+mv mozgatando.txt cel.txt (move, de lehet átnevezés is)
+mv ..
+cp legjobban_kedvelt.txt biztonsago_mentes.txt (copy)
+rm -R filename (akkor is töröl ha van a fájlban/mappában vmi)
+cat /proc/sys/kernel/pid_max (???)
+ps (folyamatok kiirása)
+ps -aux (háttérfolyamatok kiirása is)
+sleep 10 (alapból előtér)
+sleep 10 &  (így viszont back)
+kill PID (folyamat leállítása)
+trap 'echo "Hajrá Bercel"' SIGINT (kiirja néha, jópofa)
+sleep 100 & (háttér alvás)
+fg PID (előtérbe hozza elv.)
+SORT:
+sort minden.txt (sorba rendezi valahogy)
+sort -r (reverse)
+sort -n (numerikusan 100 50 9 nem pedig 100 9 50)
+sort uniq (nincsenek duplicatek)
+sort uniq -c (megszámolja hány ismétlődés volt és kiirja a sor elé)
+sort head -3 (megtartjuk az első 3-at)
+sort tail -3 (megtartjuk az utolsó 3-at)
+cat minden.txt | tr '[:lower:]' '[:upper:]' >> minden_nagybetus.txt (átrakja nagybetűsként egy másik fájlba) 
+ 
+
+
+find . -type d (kiir minden könyvtárat)
+find . -type f (kiir minden fájlt)
+
+
+chmod 000 2025_Q3.txt (számok : user, group, other mindegyik lehet 4 read, 2 write  , 1 execute és ezek összadva)
+
+
+echo "ILYEN NEM LETEZIK" >> legkevesbe_kedvelt.txt (beleír a fájlba)
+sort almafajták.txt >> rendezett_almafajtak.txt (beleyrja rendezve)
+wc (word count)
+wc -m (hány karakter ???) (char count)
+wc -l (hány sor van a fájlban) (lines count)
+wc -w (words count)
+wc -mlw asd.txt
+
+cut -c1 (első char levágása és kiirása)
+cut -c1-3(1-től 3ig terjedő karakterek)
+cut -c2- (2. karaktertől a sor végéig)
+cut -c-5 (a sor elejétől az 5. karakterig)
+cut -d " " f1 (space alapján felvágja majd az 1. felét ajda vissza az f1) 
+cut -d "F" -f2 (ki bírod találni)
+paste -sd+ -(egy sorba teszi a kiirt dolgokat +-al elválasztva)
+bc (ez egy fura sum)
+grep "Éva" leggyakoribb_vásárlók.txt  | cut -d " " -f2 | cut -d "F" -f1 | paste -sd+ - | bc (kiirja éva vásárlasainak összegét csak elötte levagdossuk a nevét meg azt hogy Ft)
