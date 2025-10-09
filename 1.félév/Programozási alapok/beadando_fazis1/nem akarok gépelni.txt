@@ -1,0 +1,52 @@
+ n: 6
+ countries:
+   - "Algéria"
+   - "Thaifold"
+   - "Norvegia"
+   - "Egyesult Kiralysag"
+   - "Oroszorszag"
+   - "Kenya"
+r: 5
+ events:
+   - countryId: 
+     year: 
+     motto:
+   - countryId: 
+     year: 
+     motto:
+   - countryId: 
+     year: 
+     motto:
+   - countryId: 
+     year: 
+     motto:
+   - countryId: 
+     year: 
+     motto: 
+ minYear: 0
+
+
+
+
+
+ami lesz:
+Be: n∈Z, events∈Event[1..n], Event=(country:S x year:Z x motto:S)
+Ki: minYear∈Z,minInd∈Z
+Ef: 1<=n<=20  és ∀i∈[1..n]:(1900<=events[i].year<=2010)
+Uf: (minInd,minYear) = MIN(i=1..n,events[i].year) 
+
+
+
+ami lehetett volna:
+Be: n∈Z, countries∈S[1..n], r∈Z ,events∈Event[1..r], Event=(countryId:Z x year:Z x motto:S)
+Ki: minYear∈Z,minInd∈Z, minCountryName∈S
+Ef: 1<=n<=20 és 1<=r<=40 és ∀i∈[1..r]:(1900<=events[i].year<=2010 és 
+(events[i].countryId = 0 vagy 1<=events[i].countryId<=n )) 
+Uf: (minInd,minYear) = MIN(i=1..r,events[i].year) és minCountryName = countries[events[minInd].countryId] és VAN(i=1..r, events[i].countryId=0 és events[i].year =)
+ minCountryName: 
+
+
+
+
+VAN(i=1..r,events[i].year=minYear és events[i].countryId = 0)->minCountryName = "?"
+or (not VAN(i=1..r,events[i].year=minYear és events[i].countryId = 0)) -> (minCountryName = countries[events[minInd].countryId]) és n<=9999
