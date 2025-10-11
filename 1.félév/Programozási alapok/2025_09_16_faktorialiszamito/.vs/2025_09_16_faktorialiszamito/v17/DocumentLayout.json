@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\admin\\Desktop\\ELTE repo\\1.f\u00E9l\u00E9v\\Programoz\u00E1si alapok\\2025_09_16_faktorialiszamito\\",
+  "WorkspaceRootPath": "C:\\Users\\admin\\Desktop\\ELTE repo mukodj\\1.f\u00E9l\u00E9v\\Programoz\u00E1si alapok\\2025_09_16_faktorialiszamito\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5D48FF98-9A57-446D-9992-4B424912EDA0}|2025_09_16_faktorialiszamito\\2025_09_16_faktorialiszamito.csproj|c:\\users\\admin\\desktop\\elte repo\\1.f\u00E9l\u00E9v\\programoz\u00E1si alapok\\2025_09_16_faktorialiszamito\\2025_09_16_faktorialiszamito\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5D48FF98-9A57-446D-9992-4B424912EDA0}|2025_09_16_faktorialiszamito\\2025_09_16_faktorialiszamito.csproj|c:\\users\\admin\\desktop\\elte repo mukodj\\1.f\u00E9l\u00E9v\\programoz\u00E1si alapok\\2025_09_16_faktorialiszamito\\2025_09_16_faktorialiszamito\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D48FF98-9A57-446D-9992-4B424912EDA0}|2025_09_16_faktorialiszamito\\2025_09_16_faktorialiszamito.csproj|solutionrelative:2025_09_16_faktorialiszamito\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,25 +14,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\ELTE repo\\1.f\u00E9l\u00E9v\\Programoz\u00E1si alapok\\2025_09_16_faktorialiszamito\\2025_09_16_faktorialiszamito\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\ELTE repo mukodj\\1.f\u00E9l\u00E9v\\Programoz\u00E1si alapok\\2025_09_16_faktorialiszamito\\2025_09_16_faktorialiszamito\\Program.cs",
               "RelativeDocumentMoniker": "2025_09_16_faktorialiszamito\\Program.cs",
-              "ToolTip": "C:\\Users\\admin\\Desktop\\ELTE repo\\1.f\u00E9l\u00E9v\\Programoz\u00E1si alapok\\2025_09_16_faktorialiszamito\\2025_09_16_faktorialiszamito\\Program.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\ELTE repo mukodj\\1.f\u00E9l\u00E9v\\Programoz\u00E1si alapok\\2025_09_16_faktorialiszamito\\2025_09_16_faktorialiszamito\\Program.cs",
               "RelativeToolTip": "2025_09_16_faktorialiszamito\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAABRAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-16T13:08:35.908Z",
               "EditorCaption": ""
